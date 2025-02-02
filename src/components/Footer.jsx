@@ -1,6 +1,7 @@
 "use client";
 
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Footer() {
     const [commitHash, setCommitHash] = useState('');
@@ -20,20 +21,19 @@ export default function Footer() {
             <footer className="footer bg-base-200 text-base-content p-10">
                 <nav>
                     <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Development</a>
-                    <a className="link link-hover">System administration</a>
-                    <a className="link link-hover">Third party software installation</a>
+                    <Link className="link link-hover" href="#">Development</Link>
+                    <Link className="link link-hover" href="#">System administration</Link>
+                    <Link className="link link-hover" href="#">Third party software installation</Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
+                    <Link className="link link-hover" href="#">Privacy policy</Link>
+                    <Link className="link link-hover" href="#">Cookie policy</Link>
                 </nav>
             </footer>
             <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
                 <aside className="grid-flow-col items-center">
-                    <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo"
-                         className="h-12 w-12 rounded-full"/>
+                    <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo" className="h-12 w-12 rounded-full"/>
                     <p className={"font-bold"}>
                         Farmeurimmo
                         <br/>
@@ -42,14 +42,11 @@ export default function Footer() {
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">
                     <div className="grid grid-flow-col gap-4">
-                        <a href={"https://github.com/Farmeurimmo/portfolio-v5"} className="link link-hover">Source
-                            code</a>
-
-                        <a href={`https://github.com/Farmeurimmo/portfolio-v5/commit/${commitHash}`}
-                           className="link link-hover text-amber-600">{commitHash}</a>
+                        <Link href="https://github.com/Farmeurimmo/portfolio-v5" className="link link-hover">Source code</Link>
+                        <Link href={`https://github.com/Farmeurimmo/portfolio-v5/commit/${commitHash}`} className="link link-hover text-amber-600">{commitHash}</Link>
                     </div>
                 </nav>
             </footer>
         </>
-    )
+    );
 }

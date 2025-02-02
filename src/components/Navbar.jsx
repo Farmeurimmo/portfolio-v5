@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Navbar() {
     return (
         <>
@@ -5,12 +7,13 @@ export function Navbar() {
                 <div className="flex flex-row items-center gap-4">
                     <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo"
                          className="h-8 w-8 rounded-full"/>
-                    <a className="text-xl font-bold hover:text-orange-500" href={"/"}>Farmeurimmo</a>
+                    <Link className="text-xl font-bold hover:text-orange-500" href={"/"}>Farmeurimmo</Link>
                 </div>
                 <div className="flex flex-row items-center gap-4">
-                    <a href="#" className="text-lg font-bold hover:text-orange-500">Home</a>
-                    <a href="#" className="text-lg font-bold hover:text-orange-500">About</a>
-                    <a href="#" className="text-lg font-bold hover:text-orange-500">Contact</a>
+                    <Link href={"#"} className="text-lg font-bold hover:text-orange-500">Home</Link>
+                    <Link href={"#"} className="text-lg font-bold hover:text-orange-500">Projects</Link>
+                    <Link href={"#"} className="text-lg font-bold hover:text-orange-500">Blog</Link>
+                    <Link href={"#"} className={"text-lg font-bold hover:text-orange-500"}>Contact</Link>
                 </div>
             </nav>
         </>
