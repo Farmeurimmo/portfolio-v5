@@ -25,7 +25,7 @@ export function generateStaticParams() {
 export default async function LocaleLayout({children, params}) {
     const {locale} = await params;
 
-    if (!routing.locales.includes(locale) && locale.length <= 3) {
+    if (!routing.locales.includes(locale) && locale.length <= 2) {
         redirect(routing.defaultLocale);
         return null;
     }

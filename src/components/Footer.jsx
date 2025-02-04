@@ -2,6 +2,7 @@
 
 import {useEffect, useState} from "react";
 import Link from "next/link";
+import {useTranslations} from "next-intl";
 
 export default function Footer() {
     const [commitHash, setCommitHash] = useState('');
@@ -16,19 +17,22 @@ export default function Footer() {
         fetchCommitHash();
     }, []);
 
+    const t = useTranslations('Footer');
+
     return (
         <>
             <footer className="footer bg-base-200 text-base-content p-10">
                 <nav>
-                    <h6 className="footer-title">Services</h6>
-                    <Link className="link link-hover" href="#">Development</Link>
-                    <Link className="link link-hover" href="#">System administration</Link>
-                    <Link className="link link-hover" href="#">Third party software installation</Link>
+                    <h6 className="footer-title">{t('services')}</h6>
+                    <Link className="link link-hover" href="#">{t("servicesList.dev")}</Link>
+                    <Link className="link link-hover" href="#">{t("servicesList.sysadmin")}</Link>
+                    <Link className="link link-hover" href="#">{t("servicesList.thirdpartyinstall")}</Link>
                 </nav>
                 <nav>
-                    <h6 className="footer-title">Legal</h6>
-                    <Link className="link link-hover" href="#">Privacy policy</Link>
-                    <Link className="link link-hover" href="#">Cookie policy</Link>
+                    <h6 className="footer-title">{t("legal")}</h6>
+                    <Link className="link link-hover" href="#">{t("legalMentions")}</Link>
+                    <Link className="link link-hover" href="#">{t("privacy")}</Link>
+                    <Link className="link link-hover" href="#">{t("cookies")}</Link>
                 </nav>
             </footer>
             <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
@@ -38,13 +42,13 @@ export default function Footer() {
                     <p className={"font-bold"}>
                         Farmeurimmo
                         <br/>
-                        Developper since 2018.
+                        {t("since")}
                     </p>
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">
                     <div className="grid grid-flow-col gap-4">
-                        <Link href="https://github.com/Farmeurimmo/portfolio-v5" className="link link-hover">Source
-                            code</Link>
+                        <Link href="https://github.com/Farmeurimmo/portfolio-v5"
+                              className="link link-hover">{t("sourcecode")}</Link>
                         <Link href={`https://github.com/Farmeurimmo/portfolio-v5/commit/${commitHash}`}
                               className="link link-hover text-amber-600">{commitHash}</Link>
                     </div>

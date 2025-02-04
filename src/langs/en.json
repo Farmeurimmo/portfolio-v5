@@ -1,15 +1,30 @@
 {
-  "homepage": {
-    "title": "This website is up and running."
+  "HomePage": {
+    "subtitle": "This website is up and running.",
+    "description": "Should be available at the end of february 2025."
   },
-  "localeswitcher": {
+  "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, fr {\uD83C\uDDEB\uD83C\uDDF7 Français} en {🇺🇸 English} other {Unknown}}"
   },
-  "navbar": {
+  "Navbar": {
     "home": "Home",
     "blog": "Blog",
     "contact": "Contact",
     "projects": "Projects"
+  },
+  "Footer": {
+    "services": "Services",
+    "servicesList": {
+      "dev": "Development",
+      "sysadmin": "System Administration",
+      "thirdpartyinstall": "Third-party Software Installation"
+    },
+    "legal": "Legal",
+    "legalMentions": "Legal Mentions",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookies",
+    "since": "Developer since 2018.",
+    "sourcecode": "Source Code"
   }
 }

@@ -1,15 +1,30 @@
 {
-  "homepage": {
-    "title": "Ce site fonctionne et est en ligne."
+  "HomePage": {
+    "subtitle": "Ce site fonctionne et est en ligne.",
+    "description": "Il devrait être disponible fin février 2025."
   },
-  "localeswitcher": {
+  "LocaleSwitcher": {
     "label": "Changer de language",
     "locale": "{locale, select, fr {\uD83C\uDDEB\uD83C\uDDF7 Français} en {🇺🇸 English} other {Unknown}}"
   },
-  "navbar": {
+  "Navbar": {
     "home": "Accueil",
     "blog": "Blog",
     "contact": "Contact",
     "projects": "Projets"
+  },
+  "Footer": {
+    "services": "Services",
+    "servicesList": {
+      "dev": "Développement",
+      "sysadmin": "Administration système",
+      "thirdpartyinstall": "Installation de logiciels tiers"
+    },
+    "legal": "Légal",
+    "legalMentions": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Cookies",
+    "since": "Développeur depuis 2018.",
+    "sourcecode": "Code source"
   }
 }

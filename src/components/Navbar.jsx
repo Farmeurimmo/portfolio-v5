@@ -3,7 +3,7 @@ import {useTranslations} from "next-intl";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 export function Navbar() {
-    const t = useTranslations('navbar');
+    const t = useTranslations('Navbar');
 
     return (
         <>
