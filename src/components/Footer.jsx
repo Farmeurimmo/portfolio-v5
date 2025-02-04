@@ -3,6 +3,7 @@
 import {useEffect, useState} from "react";
 import Link from "next/link";
 import {useTranslations} from "next-intl";
+import ThemeButton from "@/components/ThemeButton";
 
 export default function Footer() {
     const [commitHash, setCommitHash] = useState('');
@@ -21,7 +22,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="footer bg-base-200 text-base-content p-10">
+            <footer className="footer bg-base-200 dark:bg-gray-800 text-base-content dark:text-gray-200 p-10">
                 <nav>
                     <h6 className="footer-title">{t('services')}</h6>
                     <Link className="link link-hover" href="#">{t("servicesList.dev")}</Link>
@@ -35,7 +36,8 @@ export default function Footer() {
                     <Link className="link link-hover" href="#">{t("cookies")}</Link>
                 </nav>
             </footer>
-            <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
+            <footer
+                className="footer bg-base-200 dark:bg-gray-800 text-base-content dark:text-gray-200 border-base-300 dark:border-gray-700 border-t px-10 py-4">
                 <aside className="grid-flow-col items-center">
                     <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo"
                          className="h-12 w-12 rounded-full"/>
@@ -47,6 +49,7 @@ export default function Footer() {
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">
                     <div className="grid grid-flow-col gap-4">
+                        <ThemeButton blackBackground={true}/>
                         <Link href="https://github.com/Farmeurimmo/portfolio-v5"
                               className="link link-hover">{t("sourcecode")}</Link>
                         <Link href={`https://github.com/Farmeurimmo/portfolio-v5/commit/${commitHash}`}

@@ -7,6 +7,7 @@ import {Navbar} from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
+import ClientThemeProvider from "@/app/[locale]/ClientThemeProvider";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -35,16 +36,18 @@ export default async function LocaleLayout({children, params}) {
     return (
         <html lang={locale}>
         <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, min-width=400px"/>
+            <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1, min-width=400px"/>
             <link rel="icon" href="https://cdn.farmeurimmo.fr/img/logo.jpg"/>
         </head>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen w-screen min-w-[400px]`}>
+        <body
+            className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen w-screen min-w-[400px]`}>
         <NextIntlClientProvider messages={messages}>
-            <Navbar/>
-
-            {children}
-
-            <Footer/>
+            <ClientThemeProvider>
+                <Navbar/>
+                {children}
+                <Footer/>
+            </ClientThemeProvider>
         </NextIntlClientProvider>
         </body>
         </html>
