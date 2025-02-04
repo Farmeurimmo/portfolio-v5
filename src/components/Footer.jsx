@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -33,7 +33,8 @@ export default function Footer() {
             </footer>
             <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
                 <aside className="grid-flow-col items-center">
-                    <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo" className="h-12 w-12 rounded-full"/>
+                    <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo"
+                         className="h-12 w-12 rounded-full"/>
                     <p className={"font-bold"}>
                         Farmeurimmo
                         <br/>
@@ -42,8 +43,10 @@ export default function Footer() {
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">
                     <div className="grid grid-flow-col gap-4">
-                        <Link href="https://github.com/Farmeurimmo/portfolio-v5" className="link link-hover">Source code</Link>
-                        <Link href={`https://github.com/Farmeurimmo/portfolio-v5/commit/${commitHash}`} className="link link-hover text-amber-600">{commitHash}</Link>
+                        <Link href="https://github.com/Farmeurimmo/portfolio-v5" className="link link-hover">Source
+                            code</Link>
+                        <Link href={`https://github.com/Farmeurimmo/portfolio-v5/commit/${commitHash}`}
+                              className="link link-hover text-amber-600">{commitHash}</Link>
                     </div>
                 </nav>
             </footer>
