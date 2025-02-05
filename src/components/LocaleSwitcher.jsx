@@ -25,7 +25,7 @@ export default function LocaleSwitcher({defaultValue, label}) {
 
     return (
         <div className="dropdown dropdown-hover">
-            <button tabIndex={0} className="btn m-1 flex flex-row items-center bg-white dark:bg-gray-800 text-black
+            <button tabIndex={0} className="btn flex flex-row items-center bg-white dark:bg-gray-800 text-black
             dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 border-transparent" aria-label="Locale Switcher">
                 {t('locale', {locale: currentLocale})}
                 <span className="mb-4 text-2xl font-bold">⌄</span>
