@@ -11,7 +11,7 @@ export function Navbar() {
     return (
         <>
             <nav
-                className="flex flex-col gap-2 sm:flex-row justify-evenly items-start sm:items-center w-full p-2 border-b-gray-950 dark:border-b-gray-50 border-b-[1px]">
+                className="flex flex-col gap-2 md:flex-row justify-evenly items-center w-full p-2 border-b-gray-950 dark:border-b-gray-50 border-b-[1px]">
                 <div className="flex flex-row items-center gap-4">
                     <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo"
                          className="h-8 w-8 rounded-full"/>
