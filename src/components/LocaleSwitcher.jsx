@@ -1,18 +1,49 @@
-import {useLocale, useTranslations} from 'next-intl';
-import {routing} from '@/i18n/routing';
-import LocaleSwitcherSelect from './LocaleSwitcherSelect';
+'use client';
 
-export default function LocaleSwitcher() {
+import {useParams} from 'next/navigation';
+import {useTransition} from 'react';
+import {routing, usePathname, useRouter} from '@/i18n/routing';
+import {useTranslations} from "next-intl";
+
+export default function LocaleSwitcher({defaultValue, label}) {
+    const router = useRouter();
+    const [isPending, startTransition] = useTransition();
+    const pathname = usePathname();
+    const params = useParams();
     const t = useTranslations('LocaleSwitcher');
-    const locale = useLocale();
+    const currentLocale = params.locale || defaultValue;
+
+    function onSelectChange(event) {
+        const nextLocale = event.target.value;
+        startTransition(() => {
+            router.replace(
+                {pathname, params},
+                {locale: nextLocale}
+            );
+        });
+    }
 
     return (
-        <LocaleSwitcherSelect defaultValue={locale} label={t('label')}>
-            {routing.locales.map((cur) => (
-                <option key={cur} value={cur} disabled={cur === locale}>
-                    {t('locale', {locale: cur})}
-                </option>
-            ))}
-        </LocaleSwitcherSelect>
+        <div className="dropdown dropdown-hover">
+            <button tabIndex={0} className="btn m-1 flex flex-row items-center bg-white dark:bg-gray-800 text-black
+            dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 border-transparent" aria-label="Locale Switcher">
+                {t('locale', {locale: currentLocale})}
+                <span className="mb-4 text-2xl font-bold">⌄</span>
+            </button>
+            <ul tabIndex={0}
+                className="dropdown-content menu bg-white dark:bg-gray-800 rounded-box z-[1] w-36 p-2 border border-gray-700 dark:border-gray-300">
+                {routing.locales.map((cur) => (
+                    <li key={cur} className="menu-item">
+                        <button
+                            value={cur}
+                            onClick={onSelectChange}
+                            className="w-full text-left text-black dark:text-white p-2 hover:bg-gray-200 dark:hover:bg-gray-700"
+                        >
+                            {t('locale', {locale: cur})}
+                        </button>
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 }
