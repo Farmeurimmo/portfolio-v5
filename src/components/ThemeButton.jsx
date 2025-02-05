@@ -26,7 +26,8 @@ export default function ThemeButton({blackBackground = false}) {
     return (
         <button
             onClick={handleClick}
-            className={`transition-all duration-100 ${blackBackground ? 'text-white' : 'text-black'}`}>
+            className={`btn m-1 flex flex-row items-center bg-white dark:bg-gray-800 text-black dark:text-white 
+            hover:bg-gray-200 dark:hover:bg-gray-700 border-transparent transition-all duration-100 ${blackBackground ? 'text-white' : 'text-black'}`}>
             <FontAwesomeIcon className={"w-4 h-4 dark:text-yellow-500"}
                              icon={currentTheme === 'dark' ? faSun : faMoon}/>
         </button>

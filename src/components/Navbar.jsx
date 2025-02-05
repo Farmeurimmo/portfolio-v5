@@ -23,7 +23,7 @@ export function Navbar() {
                     <Link href={"#"} className="text-base font-semibold hover:text-orange-500">{t('blog')}</Link>
                     <Link href={"#"} className={"text-base font-semibold hover:text-orange-500"}>{t('contact')}</Link>
                 </div>
-                <div className="flex flex-row items-center gap-4">
+                <div className="flex flex-row items-center gap-1">
                     <LocaleSwitcher/>
                     <ThemeButton/>
                 </div>
