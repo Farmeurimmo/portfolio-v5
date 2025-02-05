@@ -48,12 +48,14 @@ export default function Footer() {
                     </p>
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">
-                    <div className="grid grid-flow-col gap-4">
+                    <div className="flex flex-row flex-wrap gap-4">
                         <ThemeButton blackBackground={true}/>
-                        <Link href="https://github.com/Farmeurimmo/portfolio-v5"
-                              className="link link-hover">{t("sourcecode")}</Link>
-                        <Link href={`https://github.com/Farmeurimmo/portfolio-v5/commit/${commitHash}`}
-                              className="link link-hover text-amber-600">{commitHash}</Link>
+                        <div className={"flex flex-col gap-1"}>
+                            <Link href="https://github.com/Farmeurimmo/portfolio-v5"
+                                  className="link link-hover">{t("sourcecode")}</Link>
+                            <Link href={`https://github.com/Farmeurimmo/portfolio-v5/commit/${commitHash}`}
+                                  className="link link-hover text-amber-600">{commitHash}</Link>
+                        </div>
                     </div>
                 </nav>
             </footer>
