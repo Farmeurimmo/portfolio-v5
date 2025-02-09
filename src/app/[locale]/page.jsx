@@ -235,7 +235,7 @@ export default function HomePage() {
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">{t('skills.title')}</h2>
                         {Object.keys(groupedSkills).map(category => (
                             <div key={category} className="flex flex-col flex-wrap gap-8">
-                                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">{category}</h3>
+                                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">{t("skills."+ xcategory)}</h3>
                                 <div className="flex flex-wrap gap-4">
                                     {groupedSkills[category].map(skill => (
                                         <div key={skill.name} className={`card ${groupedSkills[category].length > 1 ? 'flex-grow' : ''}`}>

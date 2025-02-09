@@ -6,7 +6,12 @@
       "part2": "En tant que polyglotte, je navigue facilement entre différents langages et outils, cherchant toujours les meilleures solutions grâce à l'adaptabilité et à l'innovation."
     },
     "skills": {
-      "title": "Technologies que j'utilise"
+      "title": "Technologies que j'utilise",
+      "Databases": "Bases de données",
+      "Monitoring": "Surveillance",
+      "DevOps": "DevOps",
+      "Frameworks & Libraries": "Frameworks & Bibliothèques",
+      "Languages": "Langages"
     }
   },
   "LocaleSwitcher": {

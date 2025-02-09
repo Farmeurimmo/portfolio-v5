@@ -6,7 +6,12 @@
       "part2": "As a polyglot, I easily navigate different languages and tools, always seeking the best solutions through adaptability and innovation."
     },
     "skills": {
-      "title": "Technologies I use"
+      "title": "Technologies I use",
+      "Databases": "Databases",
+      "Monitoring": "Monitoring",
+      "DevOps": "DevOps",
+      "Frameworks & Libraries": "Frameworks & Libraries",
+      "Languages": "Languages"
     }
   },
   "LocaleSwitcher": {
