@@ -1,7 +1,13 @@
 {
   "HomePage": {
-    "subtitle": "This website is up and running.",
-    "description": "Should be available at the end of february 2025."
+    "title": "Farmeurimmo",
+    "description": {
+      "part1": "I am a Full Stack Developer and System Administrator passionate about diverse technologies.",
+      "part2": "As a polyglot, I easily navigate different languages and tools, always seeking the best solutions through adaptability and innovation."
+    },
+    "skills": {
+      "title": "Technologies I use"
+    }
   },
   "LocaleSwitcher": {
     "label": "Change language",

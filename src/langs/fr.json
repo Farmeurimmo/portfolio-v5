@@ -2,11 +2,11 @@
   "HomePage": {
     "title": "Farmeurimmo",
     "description": {
-      "part1": "I am a Full Stack Developer and System Administrator passionate about diverse technologies.",
-      "part2": "As a polyglot, I easily navigate different languages and tools, always seeking the best solutions through adaptability and innovation."
+      "part1": "Je suis un développeur Full Stack et administrateur système passionné par diverses technologies.",
+      "part2": "En tant que polyglotte, je navigue facilement entre différents langages et outils, cherchant toujours les meilleures solutions grâce à l'adaptabilité et à l'innovation."
     },
     "skills": {
-      "title": "Skills"
+      "title": "Technologies que j'utilise"
     }
   },
   "LocaleSwitcher": {

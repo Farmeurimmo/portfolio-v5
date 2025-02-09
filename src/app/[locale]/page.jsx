@@ -206,31 +206,33 @@ export default function HomePage() {
     return (
         <div className="flex flex-col items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[var(--font-geist-sans)]">
             <main className="flex flex-col gap-8 w-full">
-                <section id="presentation" className="flex flex-col items-center min-h-screen">
-                    <div className="hero-content flex flex-col lg:flex-row items-center gap-8">
-                        <div className="text-center lg:text-left gap-4">
+                <section id="presentation" className="flex flex-col items-center min-h-screen p-4 sm:p-8 lg:p-16">
+                    <div className="hero place-items-start flex flex-col lg:flex-row items-center gap-8 w-full">
+                        <div className="text-center lg:text-left gap-4 w-full">
                             <div className="flex items-center gap-4 mb-4">
                                 <img loading="lazy"
                                      src="https://cdn.farmeurimmo.fr/img/logo.jpg"
-                                     className="rounded-full shadow-2xl w-24 h-24" alt="Logo"/>
-                                <h1 className="text-6xl font-bold text-gray-900 dark:text-white">{t('title')}</h1>
+                                     className="rounded-full shadow-2xl w-24 h-24 lg:w-32 lg:h-32" alt="Logo"/>
+                                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">{t('title')}</h1>
                             </div>
-                            <p className="text-2xl text-gray-700 dark:text-gray-300">{t("description.part1")}</p>
-                            <p className="text-2xl text-gray-700 dark:text-gray-300">{t("description.part2")}</p>
+                            <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-300">{t("description.part1")}</p>
+                            <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-300">{t("description.part2")}</p>
                         </div>
                     </div>
-                    <div className="hero-content flex flex-col items-start gap-8 mt-24">
-                        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">{t('skills.title')}</h2>
+                    <div className="hero place-items-start flex flex-col gap-8 mt-12 lg:mt-24 w-full">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">{t('skills.title')}</h2>
                         {Object.keys(groupedSkills).map(category => (
-                            <div key={category} className="flex flex-col gap-4">
-                                <h3 className="text-3xl font-semibold text-gray-800 dark:text-gray-200">{category}</h3>
-                                <div className="flex flex-wrap justify-center gap-4">
+                            <div key={category} className="flex flex-col flex-wrap gap-8">
+                                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">{category}</h3>
+                                <div className="flex flex-wrap gap-4">
                                     {groupedSkills[category].map(skill => (
-                                        <div key={skill.name} className="card">
+                                        <div key={skill.name} className="card flex-grow">
                                             <a href={skill.href} target="_blank"
                                                className="flex flex-col items-center gap-2" title={skill.name}>
-                                                <img src={getIconUrl(skill.name)} className="w-16 h-16 rounded-full"
+                                                <img src={getIconUrl(skill.name)}
+                                                     className="w-16 h-16 lg:w-20 lg:h-20 rounded-full"
                                                      alt={skill.name} loading={"lazy"}/>
+                                                <p className="text-sm sm:text-base lg:text-lg text-gray-800 dark:text-gray-200">{skill.name}</p>
                                             </a>
                                         </div>
                                     ))}
