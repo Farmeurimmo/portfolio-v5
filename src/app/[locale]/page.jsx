@@ -238,7 +238,7 @@ export default function HomePage() {
                                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">{category}</h3>
                                 <div className="flex flex-wrap gap-4">
                                     {groupedSkills[category].map(skill => (
-                                        <div key={skill.name} className="card flex-grow">
+                                        <div key={skill.name} className={`card ${groupedSkills[category].length > 1 ? 'flex-grow' : ''}`}>
                                             <a href={skill.href} target="_blank"
                                                className="flex flex-col items-center gap-2" title={skill.name}>
                                                 <img src={getIconUrl(skill.name)}
