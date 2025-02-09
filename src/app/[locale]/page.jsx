@@ -227,8 +227,8 @@ export default function HomePage() {
                                      className="rounded-full shadow-2xl w-24 h-24 lg:w-32 lg:h-32" alt="Logo"/>
                                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">{t('title')}</h1>
                             </div>
-                            <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-300">{t("description.part1")}</p>
-                            <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-300">{t("description.part2")}</p>
+                            <p className="text-lg font-semibold sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t("description.part1")}</p>
+                            <p className="text-lg font-semibold sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t("description.part2")}</p>
                         </div>
                     </div>
                     <div className="hero place-items-start flex flex-col gap-8 mt-12 lg:mt-24 w-full">
@@ -251,6 +251,13 @@ export default function HomePage() {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                </section>
+                <section id={"contact"} className="flex flex-col items-center min-h-screen p-4 sm:p-8 lg:p-16">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">{t('contact.title')}</h2>
+                    <p className="text-lg font-semibold sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t('contact.description')}</p>
+                    <div className="flex flex-col gap-4 mt-8">
+
                     </div>
                 </section>
             </main>

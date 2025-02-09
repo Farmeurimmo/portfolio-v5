@@ -12,6 +12,10 @@
       "DevOps": "DevOps",
       "Frameworks & Libraries": "Frameworks & Bibliothèques",
       "Languages": "Langages"
+    },
+    "contact": {
+      "title": "Vous souhaitez me contacter ?",
+      "description": "N'hésitez pas à m'envoyer un message en utilisant le formulaire ci-dessous. Je vous répondrai dans les plus brefs délais."
     }
   },
   "LocaleSwitcher": {
