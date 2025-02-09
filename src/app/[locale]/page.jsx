@@ -4,152 +4,147 @@ let skills = [
     {
         name: 'JavaScript',
         href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-        category: 'Programming Languages'
+        category: 'Languages'
     },
     {
         name: 'Python',
         href: 'https://www.python.org/',
-        category: 'Programming Languages'
+        category: 'Languages'
     },
     {
         name: 'Java',
         href: 'https://www.oracle.com/java/',
-        category: 'Programming Languages'
+        category: 'Languages'
     },
     {
         name: 'TypeScript',
         href: 'https://www.typescriptlang.org/',
-        category: 'Programming Languages'
+        category: 'Languages'
     },
     {
         name: 'HTML',
         href: 'https://html.spec.whatwg.org/',
-        category: 'Programming Languages'
+        category: 'Languages'
     },
     {
         name: 'CSS',
         href: 'https://www.w3.org/Style/CSS/',
-        category: 'Programming Languages'
+        category: 'Languages'
     },
     {
         name: 'C',
         href: 'https://en.cppreference.com/w/c/language',
-        category: 'Programming Languages'
+        category: 'Languages'
     },
     {
         name: 'Markdown',
         href: 'https://www.markdownguide.org/',
-        category: 'Programming Languages'
+        category: 'Languages'
     },
     {
         name: 'Bash',
         href: 'https://www.gnu.org/software/bash/',
-        category: 'Programming Languages'
+        category: 'Languages'
     },
     {
         name: 'React',
         href: 'https://reactjs.org/',
-        category: 'Frameworks'
+        category: 'Frameworks & Libraries'
     },
     {
         name: 'Nextjs',
         href: 'https://nextjs.org/',
-        category: 'Frameworks'
+        category: 'Frameworks & Libraries'
     },
     {
         name: 'TailwindCSS',
         href: 'https://tailwindcss.com/',
-        category: 'Frameworks'
+        category: 'Frameworks & Libraries'
     },
     {
         name: 'Spring',
         href: 'https://spring.io/',
-        category: 'Frameworks'
+        category: 'Frameworks & Libraries'
     },
     {
         name: 'FastAPI',
         href: 'https://fastapi.tiangolo.com/',
-        category: 'Frameworks'
-    },
-    {
-        name: 'Flask',
-        href: 'https://flask.palletsprojects.com/',
-        category: 'Frameworks'
+        category: 'Frameworks & Libraries'
     },
     {
         name: 'Svelte',
         href: 'https://svelte.dev/',
-        category: 'Frameworks'
+        category: 'Frameworks & Libraries'
     },
     {
         name: 'DaisyUI',
         href: 'https://daisyui.com/',
-        category: 'Frameworks'
+        category: 'Frameworks & Libraries'
     },
     {
         name: 'SDL3',
         href: 'https://libsdl.org/',
-        category: 'Frameworks'
+        category: 'Frameworks & Libraries'
     },
     {
         name: 'GitHubActions',
         href: 'https://github.com/features/actions',
-        category: 'CI/CD'
+        category: 'DevOps'
     },
     {
         name: 'junit5',
         href: 'https://junit.org/junit5/',
-        category: 'CI/CD'
+        category: 'DevOps'
     },
     {
         name: 'Docker',
         href: 'https://www.docker.com/',
-        category: 'Tools'
+        category: 'DevOps'
     },
     {
         name: 'Portainer',
         href: 'https://www.portainer.io/',
-        category: 'Tools'
+        category: 'DevOps'
     },
     {
         name: 'Git',
         href: 'https://git-scm.com/',
-        category: 'Tools'
+        category: 'DevOps'
     },
     {
         name: 'GitHub',
         href: 'https://github.com/',
-        category: 'Tools'
+        category: 'DevOps'
     },
     {
         name: 'Vite',
         href: 'https://vitejs.dev/',
-        category: 'Tools'
+        category: 'DevOps'
     },
     {
         name: 'Pnpm',
         href: 'https://pnpm.io/',
-        category: 'Tools'
+        category: 'DevOps'
     },
     {
         name: 'RabbitMQ',
         href: 'https://www.rabbitmq.com/',
-        category: 'Tools'
+        category: 'DevOps'
     },
     {
         name: 'Cloudflare',
         href: 'https://www.cloudflare.com/',
-        category: 'Tools'
+        category: 'DevOps'
     },
     {
         name: 'Vercel',
         href: 'https://vercel.com/',
-        category: 'Tools'
+        category: 'DevOps'
     },
     {
         name: 'Ubuntu',
         href: 'https://ubuntu.com/',
-        category: 'Tools'
+        category: 'DevOps'
     },
     {
         name: 'Redis',
@@ -169,12 +164,27 @@ let skills = [
     {
         name: 'Gradle',
         href: 'https://gradle.org/',
-        category: 'Build Tools'
+        category: 'DevOps'
     },
     {
         name: 'Maven',
         href: 'https://maven.apache.org/',
-        category: 'Build Tools'
+        category: 'DevOps'
+    },
+    {
+        name: 'Grafana',
+        href: 'https://grafana.com/',
+        category: 'Monitoring'
+    },
+    {
+        name: 'InfluxDB',
+        href: 'https://www.influxdata.com/',
+        category: 'Databases'
+    },
+    {
+        name: 'PhpMyAdmin',
+        href: 'https://www.phpmyadmin.net/',
+        category: 'Databases'
     }
 ];
 
@@ -193,6 +203,8 @@ const specialIcons = {
     'junit5': 'https://junit.org/junit5/assets/img/junit5-logo.png',
     'daisyui': 'https://img.daisyui.com/images/daisyui-logo/daisyui-logomark.svg',
     'portainer': 'https://www.portainer.io/hubfs/crane-icon.svg',
+    'influxdb': 'https://www.influxdata.com/wp-content/uploads/cubo.svg',
+    'phpmyadmin': 'https://www.phpmyadmin.net/static/favicon.ico',
 };
 
 function getIconUrl(skillName) {
