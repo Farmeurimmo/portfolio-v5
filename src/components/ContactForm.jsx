@@ -60,11 +60,11 @@ export default function ContactForm() {
     };
 
     return (
-        <div className="flex flex-col xl:grid xl:grid-cols-2 gap-10 px-2 py-8 items-start justify-center">
+        <div className="flex flex-col xl:grid xl:grid-cols-2 max-w-[1800px] gap-10 px-2 py-8 items-start justify-center">
             <form
                 onSubmit={handleSubmit}
                 className="flex flex-col gap-6 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white
-                rounded-2xl shadow-lg w-full max-w-4xl border border-gray-200 dark:border-gray-800"
+                rounded-2xl shadow-lg w-full border border-gray-200 dark:border-gray-800"
             >
                 <h2 className="text-3xl font-bold text-center">{t("contact.formTitle")}</h2>
                 <p className="text-gray-600 dark:text-gray-400 text-center">{t("contact.description")}</p>
@@ -144,7 +144,7 @@ export default function ContactForm() {
             </form>
 
             <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-8 rounded-2xl shadow-lg
-            w-full max-w-md border border-gray-200 dark:border-gray-800">
+            w-full border border-gray-200 dark:border-gray-800 flex flex-grow flex-col">
                 <h2 className="text-3xl font-bold text-center">{t("contact.otherWays")}</h2>
                 <div className="mt-6 space-y-4 text-left">
                     <div>
