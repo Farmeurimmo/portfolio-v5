@@ -1,12 +1,5 @@
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-import {routing} from '@/i18n/routing';
-import React from 'react';
-import {Navbar} from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import {Geist, Geist_Mono} from "next/font/google";
-import "./[locale]/globals.css";
-import ClientThemeProvider from "@/app/[locale]/ClientThemeProvider";
+import "./globals.css";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -18,32 +11,17 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
-export function generateStaticParams() {
-    return routing.locales.map((locale) => ({locale}));
-}
-
-export default async function LocaleLayout({children, params}) {
-    const {locale} = await params;
-
-    const messages = await getMessages();
-
+export default function RootLayout({children, locale}) {
     return (
         <html lang={locale}>
         <head>
-            <meta name="viewport"
-                  content="width=device-width, initial-scale=1.0, minimum-scale=1, min-width=400px"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, min-width=400px"/>
             <link rel="icon" href="https://cdn.farmeurimmo.fr/img/logo.jpg"/>
         </head>
-        <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen w-screen min-w-[400px]`}>
-        <NextIntlClientProvider messages={messages}>
-            <ClientThemeProvider>
-                <Navbar/>
-                {children}
-                <Footer/>
-            </ClientThemeProvider>
-        </NextIntlClientProvider>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen w-screen min-w-[400px]`}>
+        {children}
         </body>
         </html>
     );
 }
+

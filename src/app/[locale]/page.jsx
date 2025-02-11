@@ -217,7 +217,7 @@ export default function HomePage() {
     const groupedSkills = groupByCategory(skills);
 
     return (
-        <div className="flex flex-col items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[var(--font-geist-sans)]">
+        <div className="flex flex-col items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
             <main className="flex flex-col gap-8 w-full">
                 <section id="presentation" className="flex flex-col items-center min-h-screen p-2 sm:p-4 lg:p-8">
                     <div className="hero place-items-start flex flex-col lg:flex-row items-center gap-8 w-full">

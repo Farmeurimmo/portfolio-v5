@@ -60,7 +60,8 @@ export default function ContactForm() {
     };
 
     return (
-        <div className="flex flex-col xl:grid xl:grid-cols-2 max-w-[1800px] gap-10 px-2 py-8 items-start justify-center">
+        <div
+            className="flex flex-col xl:grid xl:grid-cols-2 max-w-[1800px] gap-10 px-2 py-8 items-start justify-center">
             <form
                 onSubmit={handleSubmit}
                 className="flex flex-col gap-6 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white
