@@ -14,17 +14,21 @@
       "Languages": "Langages"
     },
     "contact": {
+      "formTitle": "Formulaire de contact",
       "title": "Vous souhaitez me contacter ?",
       "description": "N'hésitez pas à m'envoyer un message en utilisant le formulaire ci-dessous. Je vous répondrai dans les plus brefs délais.",
       "email": "Email",
       "emailPlaceholder": "exemple@domaine.com",
       "username": "Nom d'utilisateur",
       "usernamePlaceholder": "John Doe",
+      "object": "Objet",
+      "objectPlaceholder": "Objet de votre message",
       "message": "Message",
       "messagePlaceholder": "Votre message ici...",
       "submit": "Envoyer",
       "sending": "Envoi en cours...",
-      "successMessage": "Message envoyé avec succès !"
+      "successMessage": "Message envoyé avec succès !",
+      "otherWays": "Vous pouvez également me contacter par les moyens suivants"
     }
   },
   "LocaleSwitcher": {

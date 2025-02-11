@@ -14,17 +14,21 @@
       "Languages": "Languages"
     },
     "contact": {
+      "formTitle": "Contact Form",
       "title": "Would you like to contact me?",
       "description": "Feel free to send me a message using the form below. I will get back to you as soon as possible.",
       "email": "Email",
       "emailPlaceholder": "example@domain.com",
       "username": "Username",
       "usernamePlaceholder": "John Doe",
+      "object": "Object",
+      "objectPlaceholder": "Object of your message",
       "message": "Message",
       "messagePlaceholder": "Your message here...",
-      "submit": "Submit",
+      "submit": "Send",
       "sending": "Sending...",
-      "successMessage": "Message sent successfully!"
+      "successMessage": "Message sent successfully!",
+      "otherWays": "You can also contact me through the following means"
     }
   },
   "LocaleSwitcher": {
