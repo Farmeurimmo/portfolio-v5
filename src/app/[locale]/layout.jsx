@@ -1,6 +1,5 @@
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
-import {redirect} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import React from 'react';
 import {Navbar} from "@/components/Navbar";
@@ -25,11 +24,6 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({children, params}) {
     const {locale} = await params;
-
-    if (!routing.locales.includes(locale) && locale.length <= 2) {
-        redirect(routing.defaultLocale);
-        return null;
-    }
 
     const messages = await getMessages();
 
