@@ -126,6 +126,7 @@ export default function ContactForm() {
                             formFieldValidity.message ? "textarea-success" : "textarea-error"
                         }`}
                         placeholder={t("contact.messagePlaceholder")}
+                        rows={16}
                         required
                     />
                 </label>
