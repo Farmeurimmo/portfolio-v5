@@ -68,13 +68,13 @@ export default function ContactForm({service}) {
     };
 
     return (
-        <div className="flex flex-col xl:grid xl:grid-cols-2 max-w-full gap-10 px-2 py-8 items-start justify-center">
+        <div className="flex flex-col gap-6 px-2 py-8 items-start justify-center w-full max-w-screen-2xl">
             <form
                 onSubmit={handleSubmit}
-                className="flex flex-col gap-6 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-2xl shadow-lg w-full border border-gray-200 dark:border-gray-800"
+                className="flex flex-col gap-6 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white
+                rounded-2xl shadow-lg w-full border border-gray-200 dark:border-gray-800"
             >
-                <h2 className="text-4xl font-semibold text-center text-gray-900 dark:text-white mb-4">{t("contact.formTitle")}</h2>
-                <p className="text-gray-600 dark:text-gray-400 text-center mb-6">{t("contact.description")}</p>
+                <h2 className="text-4xl font-semibold text-left text-gray-900 dark:text-white">{t("contact.formTitle")}</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2 relative">
@@ -147,12 +147,13 @@ export default function ContactForm({service}) {
                             formFieldValidity.message ? "textarea-success" : "textarea-error"
                         }`}
                         placeholder={t("contact.messagePlaceholder")}
-                        rows={16}
+                        rows={12}
                         required
                     />
                     {formFieldValidity.message && <CircleCheck className="absolute right-2 top-0 text-green-500"/>}
                     {!formFieldValidity.message && <XCircle className="absolute right-2 top-0 text-red-500"/>}
                 </div>
+
                 <button
                     type="submit"
                     className="btn btn-primary w-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -165,10 +166,10 @@ export default function ContactForm({service}) {
                 {error && <p className="text-red-500 text-sm text-center">{error}</p>}
             </form>
 
-            <div
-                className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-8 rounded-2xl shadow-lg w-full border border-gray-200 dark:border-gray-800 flex flex-grow flex-col">
-                <h2 className="text-4xl font-semibold text-center text-gray-900 dark:text-white mb-4">{t("contact.otherWays")}</h2>
-                <div className="mt-6 space-y-4">
+            <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-8 rounded-2xl shadow-lg
+            w-full border border-gray-200 dark:border-gray-800 flex flex-col flex-wrap mt-10">
+                <h2 className="text-4xl font-semibold text-left text-gray-900 dark:text-white mb-4">{t("contact.otherWays")}</h2>
+                <div className="mt-6 flex flex-col flex-wrap lg:flex-row justify-evenly">
                     <div className="flex items-center space-x-2">
                         <MailIcon className="h-6 w-6 text-blue-500"/>
                         <a href="mailto:pro@robin-massonnat.fr"

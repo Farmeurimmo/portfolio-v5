@@ -41,7 +41,7 @@
     "contact": {
       "formTitle": "Formulaire de contact",
       "title": "Vous souhaitez me contacter ?",
-      "description": "N'hésitez pas à m'envoyer un message en utilisant le formulaire ci-dessous. Je vous répondrai dans les plus brefs délais.",
+      "description": "N'hésitez pas à m'envoyer un message en utilisant le formulaire ou les moyens de contact ci-dessous. Je vous répondrai dans les plus brefs délais.",
       "email": "Email",
       "emailPlaceholder": "exemple@domaine.com",
       "username": "Nom d'utilisateur",
@@ -53,7 +53,7 @@
       "submit": "Envoyer",
       "sending": "Envoi en cours...",
       "successMessage": "Message envoyé avec succès !",
-      "otherWays": "Vous pouvez également me contacter par les moyens suivants"
+      "otherWays": "Autres moyens de me contacter"
     }
   },
   "LocaleSwitcher": {
