@@ -1,5 +1,5 @@
 import {useTranslations} from 'next-intl';
-import ContactForm from "@/components/ContactForm";
+import ContactSection from "@/app/[locale]/ContactSection";
 
 let skills = [
     {
@@ -219,7 +219,7 @@ export default function HomePage() {
     return (
         <div className="flex flex-col items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
             <main className="flex flex-col gap-8 w-full">
-                <section id="presentation" className="flex flex-col items-center min-h-screen p-2 sm:p-4 lg:p-8">
+                <section id="presentation" className="flex flex-col items-center p-2 sm:p-4 lg:p-8">
                     <div className="hero place-items-start flex flex-col lg:flex-row items-center gap-8 w-full">
                         <div className="text-center lg:text-left gap-4 w-full">
                             <div className="flex items-center gap-4 mb-4">
@@ -255,11 +255,7 @@ export default function HomePage() {
                         ))}
                     </div>
                 </section>
-                <section id={"contact"} className="flex flex-col items-start min-h-screen p-2 sm:p-4 lg:p-8">
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">{t('contact.title')}</h2>
-                    <p className="text-lg font-semibold sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t('contact.description')}</p>
-                    <ContactForm/>
-                </section>
+                <ContactSection/>
             </main>
         </div>
     );

@@ -1,15 +1,22 @@
 "use client";
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useTranslations} from "next-intl";
 
-export default function ContactForm() {
+export default function ContactForm({service}) {
     const t = useTranslations("HomePage");
     const [formData, setFormData] = useState({email: "", username: "", object: "", message: ""});
     const [formFieldValidity, setFormFieldValidity] = useState({email: false, username: false, message: false});
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(null);
+
+    useEffect(() => {
+        if (service !== undefined && service.length >= 4) {
+            setFormData((prev) => ({...prev, object: service}));
+            setFormFieldValidity((prev) => ({...prev, object: validateField("object", service)}));
+        }
+    }, [service]);
 
     const validateField = (name, value) => {
         switch (name) {
@@ -18,7 +25,7 @@ export default function ContactForm() {
             case "username":
                 return value.length >= 3;
             case "object":
-                return value.length >= 5;
+                return value.length >= 4;
             case "message":
                 return value.length >= 10;
             default:

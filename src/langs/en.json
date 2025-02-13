@@ -13,6 +13,31 @@
       "Frameworks & Libraries": "Frameworks & Libraries",
       "Languages": "Languages"
     },
+    "services": {
+      "title": "My Services",
+      "web_dev": {
+        "title": "Web Development",
+        "description": "Custom website and web application development to meet your needs."
+      },
+      "saas": {
+        "title": "SaaS",
+        "description": "Software as a Service (SaaS) development to help you manage your business."
+      },
+      "installation": {
+        "title": "Software Installation",
+        "description": "Installation and configuration of third-party software (control panel, CMS, etc.)."
+      },
+      "admin": {
+        "title": "System Administration",
+        "description": "Server management, service configuration, troubleshooting, firewalling, optimization, etc."
+      },
+      "help": {
+        "title": "Need help? Something else?",
+        "description": "Feel free to contact me for any other request or assistance."
+      },
+      "contact": "Contact me for more information",
+      "contactButton": "Contact me for"
+    },
     "contact": {
       "formTitle": "Contact Form",
       "title": "Would you like to contact me?",

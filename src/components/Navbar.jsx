@@ -18,7 +18,7 @@ export function Navbar() {
                     <Link className="text-2xl font-bold hover:text-orange-500" href={"/"}>Farmeurimmo</Link>
                 </div>
                 <div className="flex flex-row items-center gap-4">
-                    <Link href={"/#presentation"}
+                    <Link href={"/#"}
                           className="text-base font-semibold hover:text-orange-500">{t('home')}</Link>
                     <Link href={"/projects"}
                           className="text-base font-semibold hover:text-orange-500">{t('projects')}</Link>
