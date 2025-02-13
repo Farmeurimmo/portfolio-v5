@@ -34,7 +34,6 @@ export default function Footer() {
                 <nav>
                     <h6 className="footer-title">{t("legal")}</h6>
                     <Link className="link link-hover" href="/legals">{t("legalMentions")}</Link>
-                    <Link className="link link-hover" href="/privacy">{t("privacy")}</Link>
                 </nav>
             </footer>
             <footer
