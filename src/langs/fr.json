@@ -70,6 +70,7 @@
     "services": "Services",
     "servicesList": {
       "dev": "Développement",
+      "saas": "Logiciel en tant que service (SaaS)",
       "sysadmin": "Administration système",
       "thirdpartyinstall": "Installation de logiciels tiers"
     },

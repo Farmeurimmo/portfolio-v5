@@ -24,7 +24,8 @@ export default function ContactSection() {
 
                 <div className="flex flex-wrap gap-6 mt-6 w-full justify-start">
                     <div
-                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px]">
+                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] focus:border focus:border-orange-600"
+                        tabIndex="0" id={"dev"}>
                         <Code className="h-20 w-20 text-blue-600 dark:text-blue-400 mb-3"/>
                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('services.web_dev.title')}</h3>
                         <p className="text-gray-700 dark:text-gray-300">{t('services.web_dev.description')}</p>
@@ -32,7 +33,8 @@ export default function ContactSection() {
                     </div>
 
                     <div
-                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px]">
+                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] focus:border focus:border-orange-600"
+                        tabIndex="0" id={"saas"}>
                         <Cloud className="h-20 w-20 text-green-600 dark:text-green-400 mb-3"/>
                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('services.saas.title')}</h3>
                         <p className="text-gray-700 dark:text-gray-300">{t('services.saas.description')}</p>
@@ -40,19 +42,21 @@ export default function ContactSection() {
                     </div>
 
                     <div
-                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px]">
-                        <Wrench className="h-20 w-20 text-orange-600 dark:text-orange-400 mb-3"/>
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('services.installation.title')}</h3>
-                        <p className="text-gray-700 dark:text-gray-300">{t('services.installation.description')}</p>
-                        <ServiceButton service={t('services.installation.title')} onClick={handleContactClick}/>
-                    </div>
-
-                    <div
-                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px]">
+                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] focus:border focus:border-orange-600"
+                        tabIndex="0" id={"admin"}>
                         <Server className="h-20 w-20 text-purple-600 dark:text-purple-400 mb-3"/>
                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('services.admin.title')}</h3>
                         <p className="text-gray-700 dark:text-gray-300">{t('services.admin.description')}</p>
                         <ServiceButton service={t('services.admin.title')} onClick={handleContactClick}/>
+                    </div>
+
+                    <div
+                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] focus:border focus:border-orange-600"
+                        tabIndex="0" id={"installation"}>
+                        <Wrench className="h-20 w-20 text-orange-600 dark:text-orange-400 mb-3"/>
+                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('services.installation.title')}</h3>
+                        <p className="text-gray-700 dark:text-gray-300">{t('services.installation.description')}</p>
+                        <ServiceButton service={t('services.installation.title')} onClick={handleContactClick}/>
                     </div>
 
                     <div
