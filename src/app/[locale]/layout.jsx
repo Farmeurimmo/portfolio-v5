@@ -5,7 +5,7 @@ import {redirect} from "next/navigation";
 import {Navbar} from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ClientThemeProvider from "./ClientThemeProvider";
-import RootLayout from "@/app/layout";
+import BaseLayout from "@/app/BaseLayout";
 
 export async function generateStaticParams() {
     return routing.locales.map((locale) => ({locale}));
@@ -22,7 +22,7 @@ export default async function LocaleLayout({children, params}) {
     const messages = await getMessages();
 
     return (
-        <RootLayout locale={locale}>
+        <BaseLayout locale={locale}>
             <NextIntlClientProvider messages={messages}>
                 <ClientThemeProvider>
                     <Navbar locale={locale}/>
@@ -30,6 +30,6 @@ export default async function LocaleLayout({children, params}) {
                     <Footer/>
                 </ClientThemeProvider>
             </NextIntlClientProvider>
-        </RootLayout>
+        </BaseLayout>
     );
 }
