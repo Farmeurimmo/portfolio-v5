@@ -2,6 +2,7 @@
 
 import {useEffect, useState} from "react";
 import {useTranslations} from "next-intl";
+import {CircleCheck, LinkedinIcon, MailIcon, XCircle} from "lucide-react";
 
 export default function ContactForm({service}) {
     const t = useTranslations("HomePage");
@@ -67,20 +68,20 @@ export default function ContactForm({service}) {
     };
 
     return (
-        <div
-            className="flex flex-col xl:grid xl:grid-cols-2 max-w-[1800px] gap-10 px-2 py-8 items-start justify-center">
+        <div className="flex flex-col xl:grid xl:grid-cols-2 max-w-full gap-10 px-2 py-8 items-start justify-center">
             <form
                 onSubmit={handleSubmit}
-                className="flex flex-col gap-6 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white
-                rounded-2xl shadow-lg w-full border border-gray-200 dark:border-gray-800"
+                className="flex flex-col gap-6 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-2xl shadow-lg w-full border border-gray-200 dark:border-gray-800"
             >
-                <h2 className="text-3xl font-bold text-center">{t("contact.formTitle")}</h2>
-                <p className="text-gray-600 dark:text-gray-400 text-center">{t("contact.description")}</p>
+                <h2 className="text-4xl font-semibold text-center text-gray-900 dark:text-white mb-4">{t("contact.formTitle")}</h2>
+                <p className="text-gray-600 dark:text-gray-400 text-center mb-6">{t("contact.description")}</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <label className="flex flex-col gap-2">
-                        <span className="text-gray-900 dark:text-gray-200 font-medium">{t("contact.email")}</span>
+                    <div className="flex flex-col gap-2 relative">
+                        <label htmlFor="email"
+                               className="font-medium text-gray-900 dark:text-gray-200">{t("contact.email")}</label>
                         <input
+                            id="email"
                             type="email"
                             name="email"
                             value={formData.email}
@@ -91,11 +92,15 @@ export default function ContactForm({service}) {
                             placeholder={t("contact.emailPlaceholder")}
                             required
                         />
-                    </label>
+                        {formFieldValidity.email && <CircleCheck className="absolute right-2 top-0 text-green-500"/>}
+                        {!formFieldValidity.email && <XCircle className="absolute right-2 top-0 text-red-500"/>}
+                    </div>
 
-                    <label className="flex flex-col gap-2">
-                        <span className="text-gray-900 dark:text-gray-200 font-medium">{t("contact.username")}</span>
+                    <div className="flex flex-col gap-2 relative">
+                        <label htmlFor="username"
+                               className="font-medium text-gray-900 dark:text-gray-200">{t("contact.username")}</label>
                         <input
+                            id="username"
                             type="text"
                             name="username"
                             value={formData.username}
@@ -106,12 +111,16 @@ export default function ContactForm({service}) {
                             placeholder={t("contact.usernamePlaceholder")}
                             required
                         />
-                    </label>
+                        {formFieldValidity.username && <CircleCheck className="absolute right-2 top-0 text-green-500"/>}
+                        {!formFieldValidity.username && <XCircle className="absolute right-2 top-0 text-red-500"/>}
+                    </div>
                 </div>
 
-                <label className="flex flex-col gap-2">
-                    <span className="text-gray-900 dark:text-gray-200 font-medium">{t("contact.object")}</span>
+                <div className="flex flex-col gap-2 relative">
+                    <label htmlFor="object"
+                           className="font-medium text-gray-900 dark:text-gray-200">{t("contact.object")}</label>
                     <input
+                        id="object"
                         type="text"
                         name="object"
                         value={formData.object}
@@ -122,11 +131,15 @@ export default function ContactForm({service}) {
                         placeholder={t("contact.objectPlaceholder")}
                         required
                     />
-                </label>
+                    {formFieldValidity.object && <CircleCheck className="absolute right-2 top-0 text-green-500"/>}
+                    {!formFieldValidity.object && <XCircle className="absolute right-2 top-0 text-red-500"/>}
+                </div>
 
-                <label className="flex flex-col gap-2">
-                    <span className="text-gray-900 dark:text-gray-200 font-medium">{t("contact.message")}</span>
+                <div className="flex flex-col gap-2 relative">
+                    <label htmlFor="message"
+                           className="font-medium text-gray-900 dark:text-gray-200">{t("contact.message")}</label>
                     <textarea
+                        id="message"
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
@@ -137,11 +150,12 @@ export default function ContactForm({service}) {
                         rows={16}
                         required
                     />
-                </label>
-
+                    {formFieldValidity.message && <CircleCheck className="absolute right-2 top-0 text-green-500"/>}
+                    {!formFieldValidity.message && <XCircle className="absolute right-2 top-0 text-red-500"/>}
+                </div>
                 <button
                     type="submit"
-                    className="btn btn-primary w-full"
+                    className="btn btn-primary w-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     disabled={loading || !Object.values(formFieldValidity).every(Boolean)}
                 >
                     {loading ? <span className="loading loading-spinner"></span> : t("contact.submit")}
@@ -151,17 +165,19 @@ export default function ContactForm({service}) {
                 {error && <p className="text-red-500 text-sm text-center">{error}</p>}
             </form>
 
-            <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-8 rounded-2xl shadow-lg
-            w-full border border-gray-200 dark:border-gray-800 flex flex-grow flex-col">
-                <h2 className="text-3xl font-bold text-center">{t("contact.otherWays")}</h2>
-                <div className="mt-6 space-y-4 text-left">
-                    <div>
+            <div
+                className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-8 rounded-2xl shadow-lg w-full border border-gray-200 dark:border-gray-800 flex flex-grow flex-col">
+                <h2 className="text-4xl font-semibold text-center text-gray-900 dark:text-white mb-4">{t("contact.otherWays")}</h2>
+                <div className="mt-6 space-y-4">
+                    <div className="flex items-center space-x-2">
+                        <MailIcon className="h-6 w-6 text-blue-500"/>
                         <a href="mailto:pro@robin-massonnat.fr"
                            className="text-blue-500 hover:underline text-lg font-medium">
                             pro@robin-massonnat.fr
                         </a>
                     </div>
-                    <div>
+                    <div className="flex items-center space-x-2">
+                        <LinkedinIcon className="h-6 w-6 text-blue-500"/>
                         <a
                             href="https://www.linkedin.com/in/robin-massonnat"
                             target="_blank"
