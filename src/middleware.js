@@ -8,7 +8,8 @@ export default async function customMiddleware(req, ev) {
     const {pathname} = req.nextUrl;
     const userLocale = req.headers.get('accept-language')?.split(',')[0].split('-')[0];
 
-    if (pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.startsWith("/installHook.js")) {
+    if (pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.startsWith("/installHook.js") ||
+        pathname.startsWith("/sitemap.xml") || pathname.startsWith("/robots.txt")) {
         return NextResponse.next();
     }
 
