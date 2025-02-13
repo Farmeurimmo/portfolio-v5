@@ -72,7 +72,8 @@
       "dev": "Development",
       "saas": "Software as a Service (SaaS)",
       "sysadmin": "System Administration",
-      "thirdpartyinstall": "Third-party Software Installation"
+      "thirdpartyinstall": "Third-party Software Installation",
+      "ondemand": "On Demand"
     },
     "legal": "Legal",
     "legalMentions": "Legal Mentions",

@@ -29,6 +29,7 @@ export default function Footer() {
                     <Link className="link link-hover" href="/#saas">{t("servicesList.saas")}</Link>
                     <Link className="link link-hover" href="/#admin">{t("servicesList.sysadmin")}</Link>
                     <Link className="link link-hover" href="/#installation">{t("servicesList.thirdpartyinstall")}</Link>
+                    <Link className="link link-hover" href="/#help">{t("servicesList.ondemand")}</Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title">{t("legal")}</h6>
