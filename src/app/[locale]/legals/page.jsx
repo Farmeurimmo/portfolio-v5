@@ -7,7 +7,7 @@ export default function Legals() {
         <div className="flex flex-col items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
             <main className="flex flex-col gap-8 w-full">
                 <section id="presentation"
-                         className="flex flex-col p-6 sm:p-8 lg:p-10 w-full text-left gap-8 rounded-lg shadow-md dark:shadow-lg">
+                         className="flex flex-col p-6 sm:p-8 lg:p-10 w-full text-left gap-8 rounded-lg">
                     <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white">{t('title')}</h1>
 
                     <div className="flex flex-col flex-wrap gap-8 md:flex-row">
