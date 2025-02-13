@@ -43,7 +43,7 @@ export default function Footer() {
                     <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo"
                          className="h-12 w-12 rounded-full"/>
                     <p className={"font-bold"}>
-                        Farmeurimmo
+                        Farmeurimmo © 2018 - {new Date().getFullYear()}. Tous droits réservés.
                         <br/>
                         {t("since")}
                     </p>
