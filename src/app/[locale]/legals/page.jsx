@@ -4,7 +4,7 @@ export default function Legals() {
     const t = useTranslations('Legals');
 
     return (
-        <div className="flex flex-col items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+        <div className="flex flex-col items-center min-h-screen p-8 gap-8 sm:p-10 sm:p-4">
             <main className="flex flex-col gap-8 w-full">
                 <section id="presentation"
                          className="flex flex-col p-6 sm:p-8 lg:p-10 w-full text-left gap-8 rounded-lg">
