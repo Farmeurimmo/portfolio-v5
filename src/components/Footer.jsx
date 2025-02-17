@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import Link from "next/link";
 import {useTranslations} from "next-intl";
 import ThemeButton from "@/components/ThemeButton";
+import {useParams} from "next/navigation";
 
 export default function Footer() {
     const [commitHash, setCommitHash] = useState('');
@@ -20,20 +21,26 @@ export default function Footer() {
 
     const t = useTranslations('Footer');
 
+    const params = useParams();
+    const currentLocale = params.locale || "en";
+
     return (
         <>
             <footer className="footer bg-base-200 dark:bg-gray-800 text-base-content dark:text-gray-200 p-10">
                 <nav>
                     <h6 className="footer-title">{t('services')}</h6>
-                    <Link className="link link-hover" href="/#dev">{t("servicesList.dev")}</Link>
-                    <Link className="link link-hover" href="/#saas">{t("servicesList.saas")}</Link>
-                    <Link className="link link-hover" href="/#admin">{t("servicesList.sysadmin")}</Link>
-                    <Link className="link link-hover" href="/#installation">{t("servicesList.thirdpartyinstall")}</Link>
-                    <Link className="link link-hover" href="/#help">{t("servicesList.ondemand")}</Link>
+                    <Link className="link link-hover" href={`/${currentLocale}/#dev`}>{t("servicesList.dev")}</Link>
+                    <Link className="link link-hover" href={`/${currentLocale}/#saas`}>{t("servicesList.saas")}</Link>
+                    <Link className="link link-hover"
+                          href={`/${currentLocale}/#admin`}>{t("servicesList.sysadmin")}</Link>
+                    <Link className="link link-hover"
+                          href={`/${currentLocale}/#installation`}>{t("servicesList.thirdpartyinstall")}</Link>
+                    <Link className="link link-hover"
+                          href={`/${currentLocale}/#help`}>{t("servicesList.ondemand")}</Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title">{t("legal")}</h6>
-                    <Link className="link link-hover" href="/legals">{t("legalMentions")}</Link>
+                    <Link className="link link-hover" href={`/${currentLocale}/legals`}>{t("legalMentions")}</Link>
                 </nav>
             </footer>
             <footer

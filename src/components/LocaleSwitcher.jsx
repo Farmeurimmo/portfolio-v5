@@ -5,7 +5,7 @@ import {useTransition} from 'react';
 import {routing, usePathname, useRouter} from '@/i18n/routing';
 import {useTranslations} from "next-intl";
 
-export default function LocaleSwitcher({defaultValue, label}) {
+export default function LocaleSwitcher({defaultValue}) {
     const router = useRouter();
     const [isPending, startTransition] = useTransition();
     const pathname = usePathname();
