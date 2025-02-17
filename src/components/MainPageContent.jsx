@@ -13,6 +13,8 @@ export default function MainPageContent() {
 
     const handleContactClick = (service) => {
         setSelectedService(service);
+
+        document.getElementById("contact").scrollIntoView({behavior: "smooth"});
     };
 
     return (
