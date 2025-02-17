@@ -1,6 +1,6 @@
 "use client";
 
-import {CircleHelp, Cloud, Code, Server, Wrench} from "lucide-react";
+import {ArrowRight, CircleHelp, Cloud, Code, Server, Wrench} from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import {useTranslations} from "next-intl";
 import {useState} from "react";
@@ -17,6 +17,39 @@ export default function MainPageContent() {
         document.getElementById("contact").scrollIntoView({behavior: "smooth"});
     };
 
+    const services = [
+        {
+            id: "dev",
+            title: "services.web_dev.title",
+            description: "services.web_dev.description",
+            icon: <Code className="h-20 w-20 text-blue-600 dark:text-blue-400 mb-3"/>
+        },
+        {
+            id: "saas",
+            title: "services.saas.title",
+            description: "services.saas.description",
+            icon: <Cloud className="h-20 w-20 text-green-600 dark:text-green-400 mb-3"/>
+        },
+        {
+            id: "admin",
+            title: "services.admin.title",
+            description: "services.admin.description",
+            icon: <Server className="h-20 w-20 text-purple-600 dark:text-purple-400 mb-3"/>
+        },
+        {
+            id: "installation",
+            title: "services.installation.title",
+            description: "services.installation.description",
+            icon: <Wrench className="h-20 w-20 text-orange-600 dark:text-orange-400 mb-3"/>
+        },
+        {
+            id: "help",
+            title: "services.help.title",
+            description: "services.help.description",
+            icon: <CircleHelp className="h-20 w-20 text-red-600 dark:text-red-400 mb-3"/>
+        },
+    ];
+
     return (
         <>
             <section id="services" className="flex flex-col items-start p-8 gap-2 sm:p-10">
@@ -25,46 +58,30 @@ export default function MainPageContent() {
                 </h2>
 
                 <div className="flex flex-wrap gap-6 mt-6 w-full justify-start">
-                    <button
-                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] hover:outline hover:outline-amber-500"
-                        id={"dev"} tabIndex={0} onClick={() => handleContactClick(t('services.web_dev.title'))}>
-                        <Code className="h-20 w-20 text-blue-600 dark:text-blue-400 mb-3"/>
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('services.web_dev.title')}</h3>
-                        <p className="text-gray-700 dark:text-gray-300">{t('services.web_dev.description')}</p>
-                    </button>
-
-                    <button
-                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] hover:outline hover:outline-amber-500"
-                        id={"saas"} tabIndex={0} onClick={() => handleContactClick(t('services.saas.title'))}>
-                        <Cloud className="h-20 w-20 text-green-600 dark:text-green-400 mb-3"/>
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('services.saas.title')}</h3>
-                        <p className="text-gray-700 dark:text-gray-300">{t('services.saas.description')}</p>
-                    </button>
-
-                    <button
-                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] hover:outline hover:outline-amber-500"
-                        id={"admin"} tabIndex={0} onClick={() => handleContactClick(t('services.admin.title'))}>
-                        <Server className="h-20 w-20 text-purple-600 dark:text-purple-400 mb-3"/>
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('services.admin.title')}</h3>
-                        <p className="text-gray-700 dark:text-gray-300">{t('services.admin.description')}</p>
-                    </button>
-
-                    <button
-                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] hover:outline hover:outline-amber-500"
-                        id={"installation"} tabIndex={0}
-                        onClick={() => handleContactClick(t('services.installation.title'))}>
-                        <Wrench className="h-20 w-20 text-orange-600 dark:text-orange-400 mb-3"/>
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('services.installation.title')}</h3>
-                        <p className="text-gray-700 dark:text-gray-300">{t('services.installation.description')}</p>
-                    </button>
-
-                    <button
-                        className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] hover:outline hover:outline-amber-500"
-                        id={"help"} tabIndex={0} onClick={() => handleContactClick(t('services.help.title'))}>
-                        <CircleHelp className="h-20 w-20 text-red-600 dark:text-red-400 mb-3"/>
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('services.help.title')}</h3>
-                        <p className="text-gray-700 dark:text-gray-300">{t('services.help.description')}</p>
-                    </button>
+                    {services.map(service => (
+                        <div
+                            key={service.id}
+                            id={service.id}
+                            tabIndex={0}
+                            role="button"
+                            className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-6
+                            bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] hover:scale-105 hover:shadow-lg
+                            transition-transform cursor-pointer active:scale-95"
+                            onClick={() => handleContactClick(t(service.title))}
+                            aria-label={t(service.title)}
+                        >
+                            {service.icon}
+                            <h3 className="text-2xl font-bold text-black dark:text-white flex items-center gap-2">
+                                {t(service.title)} <ArrowRight className="h-6 w-6 text-amber-500"/>
+                            </h3>
+                            <p className="text-gray-700 dark:text-gray-300 text-sm italic">
+                                {t(service.description)}
+                            </p>
+                            <span className="mt-2 px-4 py-2 btn btn-info rounded-xl">
+                                En savoir plus
+                            </span>
+                        </div>
+                    ))}
                 </div>
             </section>
 
