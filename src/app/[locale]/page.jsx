@@ -9,7 +9,7 @@ export default function HomePage() {
             <main className="flex flex-col gap-8 w-full">
                 <section id="presentation" className="flex flex-col items-center p-2 sm:p-4 lg:p-8">
                     <div className="hero place-items-start flex flex-col lg:flex-row items-center gap-8 w-full">
-                        <div className="text-center lg:text-left gap-4 w-full">
+                        <div className="flex flex-col text-center lg:text-left gap-4 w-full">
                             <div className="flex items-center gap-4 mb-4">
                                 <img loading="lazy"
                                      src="https://cdn.farmeurimmo.fr/img/logo.jpg"

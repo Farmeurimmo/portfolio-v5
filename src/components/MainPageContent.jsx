@@ -52,7 +52,7 @@ export default function MainPageContent() {
 
     return (
         <>
-            <section id="services" className="flex flex-col items-start p-8 gap-2 sm:p-10">
+            <section id="services" className="flex flex-col items-start p-2 gap-2 sm:p-8">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
                     {t('services.title')}
                 </h2>
@@ -87,9 +87,9 @@ export default function MainPageContent() {
 
             <Skills/>
 
-            <section id={"contact"} className="flex flex-col items-start p-8 gap-4 sm:p-10">
+            <section id={"contact"} className="flex flex-col items-start p-2 gap-2 sm:p-8">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">{t('contact.title')}</h2>
-                <p className="text-lg font-semibold sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t('contact.description')}</p>
+                <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t('contact.description')}</p>
                 <ContactForm service={selectedService}/>
             </section>
         </>
