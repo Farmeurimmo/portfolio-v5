@@ -66,7 +66,7 @@ export default function MainPageContent() {
                             role="button"
                             className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-6
                             bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] hover:scale-105 hover:shadow-lg
-                            transition-transform cursor-pointer active:scale-95"
+                            transition-transform cursor-pointer active:scale-95 border-amber-500 focus:border"
                             onClick={() => handleContactClick(t(service.title))}
                             aria-label={t(service.title)}
                         >
