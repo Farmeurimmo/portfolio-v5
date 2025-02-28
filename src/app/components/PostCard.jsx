@@ -21,6 +21,7 @@ function PostCard({post, featured = false}) {
                 width={400}
                 height={300}
                 className="w-full h-auto rounded-t-2xl object-cover"
+                loading={"lazy"}
             />
             <div className="p-4">
                 <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{post.title}</h2>
