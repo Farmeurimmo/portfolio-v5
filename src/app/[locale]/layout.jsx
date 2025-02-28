@@ -1,4 +1,4 @@
-import {NextIntlClientProvider, useTranslations} from "next-intl";
+import {NextIntlClientProvider} from "next-intl";
 import {getMessages, setRequestLocale} from "next-intl/server";
 import {routing} from "@/i18n/routing";
 import {redirect} from "next/navigation";
@@ -6,14 +6,14 @@ import {Navbar} from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import ClientThemeProvider from "./ClientThemeProvider";
 import BaseLayout from "@/app/BaseLayout";
-import { headers } from "next/headers";
+import {headers} from "next/headers";
 
 export async function generateStaticParams() {
     return routing.locales.map((locale) => ({locale}));
 }
 
-export async function generateMetadata({ params }) {
-    const { locale } = await params;
+export async function generateMetadata({params}) {
+    const {locale} = await params;
     const headersList = await headers();
     let pathname = headersList.get("x-request-url").replace("https://farmeurimmo.fr", "")
         .replace("https://v5.farmeurimmo.fr", "").replace("http://localhost:3000", "")
@@ -30,61 +30,73 @@ export async function generateMetadata({ params }) {
     const metadata = {
         en: {
             default: {
-                title: "Portfolio | Farmeurimmo - Developer & System Administrator",
-                description: "Explore the portfolio of Farmeurimmo, a skilled developer and system administrator passionate about various technologies.",
-                keywords: "developer, system administrator, polyglot programmer, technologies, portfolio, Java, Minecraft, IT solutions, software development, system architecture, cloud computing",
-                "og:title": "Farmeurimmo - Developer & System Administrator Portfolio",
-                "og:description": "Explore the portfolio of Farmeurimmo, showcasing expertise in software development, system administration, and technology solutions.",
+                title: "Farmeurimmo | Portfolio - Developer & System Administrator",
+                description: "Explore my portfolio as a developer and system administrator. I offer SaaS, system administration, and software development services.",
+                keywords: "developer, system administrator, software development, system administration, SaaS, infrastructure management, programming, automation, cloud solutions, security",
+                "og:title": "Farmeurimmo | Portfolio - Developer & System Administrator",
+                "og:description": "Discover my expertise in software development, system administration, SaaS solutions, and more.",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
-                "twitter:title": "Farmeurimmo - Developer & System Administrator Portfolio",
-                "twitter:description": "Explore the portfolio of Farmeurimmo, showcasing expertise in software development and system administration.",
+                "twitter:title": "Farmeurimmo | Portfolio - Developer & System Administrator",
+                "twitter:description": "Explore my portfolio showcasing expertise in software development, system administration, and digital solutions.",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"
             },
             blog: {
-                title: "Farmeurimmo - Blog",
-                description: "Stay updated with the latest news, insights, and articles from Farmeurimmo on technology, development, and system administration.",
-                keywords: "blog, news, articles, Farmeurimmo, technology blog, development, system administration, IT, programming",
-                "og:title": "Farmeurimmo Blog - Latest Technology and Development Articles",
-                "og:description": "Read the latest articles on Farmeurimmo’s blog, covering technology, development, and system administration topics.",
+                title: "Farmeurimmo | Blog - Developer & System Administrator",
+                description: "Articles on technology, development, and system administration, covering various topics and practical insights.",
+                keywords: "blog, technology, development, system administration, programming, cloud computing, automation, software engineering, cybersecurity",
+                "og:title": "Farmeurimmo | Blog - Technology & Development Articles",
+                "og:description": "Explore articles on technology, software development, and system administration.",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
-                "twitter:title": "Farmeurimmo Blog - Latest Articles on Tech and Development",
-                "twitter:description": "Stay updated with new articles on technology, system administration, and development topics from Farmeurimmo.",
+                "twitter:title": "Farmeurimmo | Blog - Technology & Development Articles",
+                "twitter:description": "Read articles on system administration, software development, and emerging technologies.",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"
             }
         },
         fr: {
             default: {
-                title: "Portfolio | Farmeurimmo - Développeur & Administrateur Système",
-                description: "Découvrez le portfolio de Farmeurimmo, un développeur et administrateur système passionné par diverses technologies.",
-                keywords: "développeur, administrateur système, programmeur polyglotte, technologies, portfolio, Java, Minecraft, solutions IT, développement logiciel, architecture système, cloud computing",
-                "og:title": "Farmeurimmo - Portfolio Développeur & Administrateur Système",
-                "og:description": "Découvrez le portfolio de Farmeurimmo, mettant en avant son expertise en développement logiciel, administration système et solutions technologiques.",
+                title: "Farmeurimmo | Portfolio - Développeur & Administrateur Système",
+                description: "Découvrez mon portfolio en tant que développeur et administrateur système. Je propose des services en SaaS, administration système et développement logiciel.",
+                keywords: "développeur, administrateur système, développement logiciel, administration système, SaaS, gestion des infrastructures, programmation, automatisation, solutions cloud, sécurité",
+                "og:title": "Farmeurimmo | Portfolio - Développeur & Administrateur Système",
+                "og:description": "Découvrez mon expertise en développement logiciel, administration système, solutions SaaS et bien plus encore.",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
-                "twitter:title": "Farmeurimmo - Portfolio Développeur & Administrateur Système",
-                "twitter:description": "Découvrez le portfolio de Farmeurimmo, mettant en avant son expertise en développement logiciel et administration système.",
+                "twitter:title": "Farmeurimmo | Portfolio - Développeur & Administrateur Système",
+                "twitter:description": "Explorez mon portfolio mettant en avant mon expertise en développement logiciel, administration système et solutions numériques.",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"
             },
             blog: {
-                title: "Farmeurimmo - Blog",
-                description: "Restez à jour avec les dernières actualités, idées et articles du blog de Farmeurimmo sur la technologie, le développement et l'administration système.",
-                keywords: "blog, actualités, articles, Farmeurimmo, blog technologique, développement, administration système, informatique, programmation",
-                "og:title": "Blog Farmeurimmo - Derniers Articles sur la Technologie et le Développement",
-                "og:description": "Lisez les derniers articles du blog de Farmeurimmo, traitant de sujets sur la technologie, le développement et l'administration système.",
+                title: "Farmeurimmo | Blog - Développeur & Administrateur Système",
+                description: "Articles sur la technologie, le développement et l'administration système, abordant divers sujets et retours d'expérience.",
+                keywords: "blog, technologie, développement, administration système, programmation, cloud computing, automatisation, ingénierie logicielle, cybersécurité",
+                "og:title": "Farmeurimmo | Blog - Articles sur la Technologie & le Développement",
+                "og:description": "Découvrez des articles sur la technologie, le développement logiciel et l'administration système.",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
-                "twitter:title": "Blog Farmeurimmo - Derniers Articles sur la Technologie et le Développement",
-                "twitter:description": "Restez à jour avec les nouveaux articles sur la technologie, l'administration système et le développement de Farmeurimmo.",
+                "twitter:title": "Farmeurimmo | Blog - Articles sur la Technologie & le Développement",
+                "twitter:description": "Découvrez des articles sur l'administration système, le développement logiciel et les nouvelles technologies.",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"
             }
         }
     };
 
+
     const pageType = pathname.replace("/", "") || "default";
     try {
-        const { title, description, keywords, "og:title": ogTitle, "og:description": ogDescription, "og:image": ogImage, "twitter:title": twitterTitle, "twitter:description": twitterDescription, "twitter:image": twitterImage, robots } = metadata[locale][pageType];
+        const {
+            title,
+            description,
+            keywords,
+            "og:title": ogTitle,
+            "og:description": ogDescription,
+            "og:image": ogImage,
+            "twitter:title": twitterTitle,
+            "twitter:description": twitterDescription,
+            "twitter:image": twitterImage,
+            robots
+        } = metadata[locale][pageType];
 
         return {
             title,
@@ -98,7 +110,8 @@ export async function generateMetadata({ params }) {
             "twitter:image": twitterImage,
             robots
         };
-    } catch (e) {}
+    } catch (e) {
+    }
 }
 
 export default async function LocaleLayout({children, params}) {

@@ -16,7 +16,8 @@ export function getPostBySlug(slug) {
         const {data, content} = matter(fileContents);
 
         return {...data, slug: realSlug, content};
-    } catch (error) {}
+    } catch (error) {
+    }
 
     return null;
 }

@@ -16,7 +16,8 @@ export default function BaseLayout({children, locale = "en"}) {
         <html lang={locale}>
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, min-width=400px"/>
-            <meta name={"favicon"} content="https://cdn.farmeurimmo.fr/img/logo.png" />
+            <meta name={"favicon"} content="https://cdn.farmeurimmo.fr/img/logo.png"/>
+            <link rel={"canonical"} href={"/"}/>
             <link rel="icon" href="https://cdn.farmeurimmo.fr/img/logo.jpg"/>
         </head>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen w-screen min-w-[400px]`}>
