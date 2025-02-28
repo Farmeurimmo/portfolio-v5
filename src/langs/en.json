@@ -56,6 +56,11 @@
       "otherWays": "Other ways to contact me"
     }
   },
+  "BlogPage": {
+    "heroPosts": "Featured Posts",
+    "morePosts": "More Posts",
+    "description": "Articles covering a wide range of topics in technology, development, and system administration, all written in English."
+  },
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, fr {\uD83C\uDDEB\uD83C\uDDF7 Français} en {🇺🇸 English} other {Unknown}}"

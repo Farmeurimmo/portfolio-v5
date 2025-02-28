@@ -56,6 +56,11 @@
       "otherWays": "Autres moyens de me contacter"
     }
   },
+  "BlogPage": {
+    "heroPosts": "Articles en vedette",
+    "morePosts": "Plus d'articles",
+    "description": "Des articles couvrant une large gamme de sujets liés à la technologie, au développement et à l'administration système, rédigés en anglais."
+  },
   "LocaleSwitcher": {
     "label": "Changer de language",
     "locale": "{locale, select, fr {\uD83C\uDDEB\uD83C\uDDF7 Français} en {🇺🇸 English} other {Unknown}}"
