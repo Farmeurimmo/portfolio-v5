@@ -31,10 +31,10 @@ export async function generateMetadata({params}) {
         en: {
             default: {
                 title: "Farmeurimmo | Portfolio - Developer & System Administrator",
-                description: "Explore my portfolio as a developer and system administrator. I offer SaaS, system administration, and software development services.",
-                keywords: "developer, system administrator, software development, system administration, SaaS, infrastructure management, programming, automation, cloud solutions, security",
+                description: "Explore my portfolio as a developer, system administrator, and digital solutions provider. I offer SaaS, system administration, infrastructure management, and more.",
+                keywords: "developer, system administrator, SaaS, infrastructure management, programming, automation, cloud solutions, security, digital solutions",
                 "og:title": "Farmeurimmo | Portfolio - Developer & System Administrator",
-                "og:description": "Discover my expertise in software development, system administration, SaaS solutions, and more.",
+                "og:description": "Discover my expertise in software development, system administration, SaaS solutions, and digital projects.",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:title": "Farmeurimmo | Portfolio - Developer & System Administrator",
                 "twitter:description": "Explore my portfolio showcasing expertise in software development, system administration, and digital solutions.",
@@ -43,13 +43,25 @@ export async function generateMetadata({params}) {
             },
             blog: {
                 title: "Farmeurimmo | Blog - Developer & System Administrator",
-                description: "Articles on technology, development, and system administration, covering various topics and practical insights.",
-                keywords: "blog, technology, development, system administration, programming, cloud computing, automation, software engineering, cybersecurity",
+                description: "Insights and discussions on technology, software development, system administration, and digital solutions.",
+                keywords: "blog, technology, development, system administration, programming, cloud computing, automation, software engineering, cybersecurity, digital solutions",
                 "og:title": "Farmeurimmo | Blog - Technology & Development Articles",
-                "og:description": "Explore articles on technology, software development, and system administration.",
+                "og:description": "Explore articles on technology, software development, system administration, and digital solutions.",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:title": "Farmeurimmo | Blog - Technology & Development Articles",
-                "twitter:description": "Read articles on system administration, software development, and emerging technologies.",
+                "twitter:description": "Read articles on system administration, software development, emerging technologies, and digital solutions.",
+                "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
+                "robots": "index, follow"
+            },
+            projects: {
+                title: "Farmeurimmo | Projects - Developer & System Administrator",
+                description: "A showcase of my completed and ongoing projects in development, system administration, and digital solutions.",
+                keywords: "projects, software development, system administration, digital solutions, programming, automation, cloud solutions, infrastructure, DevOps, SaaS",
+                "og:title": "Farmeurimmo | Projects - Developer & System Administrator",
+                "og:description": "Explore my portfolio of projects, including software development, system administration, and other digital solutions.",
+                "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
+                "twitter:title": "Farmeurimmo | Projects - Developer & System Administrator",
+                "twitter:description": "Take a look at my completed and ongoing projects in software development, system administration, and digital solutions.",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"
             }
@@ -57,10 +69,10 @@ export async function generateMetadata({params}) {
         fr: {
             default: {
                 title: "Farmeurimmo | Portfolio - Développeur & Administrateur Système",
-                description: "Découvrez mon portfolio en tant que développeur et administrateur système. Je propose des services en SaaS, administration système et développement logiciel.",
-                keywords: "développeur, administrateur système, développement logiciel, administration système, SaaS, gestion des infrastructures, programmation, automatisation, solutions cloud, sécurité",
+                description: "Découvrez mon portfolio en tant que développeur, administrateur système et prestataire de solutions numériques. Je propose des services en SaaS, administration système, gestion des infrastructures et plus encore.",
+                keywords: "développeur, administrateur système, SaaS, gestion des infrastructures, programmation, automatisation, solutions cloud, sécurité, solutions numériques",
                 "og:title": "Farmeurimmo | Portfolio - Développeur & Administrateur Système",
-                "og:description": "Découvrez mon expertise en développement logiciel, administration système, solutions SaaS et bien plus encore.",
+                "og:description": "Découvrez mon expertise en développement logiciel, administration système, solutions SaaS et projets numériques.",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:title": "Farmeurimmo | Portfolio - Développeur & Administrateur Système",
                 "twitter:description": "Explorez mon portfolio mettant en avant mon expertise en développement logiciel, administration système et solutions numériques.",
@@ -69,19 +81,30 @@ export async function generateMetadata({params}) {
             },
             blog: {
                 title: "Farmeurimmo | Blog - Développeur & Administrateur Système",
-                description: "Articles sur la technologie, le développement et l'administration système, abordant divers sujets et retours d'expérience.",
-                keywords: "blog, technologie, développement, administration système, programmation, cloud computing, automatisation, ingénierie logicielle, cybersécurité",
+                description: "Réflexions et discussions sur la technologie, le développement, l'administration système et les solutions numériques.",
+                keywords: "blog, technologie, développement, administration système, programmation, cloud computing, automatisation, ingénierie logicielle, cybersécurité, solutions numériques",
                 "og:title": "Farmeurimmo | Blog - Articles sur la Technologie & le Développement",
-                "og:description": "Découvrez des articles sur la technologie, le développement logiciel et l'administration système.",
+                "og:description": "Découvrez des articles sur la technologie, le développement logiciel, l'administration système et les solutions numériques.",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:title": "Farmeurimmo | Blog - Articles sur la Technologie & le Développement",
-                "twitter:description": "Découvrez des articles sur l'administration système, le développement logiciel et les nouvelles technologies.",
+                "twitter:description": "Découvrez des articles sur l'administration système, le développement logiciel, les nouvelles technologies et les solutions numériques.",
+                "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
+                "robots": "index, follow"
+            },
+            projects: {
+                title: "Farmeurimmo | Projets - Développeur & Administrateur Système",
+                description: "Une vitrine de mes projets terminés et en cours en développement, administration système et solutions numériques.",
+                keywords: "projets, développement logiciel, administration système, solutions numériques, programmation, automatisation, solutions cloud, infrastructure, DevOps, SaaS",
+                "og:title": "Farmeurimmo | Projets - Développeur & Administrateur Système",
+                "og:description": "Explorez mon portfolio de projets, incluant le développement logiciel, l'administration système et d'autres solutions numériques.",
+                "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
+                "twitter:title": "Farmeurimmo | Projets - Développeur & Administrateur Système",
+                "twitter:description": "Découvrez mes projets terminés et en cours en développement logiciel, administration système et solutions numériques.",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"
             }
         }
     };
-
 
     const pageType = pathname.replace("/", "") || "default";
     try {
