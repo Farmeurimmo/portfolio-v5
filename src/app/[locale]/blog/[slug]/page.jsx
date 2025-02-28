@@ -1,7 +1,7 @@
 import {notFound} from "next/navigation";
 import {getAllPosts, getPostBySlug} from "@/lib/blog";
 import markdownToHtml from "@/lib/markdownToHtml";
-import {PostBody} from "@/components/PostBody";
+import {PostBody} from "@/app/components/PostBody";
 
 export default async function Post(props) {
     const params = await props.params;
@@ -16,7 +16,6 @@ export default async function Post(props) {
     return (
         <main>
             <article>
-                <h1>{post.title}</h1>
                 <PostBody content={content}/>
             </article>
         </main>
@@ -37,7 +36,7 @@ export async function generateMetadata(props) {
         title,
         openGraph: {
             title,
-            images: [post.ogImage.url],
+            images: [post.coverImage],
         },
     };
 }

@@ -1,10 +1,10 @@
 "use client";
 
 import {ArrowRight, CircleHelp, Cloud, Code, Server, Wrench} from "lucide-react";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/app/components/ContactForm";
 import {useTranslations} from "next-intl";
 import {useState} from "react";
-import Skills from "@/components/Skills";
+import Skills from "@/app/components/Skills";
 
 export default function MainPageContent() {
     const t = useTranslations('HomePage');

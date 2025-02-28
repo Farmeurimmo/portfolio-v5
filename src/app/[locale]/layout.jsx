@@ -2,8 +2,8 @@ import {NextIntlClientProvider} from "next-intl";
 import {getMessages, setRequestLocale} from "next-intl/server";
 import {routing} from "@/i18n/routing";
 import {redirect} from "next/navigation";
-import {Navbar} from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import {Navbar} from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 import ClientThemeProvider from "./ClientThemeProvider";
 import BaseLayout from "@/app/BaseLayout";
 

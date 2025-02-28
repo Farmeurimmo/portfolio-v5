@@ -3,7 +3,7 @@
 import {useEffect, useState} from "react";
 import Link from "next/link";
 import {useTranslations} from "next-intl";
-import ThemeButton from "@/components/ThemeButton";
+import ThemeButton from "@/app/components/ThemeButton";
 import {useParams} from "next/navigation";
 
 export default function Footer() {

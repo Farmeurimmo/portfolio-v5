@@ -1,5 +1,5 @@
 import {useTranslations} from 'next-intl';
-import MainPageContent from "@/components/MainPageContent";
+import MainPageContent from "@/app/components/MainPageContent";
 
 export default function HomePage() {
     const t = useTranslations('HomePage');

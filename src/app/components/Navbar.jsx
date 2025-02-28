@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import {useTranslations} from "next-intl";
-import LocaleSwitcher from "@/components/LocaleSwitcher";
-import ThemeButton from "@/components/ThemeButton";
+import LocaleSwitcher from "@/app/components/LocaleSwitcher";
+import ThemeButton from "@/app/components/ThemeButton";
 import {useParams} from "next/navigation";
 
 export function Navbar() {
@@ -20,7 +20,7 @@ export function Navbar() {
                     <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo"
                          className="h-8 w-8 rounded-full"/>
                     <Link className="text-2xl font-bold hover:text-orange-500"
-                          href={"/" + currentLocale}>Farmeurimmo</Link>
+                          href={"/public" + currentLocale}>Farmeurimmo</Link>
                 </div>
                 <div className="flex flex-row items-center gap-4">
                     <Link href={`/${currentLocale}/#`}
