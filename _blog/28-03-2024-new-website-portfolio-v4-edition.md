@@ -7,8 +7,6 @@ date: "2024-03-28T21:00:00.000Z"
 author:
   name: "Farmeurimmo"
   picture: "https://cdn.farmeurimmo.fr/img/logo.png"
-views: 280
-published: "2024-03-28 21:00"
 ---
 
 # My new website / portfolio V4 edition

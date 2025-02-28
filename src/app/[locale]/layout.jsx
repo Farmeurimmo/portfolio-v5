@@ -12,6 +12,14 @@ export async function generateStaticParams() {
     return routing.locales.map((locale) => ({locale}));
 }
 
+export const viewport = {
+    width: "device-width",
+    initialScale: 1,
+    minimumScale: 0.8,
+    maximumScale: 2,
+    userScalable: true,
+}
+
 export async function generateMetadata({params}) {
     const {locale} = await params;
     const headersList = await headers();
@@ -131,7 +139,7 @@ export async function generateMetadata({params}) {
             "twitter:title": twitterTitle,
             "twitter:description": twitterDescription,
             "twitter:image": twitterImage,
-            robots
+            robots,
         };
     } catch (e) {
     }
