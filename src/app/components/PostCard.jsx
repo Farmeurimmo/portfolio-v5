@@ -11,8 +11,8 @@ function PostCard({post, featured = false}) {
     return (
         <Link
             href={`/${currentLocale}/blog/${post.slug}`}
-            className={`flex flex-col justify-between items-center text-center flex-1 min-w-[200px] p-6 bg-white 
-            dark:bg-gray-800 rounded-2xl shadow-md max-w-[500px] hover:scale-105 hover:shadow-lg transition-transform 
+            className={`flex flex-col justify-between items-center text-center flex-1 min-w-[300px] p-6 bg-white 
+            dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] hover:scale-105 hover:shadow-lg transition-transform 
             cursor-pointer active:scale-95 h-full ${featured ? 'border border-amber-500' : 'border-transparent'} focus:border`}
         >
             <Image
