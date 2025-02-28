@@ -1,19 +1,25 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import {useParams} from "next/navigation";
 
 function PostCard({post, featured = false}) {
+    const params = useParams();
+    const currentLocale = params.locale || "en";
+
     return (
         <Link
-            href={`/blog/${post.slug}`}
-            className={`flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-6 bg-white 
+            href={`/${currentLocale}/blog/${post.slug}`}
+            className={`flex flex-col justify-between items-center text-center flex-1 min-w-[200px] p-6 bg-white 
             dark:bg-gray-800 rounded-2xl shadow-md max-w-[500px] hover:scale-105 hover:shadow-lg transition-transform 
-            cursor-pointer active:scale-95 ${featured ? 'border-2 border-amber-500' : 'border-transparent'} focus:border`}
+            cursor-pointer active:scale-95 h-full ${featured ? 'border-2 border-amber-500' : 'border-transparent'} focus:border`}
         >
             <Image
                 src={post.coverImage}
                 alt={post.title}
-                width={300}
-                height={150}
+                width={400}
+                height={300}
                 className="w-full h-auto rounded-t-2xl object-cover"
             />
             <div className="p-4">
