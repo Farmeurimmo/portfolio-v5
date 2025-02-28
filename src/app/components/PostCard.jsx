@@ -19,7 +19,6 @@ function PostCard({ post, featured = false }) {
             <div className="p-4">
                 <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{post.title}</h2>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">{post.excerpt}</p>
-                <span className="mt-2 px-4 py-2 btn btn-info rounded-xl">Read more</span>
             </div>
         </Link>
     );
