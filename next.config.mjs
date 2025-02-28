@@ -8,6 +8,9 @@ const nextConfig = {
         remotePatterns: [
             {
                 hostname: 'cdn.farmeurimmo.fr',
+            },
+            {
+                hostname: 'static.spigotmc.org',
             }
         ],
     },
