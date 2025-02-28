@@ -24,7 +24,7 @@ export default function BlogHome() {
                             <div className="w-full">
                                 <ul className="flex flex-wrap gap-6 mt-4 p-4 justify-start">
                                     {heroPosts.map((post) => (
-                                        <li key={post.id} className="min-w-[300px] flex-grow flex-1 max-w-[600px]">
+                                        <li key={post.id} className="min-w-[250px] flex-grow flex-1 max-w-[500px]">
                                             <PostCard post={post} featured={true}/>
                                         </li>
                                     ))}
@@ -41,7 +41,7 @@ export default function BlogHome() {
                             <div className="w-full">
                                 <ul className="flex flex-wrap gap-6 mt-4 p-4 justify-start">
                                     {morePosts.map((post) => (
-                                        <li key={post.id} className="min-w-[300px] flex-grow flex-1 max-w-[600px]">
+                                        <li key={post.id} className="min-w-[250px] flex-grow flex-1 max-w-[500px]">
                                             <PostCard post={post}/>
                                         </li>
                                     ))}
