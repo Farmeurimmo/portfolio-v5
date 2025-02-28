@@ -125,5 +125,194 @@
     "privacy": "Privacy Policy",
     "since": "Developer since 2018.",
     "sourcecode": "Source Code"
+  },
+  "projects": {
+    "projects": [
+      {
+        "id": "reapersanction",
+        "title": "Reaper Sanction",
+        "excerpt": "Reaper Sanction is a Minecraft plugin that integrates a built-in sanction system and customizable GUIs for punishing server players. The GUIs are configurable and the sanctions are customizable.",
+        "tags": [
+          "Spigot",
+          "Java",
+          "Minecraft",
+          "Plugin"
+        ],
+        "coverImage": "https://cdn.farmeurimmo.fr/img/projects/89580.png"
+      }
+    ],
+    "title": "My current and old projects",
+    "description": "Discover my past and current projects here. They are all open source and available on my GitHub account. You may find more projects on my GitHub account.",
+    "reapersanction": {
+      "title": "ReaperSanction, Sanction plugin via editable GUIs",
+      "description": "ReaperSanction is a Minecraft plugin providing a comprehensive sanction system with customizable GUIs for efficient player management.",
+      "good_points": [
+        "GUI-oriented sanction plugin for Java Minecraft servers",
+        "Compatible with Spigot, Paper, BungeeCord, Velocity",
+        "From 1.8 to the latest game versions.",
+        "Supports MYSQL, YAML",
+        "Editable messages",
+        "Customizable sanctions",
+        "Customizable GUIs"
+      ],
+      "links": "Links",
+      "demo": "The plugin in a few pictures",
+      "indev": "In development",
+      "indev_things": [
+        "Better report system (recovery, views, etc.)",
+        "Vanish rework",
+        "API for developers",
+        "Staff mod"
+      ],
+      "wikititle": "Wiki",
+      "wiki": {
+        "install": "Installation",
+        "install_instructions": [
+          "Download the latest version of the plugin",
+          "Place the file in the plugins folders of your servers",
+          "Restart the servers",
+          "Configure the plugin via the configuration files if needed",
+          "Be careful, the guis must be configured on spigot servers."
+        ],
+        "commands": "Commands",
+        "optional": "() = optional, [] = required",
+        "commands_table": {
+          "row_head": {
+            "command": "Command",
+            "usage": "Usage",
+            "permission": "Permission",
+            "description": "Description"
+          },
+          "row_rs": {
+            "usage": "/rs [player]",
+            "description": "Opens the sanction menu for the player"
+          },
+          "row_ban": {
+            "usage": "/ban [player] (reason)",
+            "description": "Permanently bans a player"
+          },
+          "row_tempban": {
+            "usage": "/tempban [player] [time with sec/min/hour/day/year] (reason)",
+            "description": "Temporarily bans a player"
+          },
+          "row_unban": {
+            "usage": "/unban [player]",
+            "description": "Unbans a player"
+          },
+          "row_kick": {
+            "usage": "/kick [player] (reason)",
+            "description": "Kicks a player from the server"
+          },
+          "row_mute": {
+            "usage": "/mute [player] (reason)",
+            "description": "Mutes a player"
+          },
+          "row_tempmute": {
+            "usage": "/tempmute [player] [time with sec/min/hour/day/year] (reason)",
+            "description": "Temporarily mutes a player"
+          },
+          "row_unmute": {
+            "usage": "/unmute [player]",
+            "description": "Unmutes a player"
+          },
+          "row_banip": {
+            "usage": "/banip [ip or player] (reason)",
+            "description": "Bans an IP or a player"
+          },
+          "row_report": {
+            "usage": "/report [player]",
+            "description": "Opens the report menu configured with your reasons"
+          },
+          "row_history": {
+            "usage": "/history [player]",
+            "description": "Opens the player's sanction history menu"
+          },
+          "row_rsadmin": {
+            "usage": "/rsadmin [rl/reload/infos/migratedb]",
+            "description": "Reloads configs, retrieves plugin information, gets information to migrate to MYSQL."
+          },
+          "row_vanish": {
+            "usage": "/vanish",
+            "description": "Activates/Deactivates vanish"
+          }
+        },
+        "custom_guis": "Custom GUIs",
+        "custom_guis_description": "See below the list of customizable menus with their exact names in the config.",
+        "how_guis_works": "How the GUIs and messages file works",
+        "how_guis_works_description": "The config is red on server startup and when you use the /rsadmin rl command. You can edit the config and use the command to reload it. The config may not order the GUIs in the same order you want. You can change the order of the GUIs, this will not affect the plugin.",
+        "location": "Location",
+        "location_inventories": "The inventories file is located in: plugins/ReaperSanction/Inventories.yml",
+        "location_messages": "The messages file is located in: plugins/ReaperSanction/Messages.yml",
+        "gui_config": "GUI Customization",
+        "code": "MAIN: # <-- This is the main gui\n  name: §4ReaperSanction # <-- The name of the gui\n  size: 27 # <-- The size of the gui (9, 18, 27, 36, 45, 54)\n  # Slots start at 0 and end at size - 1,\n  # If you place an item in a slot outside of the gui size, it can cause errors\n  isFill: true\n  # If isFill is true, the gui will be filled with a glass pane\n  # The option to customize the glass pane will be added in the future\n  items: # <-- The items of the gui\n    '8': # <-- The slot of the item\n      type: ANVIL # <-- The type of the item\n      amount: 1 # <-- The amount of the item\n      display: §6What§cEver§1You§bWant # <-- The display name of the item\n      lore: # <-- The lore of the item\n        '0': Hi # <-- The line of the lore, you have to start at 0, incrementing by 1 and write like it is\n        '1': Custom lore\n        '2': With custom actions\n      actions: # <-- The actions of the item\n        '0': EXT->SAY HELLO %player%  # <- Similar to lore, you have to start at 0, incrementing by 1\n        # More explanation about how and what is available below.\n    '16': # Here is another item\n      type: PAPER\n      amount: 1\n      display: §cEnd\n      actions:\n        '0': INT->GUI->END->%player%",
+        "actions_title": "Actions",
+        "ext_title": "EXT Options",
+        "int_title": "INT Options",
+        "ext_actions_description": "EXT actions will force the player to execute the command. For example, if we have \"EXT->SAY HELLO %player%\", the player will execute: \"/say HELLO %player%\". %player% represents the player's name.",
+        "int_actions_description": "INT actions will pass instructions to the plugin. For example, if we have \"INT->TEMPBAN->%player%->7day->Fly\", the plugin will temporarily ban the player for 7 days for \"Fly\".",
+        "int_actions_optional": "INT actions can have optional arguments. For example, we can remove the reason for the action. If we have \"INT->TEMPBAN->%player%->7day\", the plugin will temporarily ban the player for 7 days with the default reason.",
+        "int_actions_endpoints": {
+          "title": "INT actions options",
+          "description": "INT options are the possible actions that the plugin can perform without executing a command. The list of possible actions is below.",
+          "row_head": {
+            "name": "Name",
+            "arguments": "Arguments",
+            "description": "Description"
+          },
+          "row_tempban": {
+            "arguments": "->%PLAYER%->duration(->reason)",
+            "description": "Temporarily bans a player"
+          },
+          "row_ban": {
+            "arguments": "->%PLAYER%(->reason)",
+            "description": "Bans a player"
+          },
+          "row_kick": {
+            "arguments": "->%PLAYER%(->reason)",
+            "description": "Kicks a player"
+          },
+          "row_mute": {
+            "arguments": "->%PLAYER%(->reason)",
+            "description": "Mutes a player"
+          },
+          "row_tempmute": {
+            "arguments": "->%PLAYER%->duration(->reason)",
+            "description": "Temporarily mutes a player"
+          },
+          "row_unban": {
+            "arguments": "->%PLAYER%",
+            "description": "Unbans a player"
+          },
+          "row_unmute": {
+            "arguments": "->%PLAYER%",
+            "description": "Unmutes a player"
+          },
+          "row_banip": {
+            "arguments": "->%PLAYER%(->reason)",
+            "description": "Bans an IP or a player"
+          },
+          "row_unbanip": {
+            "arguments": "->%PLAYER%",
+            "description": "Unbans an IP or a player"
+          },
+          "row_gui": {
+            "arguments": "->%GUI%->%PLAYER%",
+            "description": "Opens a GUI (Not supported by sanction history, see GUI_DYN)"
+          },
+          "row_gui_dyn": {
+            "arguments": "->%GUI%->%PLAYER%",
+            "description": "Opens a dynamic GUI (It was made to open the sanction history GUI)"
+          },
+          "row_close": {
+            "arguments": "->%PLAYER%",
+            "description": "Closes the GUI"
+          },
+          "row_report": {
+            "arguments": "->%REASON%->%PLAYER%",
+            "description": "Reports a player"
+          }
+        }
+      }
+    }
   }
 }

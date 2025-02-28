@@ -125,5 +125,194 @@
     "privacy": "Politique de confidentialité",
     "since": "Développeur depuis 2018.",
     "sourcecode": "Code source"
+  },
+  "projects": {
+    "projects": [
+      {
+        "id": "reapersanction",
+        "title": "Reaper Sanction",
+        "excerpt": "Reaper Sanction est un plugin minecraft qui inclus un système de sanction intégré et de guis pour sanctionner les joueurs du serveur. Les guis sont configurables et les sanctions sont personnalisables.",
+        "tags": [
+          "Spigot",
+          "Java",
+          "Minecraft",
+          "Plugin"
+        ],
+        "coverImage": "https://cdn.farmeurimmo.fr/img/projects/89580.png"
+      }
+    ],
+    "title": "Mes projets actuels et passés",
+    "description": "Découvrez mes projets actuels et passés ici. Ils sont tous open-source et disponibles sur mon compte GitHub. Vous pouvez également en trouver plus sur mon compte GitHub.",
+    "reapersanction": {
+      "title": "ReaperSanction, plugin de sanction via GUIs modifiables",
+      "description": "ReaperSanction est un plugin Minecraft offrant un système de sanctions complet avec des interfaces graphiques personnalisables pour une gestion efficace des joueurs.",
+      "good_points": [
+        "Plugin de sanction orienté gui pour les serveurs minecraft java",
+        "Compatible Spigot, Paper, BungeeCord, Velocity",
+        "De la 1.8 aux dernières versions du jeux.",
+        "Supporte MYSQL, YAML",
+        "Messages modifiables",
+        "Sanctions personnalisables",
+        "Guis personnalisables"
+      ],
+      "links": "Liens",
+      "demo": "Le plugin en quelques images",
+      "indev": "En développement",
+      "indev_things": [
+        "Meilleur système de report (récupération, vues etc..)",
+        "Refonte du système de vanish",
+        "API pour les développeurs",
+        "Mod de modération"
+      ],
+      "wikititle": "Wiki",
+      "wiki": {
+        "install": "Installation",
+        "install_instructions": [
+          "Télécharger la dernière version du plugin",
+          "Déposer le fichier dans le dossier plugins de vos serveurs (proxy et spigot)",
+          "Redémarrer les serveurs",
+          "Configurer le plugin via les fichiers de configuration si besoin",
+          "Attention, les guis doivent être configurés sur les serveurs spigot."
+        ],
+        "commands": "Commandes",
+        "optional": "() = optionnel, [] = requis",
+        "commands_table": {
+          "row_head": {
+            "command": "Commande",
+            "usage": "Utilisation",
+            "permission": "Permission",
+            "description": "Description"
+          },
+          "row_rs": {
+            "usage": "/rs [joueur]",
+            "description": "Ouvre le menu de sanction pour le joueur"
+          },
+          "row_ban": {
+            "usage": "/ban [joueur] (raison)",
+            "description": "Bannir un joueur de manière définitive"
+          },
+          "row_tempban": {
+            "usage": "/tempban [joueur] [temps avec sec/min/hour/day/year] (raison)",
+            "description": "Bannir un joueur temporairement"
+          },
+          "row_unban": {
+            "usage": "/unban [joueur]",
+            "description": "Débannir un joueur"
+          },
+          "row_kick": {
+            "usage": "/kick [joueur] (raison)",
+            "description": "Expulser un joueur du serveur"
+          },
+          "row_mute": {
+            "usage": "/mute [joueur] (raison)",
+            "description": "Muter un joueur"
+          },
+          "row_tempmute": {
+            "usage": "/tempmute [joueur] [temps avec sec/min/hour/day/year] (raison)",
+            "description": "Muter un joueur temporairement"
+          },
+          "row_unmute": {
+            "usage": "/unmute [joueur]",
+            "description": "Démuter un joueur"
+          },
+          "row_banip": {
+            "usage": "/banip [ip ou joueur] (raison)",
+            "description": "Bannir une ip ou un joueur"
+          },
+          "row_report": {
+            "usage": "/report [joueur]",
+            "description": "Ouvre le menu de report configuré avec vos raisons"
+          },
+          "row_history": {
+            "usage": "/history [joueur]",
+            "description": "Ouvre le menu de l'historique des sanctions du joueur"
+          },
+          "row_rsadmin": {
+            "usage": "/rsadmin [rl/reload/infos/migratedb]",
+            "description": "Recharge les configs, récupère les informations du plugin, avoir les informations pour migrer vers MYSQL."
+          },
+          "row_vanish": {
+            "usage": "/vanish",
+            "description": "Active / Déactive le vanish"
+          }
+        },
+        "custom_guis": "Guis personnalisés",
+        "custom_guis_description": "Voir ci-dessous la liste des menus personnalisables avec leurs noms exact dans la config.",
+        "how_guis_works": "Fonctionnement du fichier des GUIs et des messages",
+        "how_guis_works_description": "La config est rouge au démarrage du serveur et lorsque vous utilisez la commande /rsadmin rl. Vous pouvez éditer la config et utiliser la commande pour la recharger. La config peut ne pas ordonner les GUIs dans le même ordre que vous souhaitez. Vous pouvez changer l'ordre des GUIs, cela n'affectera pas le plugin.",
+        "location": "Emplacement",
+        "location_inventories": "Le fichier des inventaires est situé dans: plugins/ReaperSanction/Inventories.yml",
+        "location_messages": "Le fichier des messages est situé dans: plugins/ReaperSanction/Messages.yml",
+        "gui_config": "Personalisation des GUIs",
+        "code": "MAIN: # <-- Ceci est le menu principal\n  name: §4ReaperSanction # <-- Le nom du menu\n  size: 27 # <-- La taille du menu (9, 18, 27, 36, 45, 54)\n  # Les slots commencent à 0 et finissent à size - 1,\n  # Si vous placez un objet dans un slot en dehors de la taille du menu, cela peut causer des erreurs\n  isFill: true\n  # Si isFill est vrai, le menu sera rempli avec une vitre\n  # La possibilité de personnaliser la vitre sera ajoutée dans le futur\n  items: # <-- Les objets du menu\n    '8': # <-- Le slot de l'objet\n      type: ANVIL # <-- Le type de l'objet\n      amount: 1 # <-- La quantité de l'objet\n      display: §6What§cEver§1You§bWant # <-- Le nom affiché de l'objet\n      lore: # <-- Le descriptif de l'objet '0': Salut # <-- La ligne du descriptif, vous devez commencer à 0, incrémenter de 1 et écrire comme ceci '1': Descriptif personnalisé '2': Avec actions personnalisées\n      actions: # <-- Les actions de l'objet '0': EXT->SAY HELLO %player%  # <- Similaire au descriptif, vous devez commencer à 0, incrémenter de 1 # Plus d'explications sur comment et ce qui est disponible ci-dessous.\n    '16': # Voici un autre objet\n      type: PAPER\n      amount: 1\n      display: §cFin\n      actions: '0': INT->GUI->END->%player%",
+        "actions_title": "Actions",
+        "ext_title": "Options EXT",
+        "int_title": "Options INT",
+        "ext_actions_description": "Les actions EXT utiliseront vont forcer le joueur à exécuter la commande. Par exemple, si nous avons \"EXT->SAY HELLO %player%\", le joueur exécutera : \"/say HELLO %player%\". %player% représente le nom du joueur.",
+        "int_actions_description": "Les actions INT transmettront des instructions au plugin. Par exemple, si nous avons \"INT->TEMPBAN->%player%->7day->Fly\", le plugin bannira temporairement le joueur pendant 7 jours pour \"Fly\".",
+        "int_actions_optional": "Les actions INT peuvent avoir des arguments optionnels. Par exemple, nous pouvons supprimer la raison de l'action. Si nous avons \"INT->TEMPBAN->%player%->7day\", le plugin bannira temporairement le joueur pendant 7 jours avec la raison par défaut.",
+        "int_actions_endpoints": {
+          "title": "Options des actions INT",
+          "description": "Les options INT sont les actions possibles que le plugin peut effectuer sans exécuter de commande. La liste des actions possibles est ci-dessous.",
+          "row_head": {
+            "name": "Nom",
+            "arguments": "Arguments",
+            "description": "Description"
+          },
+          "row_tempban": {
+            "arguments": "->%PLAYER%->duration(->raison)",
+            "description": "Bannir temporairement un joueur"
+          },
+          "row_ban": {
+            "arguments": "->%PLAYER%(->raison)",
+            "description": "Bannir un joueur"
+          },
+          "row_kick": {
+            "arguments": "->%PLAYER%(->raison)",
+            "description": "Expulser un joueur"
+          },
+          "row_mute": {
+            "arguments": "->%PLAYER%(->raison)",
+            "description": "Muter un joueur"
+          },
+          "row_tempmute": {
+            "arguments": "->%PLAYER%->duration(->raison)",
+            "description": "Muter temporairement un joueur"
+          },
+          "row_unban": {
+            "arguments": "->%PLAYER%",
+            "description": "Débannir un joueur"
+          },
+          "row_unmute": {
+            "arguments": "->%PLAYER%",
+            "description": "Démuter un joueur"
+          },
+          "row_banip": {
+            "arguments": "->%PLAYER%(->raison)",
+            "description": "Bannir une ip ou un joueur"
+          },
+          "row_unbanip": {
+            "arguments": "->%PLAYER%",
+            "description": "Débannir une ip ou un joueur"
+          },
+          "row_gui": {
+            "arguments": "->%GUI%->%PLAYER%",
+            "description": "Ouvrir un GUI (Non supporté par l'historique des sanctions, voir GUI_DYN)"
+          },
+          "row_gui_dyn": {
+            "arguments": "->%GUI%->%PLAYER%",
+            "description": "Ouvrir un GUI dynamique (Il a été fait pour ouvrir le GUI d'historique des sanctions)"
+          },
+          "row_close": {
+            "arguments": "->%PLAYER%",
+            "description": "Fermer le GUI"
+          },
+          "row_report": {
+            "arguments": "->%REASON%->%PLAYER%",
+            "description": "Reporter un joueur"
+          }
+        }
+      }
+    }
   }
 }
