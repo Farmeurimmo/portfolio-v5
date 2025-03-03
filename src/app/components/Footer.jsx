@@ -28,7 +28,7 @@ export default function Footer() {
         <>
             <footer className="footer bg-base-200 dark:bg-gray-800 text-base-content dark:text-gray-200 p-10">
                 <nav>
-                    <h6 className="footer-title">{t('services')}</h6>
+                    <h2 className="footer-title">{t('services')}</h2>
                     <Link className="link link-hover" href={`/${currentLocale}/#dev`}>{t("servicesList.dev")}</Link>
                     <Link className="link link-hover" href={`/${currentLocale}/#saas`}>{t("servicesList.saas")}</Link>
                     <Link className="link link-hover"
@@ -39,7 +39,7 @@ export default function Footer() {
                           href={`/${currentLocale}/#help`}>{t("servicesList.ondemand")}</Link>
                 </nav>
                 <nav>
-                    <h6 className="footer-title">{t("legal")}</h6>
+                    <h2 className="footer-title">{t("legal")}</h2>
                     <Link className="link link-hover" href={`/${currentLocale}/legals`}>{t("legalMentions")}</Link>
                 </nav>
             </footer>
