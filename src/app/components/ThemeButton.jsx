@@ -24,7 +24,8 @@ export default function ThemeButton({blackBackground = false}) {
         <button
             onClick={handleClick}
             className={`btn flex flex-row items-center ${blackBackground ? 'bg-black hover:bg-gray-800' : 'bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700'} text-black dark:text-white
-    border-transparent transition-all duration-100 swap swap-rotate ${blackBackground ? 'text-white' : 'text-black'}`}>
+    border-transparent transition-all duration-100 swap swap-rotate ${blackBackground ? 'text-white' : 'text-black'}`}
+            aria-label="Toggle theme between light and dark mode">
             {currentTheme === 'dark' ? (
                 <svg className="w-6 h-6 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                      fill="currentColor">
