@@ -72,6 +72,18 @@ export async function generateMetadata({params}) {
                 "twitter:description": "Take a look at my completed and ongoing projects in software development, system administration, and digital solutions.",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"
+            },
+            legals: {
+                title: "Farmeurimmo | Legal Mentions",
+                description: "Legal information and terms of use for my portfolio website. (https://farmeurimmo.fr)",
+                keywords: "legal mentions, terms of use, privacy policy, data protection, cookies, website terms",
+                "og:title": "Farmeurimmo | Legal Mentions",
+                "og:description": "Read the legal information and terms of use for my portfolio website.",
+                "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
+                "twitter:title": "Farmeurimmo | Legal Mentions",
+                "twitter:description": "Discover the legal information and terms of use for my portfolio website.",
+                "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
+                "robots": "index, nofollow"
             }
         },
         fr: {
@@ -110,6 +122,18 @@ export async function generateMetadata({params}) {
                 "twitter:description": "Découvrez mes projets terminés et en cours en développement logiciel, administration système et solutions numériques.",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"
+            },
+            legals: {
+                title: "Farmeurimmo | Mentions Légales",
+                description: "Informations légales et conditions d'utilisation pour mon site web portfolio. (https://farmeurimmo.fr)",
+                keywords: "mentions légales, conditions d'utilisation, politique de confidentialité, protection des données, cookies, conditions du site web",
+                "og:title": "Farmeurimmo | Mentions Légales",
+                "og:description": "Consultez les informations légales et conditions d'utilisation pour mon site web portfolio.",
+                "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
+                "twitter:title": "Farmeurimmo | Mentions Légales",
+                "twitter:description": "Découvrez les informations légales et conditions d'utilisation pour mon site web portfolio.",
+                "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
+                "robots": "index, nofollow"
             }
         }
     };
