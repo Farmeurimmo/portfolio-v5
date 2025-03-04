@@ -170,19 +170,19 @@ export default function ContactForm({service}) {
             w-full border border-gray-200 dark:border-gray-800 flex flex-col flex-wrap mt-10">
                 <h2 className="text-4xl font-semibold text-left text-gray-900 dark:text-white mb-4">{t("contact.otherWays")}</h2>
                 <div className="mt-6 flex flex-col flex-wrap lg:flex-row justify-evenly">
-                    <div className="flex items-center space-x-2">
-                        <MailIcon className="h-6 w-6 text-blue-500"/>
+                    <div className="flex items-center space-x-2 link">
+                        <MailIcon className="h-6 w-6"/>
                         <a href="mailto:pro@robin-massonnat.fr"
-                           className="text-blue-500 hover:underline text-lg font-medium">
+                           className="hover:underline text-lg font-medium">
                             pro@robin-massonnat.fr
                         </a>
                     </div>
-                    <div className="flex items-center space-x-2">
-                        <LinkedinIcon className="h-6 w-6 text-blue-500"/>
+                    <div className="flex items-center space-x-2 link">
+                        <LinkedinIcon className="h-6 w-6"/>
                         <a
                             href="https://www.linkedin.com/in/robin-massonnat"
                             target="_blank"
-                            className="text-blue-500 hover:underline text-lg font-medium"
+                            className="hover:underline text-lg font-medium"
                         >
                             linkedin.com/in/robin-massonnat
                         </a>
