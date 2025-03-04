@@ -208,7 +208,7 @@ const specialIcons = {
 };
 
 function getIconUrl(skillName) {
-    return (specialIcons[skillName.toLowerCase()] || `https://skillicons.dev/icons?i=${skillName.toLowerCase()}`) + '&ttl=3d';
+    return specialIcons[skillName.toLowerCase()] || `https://skillicons.dev/icons?i=${skillName.toLowerCase()}`;
 }
 
 export default function Skills() {
