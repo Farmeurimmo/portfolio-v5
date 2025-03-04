@@ -26,29 +26,32 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="footer bg-base-200 dark:bg-gray-800 text-base-content dark:text-gray-200 p-10">
+            <footer className="footer bg-gray-900 dark:bg-gray-900 text-white dark:text-white p-10">
                 <nav>
                     <h2 className="footer-title">{t('services')}</h2>
-                    <Link className="link link-hover" href={`/${currentLocale}/#dev`}>{t("servicesList.dev")}</Link>
-                    <Link className="link link-hover" href={`/${currentLocale}/#saas`}>{t("servicesList.saas")}</Link>
-                    <Link className="link link-hover"
+                    <Link className="link link-hover text-amber-400"
+                          href={`/${currentLocale}/#dev`}>{t("servicesList.dev")}</Link>
+                    <Link className="link link-hover text-amber-400"
+                          href={`/${currentLocale}/#saas`}>{t("servicesList.saas")}</Link>
+                    <Link className="link link-hover text-amber-400"
                           href={`/${currentLocale}/#admin`}>{t("servicesList.sysadmin")}</Link>
-                    <Link className="link link-hover"
+                    <Link className="link link-hover text-amber-400"
                           href={`/${currentLocale}/#installation`}>{t("servicesList.thirdpartyinstall")}</Link>
-                    <Link className="link link-hover"
+                    <Link className="link link-hover text-amber-400"
                           href={`/${currentLocale}/#help`}>{t("servicesList.ondemand")}</Link>
                 </nav>
                 <nav>
                     <h2 className="footer-title">{t("legal")}</h2>
-                    <Link className="link link-hover" href={`/${currentLocale}/legals`}>{t("legalMentions")}</Link>
+                    <Link className="link link-hover text-amber-400"
+                          href={`/${currentLocale}/legals`}>{t("legalMentions")}</Link>
                 </nav>
             </footer>
             <footer
-                className="footer bg-base-200 dark:bg-gray-800 text-base-content dark:text-gray-200 border-base-300 dark:border-gray-700 border-t px-10 py-4">
+                className="footer bg-gray-900 dark:bg-gray-900 text-white dark:text-white border-gray-700 dark:border-gray-700 border-t px-10 py-4">
                 <aside className="grid-flow-col items-center">
-                    <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo"
+                    <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading="lazy" alt="Logo"
                          className="h-12 w-12 rounded-full"/>
-                    <p className={"font-bold"}>
+                    <p className="font-bold">
                         Farmeurimmo © 2018 - {new Date().getFullYear()}. Tous droits réservés.
                         <br/>
                         {t("since")}
@@ -57,9 +60,9 @@ export default function Footer() {
                 <nav className="md:place-self-center md:justify-self-end">
                     <div className="flex flex-row flex-wrap gap-4">
                         <ThemeButton blackBackground={true}/>
-                        <div className={"flex flex-col gap-1"}>
+                        <div className="flex flex-col gap-1">
                             <Link href="https://github.com/Farmeurimmo/portfolio-v5"
-                                  className="link link-hover">{t("sourcecode")}</Link>
+                                  className="link link-hover text-amber-400">{t("sourcecode")}</Link>
                             <Link href={`https://github.com/Farmeurimmo/portfolio-v5/commit/${commitHash}`}
                                   className="link link-hover text-amber-600">{commitHash}</Link>
                         </div>
