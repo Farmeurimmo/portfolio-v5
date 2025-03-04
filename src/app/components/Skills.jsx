@@ -208,7 +208,7 @@ const specialIcons = {
 };
 
 function getIconUrl(skillName) {
-    return specialIcons[skillName.toLowerCase()] || `https://skillicons.dev/icons?i=${skillName.toLowerCase()}`;
+    return (specialIcons[skillName.toLowerCase()] || `https://skillicons.dev/icons?i=${skillName.toLowerCase()}`) + '&ttl=3d';
 }
 
 export default function Skills() {
@@ -229,7 +229,7 @@ export default function Skills() {
                                    className="flex flex-col items-center gap-2" title={skill.name}>
                                     <img src={getIconUrl(skill.name)}
                                          className="w-16 h-16 lg:w-20 lg:h-20 rounded-full"
-                                         alt={skill.name} loading={"lazy"}/>
+                                         alt={`Logo de ${skill.name}`} loading="lazy"/>
                                     <p className="text-sm sm:text-base lg:text-lg text-gray-800 dark:text-gray-200">{skill.name}</p>
                                 </a>
                             </div>
