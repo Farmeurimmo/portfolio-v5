@@ -37,7 +37,7 @@ export async function generateMetadata({params}) {
         en: {
             default: {
                 title: "Farmeurimmo | Portfolio - Developer & System Administrator",
-                description: "Explore my portfolio as a developer, system administrator, and digital solutions provider. I offer SaaS, system administration, infrastructure management, and more.",
+                description: "Discover my portfolio as a developer and system administrator. SaaS services, infrastructure management, and digital solutions.",
                 keywords: "developer, system administrator, SaaS, infrastructure management, programming, automation, cloud solutions, security, digital solutions",
                 "og:title": "Farmeurimmo | Portfolio - Developer & System Administrator",
                 "og:description": "Discover my expertise in software development, system administration, SaaS solutions, and digital projects.",
@@ -87,7 +87,7 @@ export async function generateMetadata({params}) {
         fr: {
             default: {
                 title: "Farmeurimmo | Portfolio - Développeur & Administrateur Système",
-                description: "Découvrez mon portfolio en tant que développeur, administrateur système et prestataire de solutions numériques. Je propose des services en SaaS, administration système, gestion des infrastructures et plus encore.",
+                description: "Découvrez mon portfolio de développeur et administrateur système. Services en SaaS, gestion d’infrastructure et solutions numériques.",
                 keywords: "développeur, administrateur système, SaaS, gestion des infrastructures, programmation, automatisation, solutions cloud, sécurité, solutions numériques",
                 "og:title": "Farmeurimmo | Portfolio - Développeur & Administrateur Système",
                 "og:description": "Découvrez mon expertise en développement logiciel, administration système, solutions SaaS et projets numériques.",
