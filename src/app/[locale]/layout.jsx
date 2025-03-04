@@ -21,17 +21,15 @@ export const viewport = {
 }
 
 export async function generateMetadata({params}) {
-    const {locale} = await params;
+    const { locale } = await params;
     const headersList = await headers();
-    let pathname = headersList.get("x-request-url").replace("https://farmeurimmo.fr", "")
-        .replace("https://v5.farmeurimmo.fr", "").replace("http://localhost:3000", "")
+    let pathname = headersList.get("x-request-url")
+        .replace("https://farmeurimmo.fr", "")
+        .replace("https://v5.farmeurimmo.fr", "")
+        .replace("http://localhost:3000", "")
         .replace(`/${locale}`, "");
 
-    if (/^\/blog\/.*/.test(pathname)) {
-        return;
-    }
-
-    if (/^\/projects\/.*/.test(pathname)) {
+    if (/^\/(blog|projects)\//.test(pathname)) {
         return;
     }
 
@@ -139,33 +137,35 @@ export async function generateMetadata({params}) {
     };
 
     const pageType = pathname.replace("/", "") || "default";
+
     try {
-        const {
-            title,
-            description,
-            keywords,
-            "og:title": ogTitle,
-            "og:description": ogDescription,
-            "og:image": ogImage,
-            "twitter:title": twitterTitle,
-            "twitter:description": twitterDescription,
-            "twitter:image": twitterImage,
-            robots
-        } = metadata[locale][pageType];
+        const meta = metadata[locale]?.[pageType];
+
+        if (!meta) {
+            console.error(`Metadata introuvable pour locale="${locale}" et pageType="${pageType}"`);
+            return;
+        }
 
         return {
-            title,
-            description,
-            keywords,
-            "og:title": ogTitle,
-            "og:description": ogDescription,
-            "og:image": ogImage,
-            "twitter:title": twitterTitle,
-            "twitter:description": twitterDescription,
-            "twitter:image": twitterImage,
-            robots,
+            title: meta.title,
+            description: meta.description,
+            keywords: meta.keywords,
+            robots: meta.robots,
+            openGraph: {
+                title: meta["og:title"],
+                description: meta["og:description"],
+                images: [{ url: meta["og:image"] }],
+                url: `https://farmeurimmo.fr/${locale}${pathname}`,
+                siteName: meta["og:title"],
+            },
+            twitter: {
+                title: meta["twitter:title"],
+                description: meta["twitter:description"],
+                images: [{ url: meta["twitter:image"] }],
+            },
         };
     } catch (e) {
+        console.error("Erreur dans la récupération des métadonnées:", e);
     }
 }
 
