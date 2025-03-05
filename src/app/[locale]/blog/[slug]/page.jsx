@@ -30,14 +30,25 @@ export async function generateMetadata(props) {
         return notFound();
     }
 
-    const title = `${post.title} | Next.js Blog Example`;
+    const title = `${post.title} | Blog of Farmeurimmo`;
+    const description = post.excerpt.length > 160 ? post.excerpt.substring(0, 157) + "..." : post.excerpt;
 
     return {
         title,
         openGraph: {
             title,
             images: [post.coverImage],
+            robots: "follow, index",
         },
+        twitter: {
+            cardType: "summary_large_image",
+            site: "@farmeurimmo",
+            images: [post.coverImage],
+            title: title,
+            description: description,
+        },
+        description: description,
+        keywords: post.tags.join(", "),
     };
 }
 
