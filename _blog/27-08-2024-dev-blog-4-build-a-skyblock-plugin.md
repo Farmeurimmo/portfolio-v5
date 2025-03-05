@@ -4,6 +4,11 @@ title: "Build a Skyblock Plugin (part 4): Cross server auctions"
 excerpt: "This article explores the Skyblock plugin's auction system, detailing how players can sell and buy items across servers."
 coverImage: "https://cdn.farmeurimmo.fr/img/blog/27-08-2024-dev-blog-4-build-a-skyblock-plugin.jpeg"
 date: "2024-08-27T11:00:00.000Z"
+tags:
+  - Minecraft
+  - Spigot
+  - Plugin Development
+  - Skyblock
 author:
   name: "Farmeurimmo"
   picture: "https://cdn.farmeurimmo.fr/img/logo.png"

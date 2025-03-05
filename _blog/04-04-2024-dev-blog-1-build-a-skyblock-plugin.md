@@ -4,6 +4,11 @@ title: "Build a Skyblock Plugin (Part 1): Introduction"
 excerpt: "This article outlines the development of a Minecraft Skyblock plugin for Spigot servers, starting with project goals and context."
 coverImage: "https://cdn.farmeurimmo.fr/img/blog/04-04-2024-dev-blog-1-build-a-skyblock-plugin.jpeg"
 date: "2024-04-04T21:00:00.000Z"
+tags:
+  - Minecraft
+  - Spigot
+  - Plugin Development
+  - Skyblock
 author:
   name: "Farmeurimmo"
   picture: "https://cdn.farmeurimmo.fr/img/logo.png"

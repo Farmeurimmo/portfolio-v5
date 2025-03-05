@@ -4,6 +4,11 @@ title: "New website with portfolio in its 4th version"
 excerpt: "This article explores the motivations, tech stack (Svelte, Vite, Tailwind CSS), and features (contact form, blog, multilingual) of my fourth website."
 coverImage: "https://cdn.farmeurimmo.fr/img/blog/28-03-2024-new-website-portfolio-v4-edition.jpeg"
 date: "2024-03-28T21:00:00.000Z"
+tags:
+  - Website
+  - Portfolio
+  - Svelte
+  - Vite
 author:
   name: "Farmeurimmo"
   picture: "https://cdn.farmeurimmo.fr/img/logo.png"

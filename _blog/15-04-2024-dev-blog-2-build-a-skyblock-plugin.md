@@ -4,6 +4,11 @@ title: "Build a Skyblock Plugin (part 2): Island System"
 excerpt: "This article delves into the Skyblock plugin's island system, focusing on cross-server compatibility, island distribution, and data management."
 coverImage: "https://cdn.farmeurimmo.fr/img/blog/15-04-2024-dev-blog-2-build-a-skyblock-plugin.jpeg"
 date: "2024-04-15T11:28:00.000Z"
+tags:
+  - Minecraft
+  - Spigot
+  - Plugin Development
+  - Skyblock
 author:
   name: "Farmeurimmo"
   picture: "https://cdn.farmeurimmo.fr/img/logo.png"

@@ -4,6 +4,11 @@ title: "Build a Skyblock Plugin (part 3): Inventory Sync System"
 excerpt: "This article explores the Skyblock plugin's inventory synchronization system, detailing how player inventories are managed across servers."
 coverImage: "https://cdn.farmeurimmo.fr/img/blog/18-07-2024-dev-blog-3-build-a-skyblock-plugin.jpeg"
 date: "2024-07-18T11:00:00.000Z"
+tags:
+  - Minecraft
+  - Spigot
+  - Plugin Development
+  - Skyblock
 author:
   name: "Farmeurimmo"
   picture: "https://cdn.farmeurimmo.fr/img/logo.png"
