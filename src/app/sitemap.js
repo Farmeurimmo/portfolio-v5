@@ -15,7 +15,7 @@ export default function sitemap() {
     );
 
     return [...getEntries('/'), ...getEntries('/blog'), ...getEntries('/projects'),
-        ...getEntries('/legals'), ...getEntries('/privacy'), ...blogSlugs]
+        ...getEntries('/legals'), ...blogSlugs]
 }
 
 function getEntries(href) {
