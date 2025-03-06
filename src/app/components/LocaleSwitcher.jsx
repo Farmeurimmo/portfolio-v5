@@ -1,17 +1,18 @@
 'use client';
 
 import {useParams} from 'next/navigation';
-import {useTransition} from 'react';
+import {useState, useTransition} from 'react';
 import {routing, usePathname, useRouter} from '@/i18n/routing';
 import {useTranslations} from "next-intl";
 
 export default function LocaleSwitcher({defaultValue}) {
     const router = useRouter();
-    const [isPending, startTransition] = useTransition();
+    const [startTransition] = useTransition();
     const pathname = usePathname();
     const params = useParams();
     const t = useTranslations('LocaleSwitcher');
     const currentLocale = params.locale || defaultValue;
+    const [isOpen, setIsOpen] = useState(false);
 
     function onSelectChange(event) {
         const nextLocale = event.target.value;
@@ -24,11 +25,13 @@ export default function LocaleSwitcher({defaultValue}) {
     }
 
     return (
-        <div className="dropdown dropdown-hover">
+        <div className="dropdown dropdown-hover"
+             onMouseEnter={() => setIsOpen(true)}
+             onMouseLeave={() => setIsOpen(false)}>
             <button tabIndex={0} className="btn flex flex-row items-center bg-white dark:bg-gray-800 text-black
             dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 border-transparent" aria-label="Locale Switcher">
                 {t('locale', {locale: currentLocale})}
-                <span className="mb-4 text-2xl font-bold">⌄</span>
+                <span className={`font-bold ${isOpen ? 'rotate-0' : 'rotate-90'}`}>▽</span>
             </button>
             <ul tabIndex={0}
                 className="dropdown-content menu bg-white dark:bg-gray-800 rounded-box z-[1] w-36 p-2 border border-gray-700 dark:border-gray-300">
