@@ -22,6 +22,8 @@ export default function BaseLayout({children, locale = "en"}) {
 
             <link rel={"alternate"} hrefLang={"fr"} href={"https://farmeurimmo.fr/fr"}/>
             <link rel={"alternate"} hrefLang={"en"} href={"https://farmeurimmo.fr/en"}/>
+
+            <meta lang={locale} />
         </head>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen w-screen min-w-[400px]`}>
         {children}
