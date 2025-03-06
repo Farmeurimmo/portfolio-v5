@@ -45,6 +45,16 @@ export default function Footer() {
                     <Link className="link link-hover text-amber-400"
                           href={`/${currentLocale}/legals`}>{t("legalMentions")}</Link>
                 </nav>
+                <nav>
+                    <h2 className="footer-title">{t("others")}</h2>
+                    <Link className="link link-hover text-amber-400" href="https://status.farmeurimmo.fr">
+                        {t("status")}</Link>
+                    <Link className="link link-hover text-amber-400"
+                          href="https://www.linkedin.com/in/farmeurimmo/">{t("linkedin")}</Link>
+                    <Link className="link link-hover text-amber-400"
+                          href="https://github.com/Farmeurimmo">{t("github")}</Link>
+                    <p className={"text-amber-400"}>{t("discord")}</p>
+                </nav>
             </footer>
             <footer
                 className="footer bg-gray-900 dark:bg-gray-900 text-white dark:text-white border-gray-700 dark:border-gray-700 border-t px-10 py-4">

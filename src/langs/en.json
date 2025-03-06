@@ -124,7 +124,12 @@
     "legalMentions": "Legal Mentions",
     "privacy": "Privacy Policy",
     "since": "Developer since 2018.",
-    "sourcecode": "Source Code"
+    "sourcecode": "Source Code",
+    "others": "Others",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "discord": "Discord: Farmeurimmo",
+    "status": "Services Status"
   },
   "projects": {
     "projects": [
