@@ -20,7 +20,7 @@ export function Navbar() {
                     <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading={"lazy"} alt="Logo"
                          className="h-8 w-8 rounded-full"/>
                     <Link className="text-2xl font-bold hover:text-orange-500"
-                          href={"/public" + currentLocale}>Farmeurimmo</Link>
+                          href={"/" + currentLocale}>Farmeurimmo</Link>
                 </div>
                 <div className="flex flex-row items-center gap-4">
                     <Link href={`/${currentLocale}/#`}
