@@ -26,6 +26,11 @@ function PostCard({post}) {
             <div className="p-4">
                 <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{post.title}</h2>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">{post.excerpt}</p>
+                <div className="flex flex-wrap gap-2 items-center">
+                    {post.tags.map(tag => (
+                        <div key={tag} className="badge badge-info">{tag}</div>
+                    ))}
+                </div>
             </div>
         </Link>
     );
