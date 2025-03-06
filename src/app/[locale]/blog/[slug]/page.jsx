@@ -30,7 +30,7 @@ export async function generateMetadata(props) {
         return notFound();
     }
 
-    const title = `${post.title} | Blog of Farmeurimmo`;
+    let title = post.title.length > 60 ? post.title.substring(0, 57) + "..." : post.title;
     const description = post.excerpt.length > 160 ? post.excerpt.substring(0, 157) + "..." : post.excerpt;
 
     return {
