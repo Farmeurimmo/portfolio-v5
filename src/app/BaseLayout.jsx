@@ -1,15 +1,4 @@
-import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
 
 export default function BaseLayout({children, locale = "en"}) {
     return (
@@ -25,7 +14,7 @@ export default function BaseLayout({children, locale = "en"}) {
 
             <meta lang={locale} />
         </head>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen w-screen min-w-[400px]`}>
+        <body className={`antialiased min-h-screen w-screen min-w-[400px]`}>
         {children}
         </body>
         </html>
