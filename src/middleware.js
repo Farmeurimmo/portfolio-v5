@@ -12,7 +12,17 @@ export default async function customMiddleware(req, ev) {
 
     if (pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.startsWith("/installHook.js") ||
         pathname.startsWith("/sitemap.xml") || pathname.startsWith("/robots.txt")) {
-        return NextResponse.next();
+        const res = NextResponse.next()
+
+        if (pathname.startsWith(("/api"))) {
+            const origin = req.headers.get("Origin");
+            const allowedOrigin = origin && (origin.endsWith(".farmeurimmo.fr") || origin === "https://farmeurimmo.fr") ? origin : "null";
+
+            res.headers.append('Access-Control-Allow-Origin', allowedOrigin);
+            res.headers.append('Access-Control-Allow-Methods', 'POST');
+            res.headers.append('Access-Control-Allow-Headers', 'Content-Type');
+        }
+        return res;
     }
 
     if (!/^\/(fr|en)/.test(pathname)) {
