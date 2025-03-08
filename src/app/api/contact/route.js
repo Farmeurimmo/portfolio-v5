@@ -14,19 +14,23 @@ export async function POST(request) {
         message
     };
 
-    fetch(webhook, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    }).then(r => {
-        if (r.ok) {
+    try {
+        const response = await fetch(webhook, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
             return new Response("Message sent", {status: 200});
         } else {
             return new Response("The contact url did not like the data.", {status: 500});
         }
-    });
+    } catch (error) {
+        return new Response("An error occurred while sending the message.", {status: 500});
+    }
 }
 
 export async function OPTIONS(request) {
