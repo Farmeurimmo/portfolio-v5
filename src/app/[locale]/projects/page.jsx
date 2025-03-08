@@ -13,7 +13,7 @@ export default function ProjectsHome() {
             <p className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-8">{t('description')}</p>
             <ul className={`flex flex-wrap gap-6 mt-4 p-4 justify-start`}>
                 {projects.map((project) => (
-                    <li key={project.id} className="min-w-[250px] grow flex-1 max-w-[500px]">
+                    <li key={project.id} className="min-w-[250px] flex-grow flex-1 max-w-[500px]">
                         <Link href={`/projects/${project.id}`} passHref>
                             <div className={`flex flex-col justify-between items-center text-center flex-1 min-w-[250px]
                              p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[500px] hover:scale-105 

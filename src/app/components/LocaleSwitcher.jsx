@@ -7,7 +7,7 @@ import {useTranslations} from "next-intl";
 
 export default function LocaleSwitcher({defaultValue}) {
     const router = useRouter();
-    const [isPending, startTransition] = useTransition();
+    const [startTransition] = useTransition();
     const pathname = usePathname();
     const params = useParams();
     const t = useTranslations('LocaleSwitcher');
@@ -34,7 +34,7 @@ export default function LocaleSwitcher({defaultValue}) {
                 <span className={`font-bold ${isOpen ? 'rotate-0' : 'rotate-90'}`}>▽</span>
             </button>
             <ul tabIndex={0}
-                className="dropdown-content menu bg-white dark:bg-gray-800 rounded-box z-1 w-36 p-2 border border-gray-700 dark:border-gray-300">
+                className="dropdown-content menu bg-white dark:bg-gray-800 rounded-box z-[1] w-36 p-2 border border-gray-700 dark:border-gray-300">
                 {routing.locales.map((cur) => (
                     <li key={cur} className="menu-item">
                         <button

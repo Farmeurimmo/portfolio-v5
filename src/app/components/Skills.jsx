@@ -224,7 +224,7 @@ export default function Skills() {
                     <div className="flex flex-wrap gap-4">
                         {groupedSkills[category].map(skill => (
                             <div key={skill.name}
-                                 className={`card ${groupedSkills[category].length > 1 ? 'grow' : ''}`}>
+                                 className={`card ${groupedSkills[category].length > 1 ? 'flex-grow' : ''}`}>
                                 <a href={skill.href} target="_blank"
                                    className="flex flex-col items-center gap-2" title={skill.name}>
                                     <img src={getIconUrl(skill.name)}
