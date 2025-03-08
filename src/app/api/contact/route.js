@@ -28,3 +28,17 @@ export async function POST(request) {
         }
     });
 }
+
+export async function OPTIONS(request) {
+    const origin = request.headers.get("Origin");
+    const allowedOrigin = origin && (origin.endsWith(".farmeurimmo.fr") || origin === "https://farmeurimmo.fr") ? origin : "null";
+
+    return new Response(null, {
+        headers: {
+            "Access-Control-Allow-Origin": allowedOrigin,
+            "Access-Control-Allow-Methods": "POST, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type"
+        },
+        status: 200
+    });
+}
