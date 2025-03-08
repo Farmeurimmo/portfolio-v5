@@ -2,7 +2,7 @@ export async function POST(request) {
     const webhook = process.env.WEBHOOK_URL;
 
     if (!webhook) {
-        return new Response("Webhook URL not defined", {status: 500});
+        return new Response("Problem from my side: the contact URL is invalid.", {status: 500});
     }
 
     const body = await request.json();
@@ -24,7 +24,7 @@ export async function POST(request) {
         if (r.ok) {
             return new Response("Message sent", {status: 200});
         } else {
-            return new Response("An error occurred", {status: 500});
+            return new Response("The contact url did not like the data.", {status: 500});
         }
     });
 }
