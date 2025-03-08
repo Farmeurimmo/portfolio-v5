@@ -26,7 +26,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="footer bg-gray-900 dark:bg-gray-900 text-white dark:text-white p-10">
+            <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
                 <nav>
                     <h2 className="footer-title">{t('services')}</h2>
                     <Link className="link link-hover text-amber-400"
@@ -57,7 +57,7 @@ export default function Footer() {
                 </nav>
             </footer>
             <footer
-                className="footer bg-gray-900 dark:bg-gray-900 text-white dark:text-white border-gray-700 dark:border-gray-700 border-t px-10 py-4">
+                className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4 border-t">
                 <aside className="grid-flow-col items-center">
                     <img src="https://cdn.farmeurimmo.fr/img/logo.jpg" loading="lazy" alt="Logo"
                          className="h-12 w-12 rounded-full"/>
