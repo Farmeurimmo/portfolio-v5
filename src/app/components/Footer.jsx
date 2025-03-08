@@ -69,7 +69,7 @@ export default function Footer() {
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">
                     <div className="flex flex-row flex-wrap gap-4">
-                        <ThemeButton blackBackground={true}/>
+                        <ThemeButton/>
                         <div className="flex flex-col gap-1">
                             <Link href="https://github.com/Farmeurimmo/portfolio-v5"
                                   className="link link-hover text-amber-400">{t("sourcecode")}</Link>

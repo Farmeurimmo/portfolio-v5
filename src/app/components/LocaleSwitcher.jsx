@@ -28,8 +28,8 @@ export default function LocaleSwitcher({defaultValue}) {
         <div className="dropdown dropdown-hover"
              onMouseEnter={() => setIsOpen(true)}
              onMouseLeave={() => setIsOpen(false)}>
-            <button tabIndex={0} className="btn flex flex-row items-center bg-white dark:bg-gray-800 text-black
-            dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 border-transparent" aria-label="Locale Switcher">
+            <button tabIndex={0} className="btn btn-soft btn-neutral flex flex-row items-center dark:text-white"
+                    aria-label="Locale Switcher">
                 {t('locale', {locale: currentLocale})}
                 <span className={`font-bold ${isOpen ? 'rotate-0' : 'rotate-90'}`}>▽</span>
             </button>

@@ -3,7 +3,7 @@
 import React, {useEffect, useState} from 'react';
 import {useTheme} from "next-themes";
 
-export default function ThemeButton({blackBackground = false}) {
+export default function ThemeButton() {
     const {systemTheme, theme, setTheme} = useTheme();
     const [mounted, setMounted] = useState(false);
 
@@ -23,8 +23,7 @@ export default function ThemeButton({blackBackground = false}) {
     return (
         <button
             onClick={handleClick}
-            className={`btn flex flex-row items-center ${blackBackground ? 'bg-black hover:bg-gray-800' : 'bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700'} text-black dark:text-white
-    border-transparent transition-all duration-100 swap swap-rotate ${blackBackground ? 'text-white' : 'text-black'}`}
+            className={`btn btn-soft btn-neutral flex flex-row items-center`}
             aria-label="Toggle theme between light and dark mode">
             {currentTheme === 'dark' ? (
                 <svg className="w-6 h-6 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
