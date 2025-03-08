@@ -83,7 +83,7 @@ export default function MainPageContent() {
                             <p className="text-gray-700 dark:text-gray-300 text-sm italic">
                                 {t(service.description)}
                             </p>
-                            <span className="mt-2 px-4 py-2 btn btn-info rounded-xl">
+                            <span className="mt-2 px-4 py-2 btn btn-soft btn-info rounded-xl">
                                 En savoir plus
                             </span>
                         </div>
