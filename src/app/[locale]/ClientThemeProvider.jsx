@@ -12,5 +12,5 @@ export default function ClientThemeProvider({children}) {
 
     if (!mounted) return null;
 
-    return <ThemeProvider attribute="class">{children}</ThemeProvider>;
+    return <ThemeProvider attribute="data-theme">{children}</ThemeProvider>;
 }

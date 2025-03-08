@@ -1,18 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-    --background: #ffffff;
-    --foreground: #171717;
-}
-
-html, .dark {
-    --background: #171717;
-    --foreground: #ffffff;
-}
-
-body {
-    color: var(--foreground);
-    background: var(--background);
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark, cupcake;
 }

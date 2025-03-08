@@ -68,7 +68,7 @@ export default function ContactForm({service}) {
     };
 
     return (
-        <div className="flex flex-col gap-6 px-2 py-8 items-start justify-center w-full max-w-screen-2xl">
+        <div className="flex flex-col gap-6 px-2 py-8 items-start justify-center w-full max-w-(--breakpoint-2xl)">
             <form
                 onSubmit={handleSubmit}
                 className="flex flex-col gap-6 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white
@@ -156,7 +156,7 @@ export default function ContactForm({service}) {
 
                 <button
                     type="submit"
-                    className="btn btn-primary w-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="btn btn-primary w-full hover:bg-blue-600 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
                     disabled={loading || !Object.values(formFieldValidity).every(Boolean)}
                 >
                     {loading ? <span className="loading loading-spinner"></span> : t("contact.submit")}
