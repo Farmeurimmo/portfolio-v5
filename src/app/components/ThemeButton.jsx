@@ -23,7 +23,7 @@ export default function ThemeButton() {
     return (
         <button
             onClick={handleClick}
-            className={`btn btn-soft btn-neutral flex flex-row items-center`}
+            className={`btn btn-soft btn-neutral flex flex-row items-center swap swap-rotate`}
             aria-label="Toggle theme between light and dark mode">
             {currentTheme === 'dark' ? (
                 <svg className="w-6 h-6 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
