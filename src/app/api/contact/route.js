@@ -17,7 +17,7 @@ export async function POST(request) {
             body: JSON.stringify({
                 'content': `**Username:** ${username}\n**Email:** ${email}\n**Object:** ${object}\n**Message:** ${message}`,
                 'username': 'Contact Form (v5)',
-                'avatar_url': 'https://cdn.farmeurimmo.fr/img/logo.png'
+                'avatar_url': 'https://cdn.farmeurimmo.fr/img/logo.jpg'
             })
         });
 
