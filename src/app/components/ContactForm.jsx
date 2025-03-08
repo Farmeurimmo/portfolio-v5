@@ -68,7 +68,7 @@ export default function ContactForm({service}) {
     };
 
     return (
-        <div className="flex flex-col gap-6 px-2 py-8 items-start justify-center w-full max-w-(--breakpoint-2xl)">
+        <div className="flex flex-col gap-6 px-2 py-8 items-start justify-center w-full max-w-7xl">
             <form
                 onSubmit={handleSubmit}
                 className="flex flex-col gap-6 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white
@@ -86,7 +86,7 @@ export default function ContactForm({service}) {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            className={`input input-bordered bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white ${
+                            className={`input input-bordered bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white w-full ${
                                 formFieldValidity.email ? "input-success" : "input-error"
                             }`}
                             placeholder={t("contact.emailPlaceholder")}
@@ -105,7 +105,7 @@ export default function ContactForm({service}) {
                             name="username"
                             value={formData.username}
                             onChange={handleChange}
-                            className={`input input-bordered bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white ${
+                            className={`input input-bordered bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white w-full ${
                                 formFieldValidity.username ? "input-success" : "input-error"
                             }`}
                             placeholder={t("contact.usernamePlaceholder")}
@@ -125,7 +125,7 @@ export default function ContactForm({service}) {
                         name="object"
                         value={formData.object}
                         onChange={handleChange}
-                        className={`input input-bordered bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white ${
+                        className={`input input-bordered bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white w-full ${
                             formFieldValidity.object ? "input-success" : "input-error"
                         }`}
                         placeholder={t("contact.objectPlaceholder")}
@@ -143,7 +143,7 @@ export default function ContactForm({service}) {
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
-                        className={`textarea textarea-bordered bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white ${
+                        className={`textarea textarea-bordered bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white w-full ${
                             formFieldValidity.message ? "textarea-success" : "textarea-error"
                         }`}
                         placeholder={t("contact.messagePlaceholder")}
