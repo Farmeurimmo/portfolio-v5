@@ -4,6 +4,8 @@
     themes: light --default, dark --prefersdark, cupcake;
 }
 
+@custom-variant dark (&:where([data-theme=light], [data-theme=dark] *));
+
 @layer components {
     .markdown {
         @apply text-lg leading-relaxed;
