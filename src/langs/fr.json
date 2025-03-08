@@ -14,28 +14,32 @@
       "Languages": "Langages"
     },
     "services": {
-      "title": "Mes services",
+      "title": "Mes Services",
+      "java_dev": {
+        "title": "Développement Java",
+        "description": "Développement d'APIs Spring Boot et de plugins Minecraft (Paper, Velocity, BungeeCord)."
+      },
       "web_dev": {
-        "title": "Développement web",
-        "description": "Développement de sites web et d'applications web sur mesure pour répondre à vos besoins."
+        "title": "Développement Web",
+        "description": "Développement de sites web et d'applications web sur mesure."
       },
       "saas": {
-        "title": "SaaS",
-        "description": "Développement de logiciels en tant que service pour vous aider à gérer votre entreprise."
+        "title": "Software as a Service",
+        "description": "Développement de solutions SaaS sur mesure."
       },
       "installation": {
-        "title": "Installation de logiciels",
+        "title": "Installation de Logiciels",
         "description": "Installation et configuration de logiciels tiers (panneau de contrôle, CMS, etc.)."
       },
       "admin": {
-        "title": "Administration système",
-        "description": "Gestion de serveurs, configuration de services, dépannage, firewalling, optimisation, etc."
+        "title": "Administration Système",
+        "description": "Gestion de serveurs, configuration de services, dépannage, gestion de pare-feu, optimisation, etc."
       },
       "help": {
-        "title": "Besoin d'aide ? Autre ?",
-        "description": "N'hésitez pas à me contacter pour toute autre demande ou pour obtenir de l'aide."
+        "title": "Consultation & Support",
+        "description": "Assistance technique, conseils, dépannage pour vos projets, ou toute autre demande."
       },
-      "contact": "Contactez-moi pour plus d'informations",
+    "contact": "Contactez-moi pour plus d'informations",
       "contactButton": "Me contacter"
     },
     "contact": {
@@ -114,7 +118,8 @@
   "Footer": {
     "services": "Services",
     "servicesList": {
-      "dev": "Développement",
+      "java": "Développement Java",
+      "webdev": "Développement web",
       "saas": "Logiciel en tant que service (SaaS)",
       "sysadmin": "Administration système",
       "thirdpartyinstall": "Installation de logiciels tiers",

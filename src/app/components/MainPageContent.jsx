@@ -19,34 +19,40 @@ export default function MainPageContent() {
 
     const services = [
         {
-            id: "dev",
+            id: "dev_java",
+            title: "services.java_dev.title",
+            description: "services.java_dev.description",
+            icon: <Code className="h-16 w-16 text-orange-600 dark:text-orange-400 mb-3"/>
+        },
+        {
+            id: "dev_web",
             title: "services.web_dev.title",
             description: "services.web_dev.description",
-            icon: <Code className="h-20 w-20 text-blue-600 dark:text-blue-400 mb-3"/>
+            icon: <Code className="h-16 w-16 text-blue-600 dark:text-blue-400 mb-3"/>
         },
         {
             id: "saas",
             title: "services.saas.title",
             description: "services.saas.description",
-            icon: <Cloud className="h-20 w-20 text-green-600 dark:text-green-400 mb-3"/>
+            icon: <Cloud className="h-16 w-16 text-green-600 dark:text-green-400 mb-3"/>
         },
         {
             id: "admin",
             title: "services.admin.title",
             description: "services.admin.description",
-            icon: <Server className="h-20 w-20 text-purple-600 dark:text-purple-400 mb-3"/>
+            icon: <Server className="h-16 w-16 text-purple-600 dark:text-purple-400 mb-3"/>
         },
         {
             id: "installation",
             title: "services.installation.title",
             description: "services.installation.description",
-            icon: <Wrench className="h-20 w-20 text-orange-600 dark:text-orange-400 mb-3"/>
+            icon: <Wrench className="h-16 w-16 text-yellow-600 dark:text-yellow-400 mb-3"/>
         },
         {
-            id: "help",
+            id: "support",
             title: "services.help.title",
             description: "services.help.description",
-            icon: <CircleHelp className="h-20 w-20 text-red-600 dark:text-red-400 mb-3"/>
+            icon: <CircleHelp className="h-16 w-16 text-red-600 dark:text-red-400 mb-3"/>
         },
     ];
 

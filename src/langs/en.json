@@ -15,13 +15,17 @@
     },
     "services": {
       "title": "My Services",
+      "java_dev": {
+        "title": "Java Development",
+        "description": "Development of Spring Boot APIs and Minecraft plugins (Paper, Velocity, BungeeCord)."
+      },
       "web_dev": {
         "title": "Web Development",
-        "description": "Custom website and web application development to meet your needs."
+        "description": "Custom website and web application development."
       },
       "saas": {
-        "title": "SaaS",
-        "description": "Software as a Service (SaaS) development to help you manage your business."
+        "title": "Software as a Service",
+        "description": "Development of custom SaaS solutions."
       },
       "installation": {
         "title": "Software Installation",
@@ -32,10 +36,10 @@
         "description": "Server management, service configuration, troubleshooting, firewalling, optimization, etc."
       },
       "help": {
-        "title": "Need help? Something else?",
-        "description": "Feel free to contact me for any other request or assistance."
+        "title": "Consulting & Support",
+        "description": "Technical assistance, advice, troubleshooting for your projects, or any other requests."
       },
-      "contact": "Contact me for more information",
+    "contact": "Contact me for more information",
       "contactButton": "Contact me"
     },
     "contact": {
@@ -114,7 +118,8 @@
   "Footer": {
     "services": "Services",
     "servicesList": {
-      "dev": "Development",
+      "java": "Java Development",
+      "webdev": "Web Development",
       "saas": "Software as a Service (SaaS)",
       "sysadmin": "System Administration",
       "thirdpartyinstall": "Third-party Software Installation",
