@@ -50,7 +50,7 @@ export default function ReaperSanction() {
     ];
 
     return (
-        <section id="blog" className="flex flex-col min-h-screen p-4 lg:p-8">
+        <section id="blog" className="flex flex-col min-h-screen p-4 lg:p-8 max-w-7xl w-full justify-center mx-auto">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">{t('title')}</h1>
             <p className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-8">{t('description')}</p>
 
