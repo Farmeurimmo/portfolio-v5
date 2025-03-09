@@ -37,42 +37,42 @@ export async function generateMetadata({params}) {
         en: {
             default: {
                 title: "Farmeurimmo | Developer and System Administrator",
-                description: "Discover my portfolio as a developer and system administrator. SaaS services, infrastructure management, and digital solutions.",
-                keywords: "developer, system administrator, SaaS, infrastructure management, programming, automation, cloud solutions, security, digital solutions",
+                description: "Explore my portfolio as a web and Java developer, system administrator, infrastructure management specialist, and digital solutions provider.",
+                keywords: "developer, system administrator, web, Java, infrastructure management, programming, automation, cloud solutions, security, digital solutions",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
-                "robots": "index, follow"
+                robots: "index, follow"
             },
             blog: {
-                title: "Farmeurimmo | Technology and Development Blog",
-                description: "Insights and discussions on technology, software development, system administration, and digital solutions.",
+                title: "Farmeurimmo | Blog on Technology and Development",
+                description: "Insights and discussions on technology, development, system administration, and digital solutions.",
                 keywords: "blog, technology, development, system administration, programming, cloud computing, automation, software engineering, cybersecurity, digital solutions",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
-                "robots": "index, follow"
+                robots: "index, follow"
             },
             projects: {
-                title: "Farmeurimmo | Projects Developed and Ongoing",
+                title: "Farmeurimmo | Developed and Ongoing Projects",
                 description: "A showcase of my completed and ongoing projects in development, system administration, and digital solutions.",
-                keywords: "projects, software development, system administration, digital solutions, programming, automation, cloud solutions, infrastructure, DevOps, SaaS",
+                keywords: "projects, software development, system administration, digital solutions, programming, automation, cloud solutions, infrastructure, DevOps, web, java",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
-                "robots": "index, follow"
+                robots: "index, follow"
             },
             legals: {
-                title: "Farmeurimmo | Terms & Legal Information",
-                description: "Find all legal information, terms of use, and privacy policies related to my portfolio website. Compliance and transparency.",
-                keywords: "legal, terms, privacy policy, data protection, cookies, website terms",
+                title: "Farmeurimmo | Terms & Legal Notices",
+                description: "Find all legal notices, terms of use, and privacy policies related to my portfolio website.",
+                keywords: "legal notices, terms of use, privacy policy, data protection, cookies, website terms",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
-                "robots": "index, nofollow"
+                robots: "index, nofollow"
             }
         },
         fr: {
             default: {
                 title: "Farmeurimmo | Développeur et Administrateur Système",
-                description: "Découvrez mon portfolio de développeur et administrateur système. Services en SaaS, gestion d’infrastructure et solutions numériques.",
-                keywords: "développeur, administrateur système, SaaS, gestion des infrastructures, programmation, automatisation, solutions cloud, sécurité, solutions numériques",
+                description: "Découvrez mon portfolio de développeur web et java, administrateur système, gestion d’infrastructure et solutions numériques.",
+                keywords: "développeur, administrateur système, web, java, gestion des infrastructures, programmation, automatisation, solutions cloud, sécurité, solutions numériques",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"
@@ -88,7 +88,7 @@ export async function generateMetadata({params}) {
             projects: {
                 title: "Farmeurimmo | Projets développés et en cours",
                 description: "Une vitrine de mes projets terminés et en cours en développement, administration système et solutions numériques.",
-                keywords: "projets, développement logiciel, administration système, solutions numériques, programmation, automatisation, solutions cloud, infrastructure, DevOps, SaaS",
+                keywords: "projets, développement logiciel, administration système, solutions numériques, programmation, automatisation, solutions cloud, infrastructure, DevOps, web, java",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"

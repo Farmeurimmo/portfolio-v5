@@ -21,25 +21,21 @@
       },
       "web_dev": {
         "title": "Web Development",
-        "description": "Custom website and web application development."
-      },
-      "saas": {
-        "title": "Software as a Service",
-        "description": "Development of custom SaaS solutions."
+        "description": "Development of websites and web applications tailored to your needs."
       },
       "installation": {
         "title": "Software Installation",
-        "description": "Installation and configuration of third-party software (control panel, CMS, etc.)."
+        "description": "Installation and configuration of third-party software (control panel, CMS, ...)."
       },
       "admin": {
         "title": "System Administration",
-        "description": "Server management, service configuration, troubleshooting, firewalling, optimization, etc."
+        "description": "Server management, service configuration, troubleshooting, firewalling, optimization, ...)."
       },
       "help": {
         "title": "Consulting & Support",
         "description": "Technical assistance, advice, troubleshooting for your projects, or any other requests."
       },
-    "contact": "Contact me for more information",
+      "contact": "Contact me for more information",
       "contactButton": "Contact me"
     },
     "contact": {
@@ -120,7 +116,6 @@
     "servicesList": {
       "java": "Java Development",
       "webdev": "Web Development",
-      "saas": "Software as a Service (SaaS)",
       "sysadmin": "System Administration",
       "thirdpartyinstall": "Third-party Software Installation",
       "ondemand": "On Demand"

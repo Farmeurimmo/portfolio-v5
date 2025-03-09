@@ -34,8 +34,6 @@ export default function Footer() {
                     <Link className="link link-hover text-amber-400"
                           href={`/${currentLocale}/#webdev`}>{t("servicesList.webdev")}</Link>
                     <Link className="link link-hover text-amber-400"
-                          href={`/${currentLocale}/#saas`}>{t("servicesList.saas")}</Link>
-                    <Link className="link link-hover text-amber-400"
                           href={`/${currentLocale}/#admin`}>{t("servicesList.sysadmin")}</Link>
                     <Link className="link link-hover text-amber-400"
                           href={`/${currentLocale}/#installation`}>{t("servicesList.thirdpartyinstall")}</Link>

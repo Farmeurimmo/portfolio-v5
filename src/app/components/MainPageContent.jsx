@@ -1,6 +1,6 @@
 "use client";
 
-import {ArrowRight, CircleHelp, Cloud, Code, Server, Wrench} from "lucide-react";
+import {ArrowRight, CircleHelp, Code, Server, Wrench} from "lucide-react";
 import ContactForm from "@/app/components/ContactForm";
 import {useTranslations} from "next-intl";
 import {useState} from "react";
@@ -29,12 +29,6 @@ export default function MainPageContent() {
             title: "services.web_dev.title",
             description: "services.web_dev.description",
             icon: <Code className="h-16 w-16 text-blue-600 dark:text-blue-400 mb-3"/>
-        },
-        {
-            id: "saas",
-            title: "services.saas.title",
-            description: "services.saas.description",
-            icon: <Cloud className="h-16 w-16 text-green-600 dark:text-green-400 mb-3"/>
         },
         {
             id: "admin",

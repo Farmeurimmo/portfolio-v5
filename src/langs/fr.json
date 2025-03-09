@@ -21,25 +21,21 @@
       },
       "web_dev": {
         "title": "Développement Web",
-        "description": "Développement de sites web et d'applications web sur mesure."
-      },
-      "saas": {
-        "title": "Software as a Service",
-        "description": "Développement de solutions SaaS sur mesure."
+        "description": "Développement de sites et applications web adaptés à vos besoins."
       },
       "installation": {
         "title": "Installation de Logiciels",
-        "description": "Installation et configuration de logiciels tiers (panneau de contrôle, CMS, etc.)."
+        "description": "Installation et configuration de logiciels tiers (panneau de contrôle, CMS, ...)."
       },
       "admin": {
         "title": "Administration Système",
-        "description": "Gestion de serveurs, configuration de services, dépannage, gestion de pare-feu, optimisation, etc."
+        "description": "Gestion de serveurs, configuration de services, dépannage, gestion de pare-feu, optimisation, ...)."
       },
       "help": {
         "title": "Consultation & Support",
         "description": "Assistance technique, conseils, dépannage pour vos projets, ou toute autre demande."
       },
-    "contact": "Contactez-moi pour plus d'informations",
+      "contact": "Contactez-moi pour plus d'informations",
       "contactButton": "Me contacter"
     },
     "contact": {
@@ -120,7 +116,6 @@
     "servicesList": {
       "java": "Développement Java",
       "webdev": "Développement web",
-      "saas": "Logiciel en tant que service (SaaS)",
       "sysadmin": "Administration système",
       "thirdpartyinstall": "Installation de logiciels tiers",
       "ondemand": "Sur demande"
