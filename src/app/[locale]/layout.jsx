@@ -23,6 +23,11 @@ export const viewport = {
 export async function generateMetadata({params}) {
     const {locale} = await params;
     const headersList = await headers();
+
+    if (headersList.get("x-request-url") === null) {
+        return;
+    }
+
     let pathname = headersList.get("x-request-url")
         .replace("https://farmeurimmo.fr", "")
         .replace("https://v5.farmeurimmo.fr", "")
