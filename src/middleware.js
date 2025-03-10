@@ -11,7 +11,7 @@ export default async function customMiddleware(req, ev) {
     req.headers.set('x-request-url', req.url);
 
     if (pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.startsWith("/installHook.js") ||
-        pathname.startsWith("/sitemap.xml") || pathname.startsWith("/robots.txt")) {
+        pathname.startsWith("/sitemap.xml") || pathname.startsWith("/robots.txt") || pathname.startsWith("/ai.txt")) {
         return NextResponse.next();
     }
 
