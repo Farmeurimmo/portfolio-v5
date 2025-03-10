@@ -5,7 +5,6 @@ export default function BaseLayout({children, locale = "en"}) {
         <html lang={locale}>
         <head>
             <meta name={"favicon"} content="https://cdn.farmeurimmo.fr/img/logo.png"/>
-            <link rel={"canonical"} href={"https://farmeurimmo.fr"}/>
             <link rel="icon" href="https://cdn.farmeurimmo.fr/img/logo.jpg"/>
             <link rel={"shortcut icon"} href={"https://cdn.farmeurimmo.fr/img/logo.jpg"} type={"image/x-icon"}/>
 
