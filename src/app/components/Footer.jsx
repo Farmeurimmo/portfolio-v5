@@ -50,7 +50,7 @@ export default function Footer() {
                     <Link className="link link-hover text-amber-400" href="https://status.farmeurimmo.fr">
                         {t("status")}</Link>
                     <Link className="link link-hover text-amber-400"
-                          href="https://www.linkedin.com/in/farmeurimmo/">{t("linkedin")}</Link>
+                          href="https://www.linkedin.com/in/robin-massonnat">{t("linkedin")}</Link>
                     <Link className="link link-hover text-amber-400"
                           href="https://github.com/Farmeurimmo">{t("github")}</Link>
                     <p className={"text-amber-400"}>{t("discord")}</p>
