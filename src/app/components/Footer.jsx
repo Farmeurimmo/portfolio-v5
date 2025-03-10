@@ -30,9 +30,9 @@ export default function Footer() {
                 <nav>
                     <h2 className="footer-title">{t('services')}</h2>
                     <Link className="link link-hover text-amber-400"
-                          href={`/${currentLocale}/#java`}>{t("servicesList.java")}</Link>
+                          href={`/${currentLocale}/#java_dev`}>{t("servicesList.java")}</Link>
                     <Link className="link link-hover text-amber-400"
-                          href={`/${currentLocale}/#webdev`}>{t("servicesList.webdev")}</Link>
+                          href={`/${currentLocale}/#web_dev`}>{t("servicesList.webdev")}</Link>
                     <Link className="link link-hover text-amber-400"
                           href={`/${currentLocale}/#admin`}>{t("servicesList.sysadmin")}</Link>
                     <Link className="link link-hover text-amber-400"

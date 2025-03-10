@@ -43,7 +43,7 @@ export default function MainPageContent() {
             icon: <Wrench className="h-16 w-16 text-yellow-600 dark:text-yellow-400 mb-3"/>
         },
         {
-            id: "support",
+            id: "help",
             title: "services.help.title",
             description: "services.help.description",
             icon: <CircleHelp className="h-16 w-16 text-red-600 dark:text-red-400 mb-3"/>
