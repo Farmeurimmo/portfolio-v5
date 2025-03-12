@@ -19,13 +19,13 @@ export default function MainPageContent() {
 
     const services = [
         {
-            id: "dev_java",
+            id: "java_dev",
             title: "services.java_dev.title",
             description: "services.java_dev.description",
             icon: <Code className="h-16 w-16 text-orange-600 dark:text-orange-400 mb-3"/>
         },
         {
-            id: "dev_web",
+            id: "web_dev",
             title: "services.web_dev.title",
             description: "services.web_dev.description",
             icon: <Code className="h-16 w-16 text-blue-600 dark:text-blue-400 mb-3"/>
