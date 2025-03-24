@@ -49,9 +49,9 @@ export async function generateMetadata({params}) {
                 robots: "index, follow"
             },
             blog: {
-                title: "Farmeurimmo | Blog on Technology and Development",
-                description: "Insights and discussions on technology, development, system administration, and digital solutions.",
-                keywords: "blog, technology, development, system administration, programming, cloud computing, automation, software engineering, cybersecurity, digital solutions",
+                title: "Farmeurimmo | Personal blog",
+                description: "Articles focused on technology, development, system administration, and digital solutions.",
+                keywords: "blog, technology, development, system administration, programming, cloud computing, automation, software engineering, cybersecurity, digital solutions, articles",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 robots: "index, follow"
@@ -83,9 +83,9 @@ export async function generateMetadata({params}) {
                 "robots": "index, follow"
             },
             blog: {
-                title: "Farmeurimmo | Blog sur la Technologie et le Développement",
-                description: "Réflexions et discussions sur la technologie, le développement, l'administration système et les solutions numériques.",
-                keywords: "blog, technologie, développement, administration système, programmation, cloud computing, automatisation, ingénierie logicielle, cybersécurité, solutions numériques",
+                title: "Farmeurimmo | Blog Personnel ",
+                description: "Articles orienté sur la technique, le développement, l'administration système et les solutions numériques.",
+                keywords: "blog, technologie, développement, administration système, programmation, cloud computing, automatisation, ingénierie logicielle, cybersécurité, solutions numériques, articles",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "robots": "index, follow"
