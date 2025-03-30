@@ -12,5 +12,8 @@ export default function ClientThemeProvider({children}) {
 
     if (!mounted) return null;
 
-    return <ThemeProvider attribute="data-theme">{children}</ThemeProvider>;
+    return <ThemeProvider attribute="data-theme">
+        <canvas id={"particleCanvas"} className={"fixed top-0 left-0 -z-10 w-screen h-screen"}/>
+        {children}
+    </ThemeProvider>;
 }

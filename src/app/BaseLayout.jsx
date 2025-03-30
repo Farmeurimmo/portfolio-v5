@@ -14,6 +14,8 @@ export default function BaseLayout({children, locale = "en"}) {
             <link rel={"canonical"} href={"https://farmeurimmo.fr/" + locale}/>
 
             <meta lang={locale}/>
+
+            <script defer={true} src={"http://localhost:3000/ParticleCanvas.js"}/>
         </head>
         <body className={`antialiased min-h-screen w-screen min-w-[400px]`}>
         {children}
