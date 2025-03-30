@@ -9,6 +9,7 @@ tags:
   - Portfolio
   - Svelte
   - Vite
+  - TailwindCSS
 author:
   name: "Farmeurimmo"
   picture: "https://cdn.farmeurimmo.fr/img/logo.png"
