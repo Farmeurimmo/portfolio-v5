@@ -1,9 +1,9 @@
 (function () {
     const opt = {
-        particles: 100,
+        particles: 90,
         noiseScale: 0.02,
         angle: (Math.PI / 180) * -90,
-        strokeWeight: 1.5,
+        strokeWeight: 1.1,
         tail: 3,
     };
 
