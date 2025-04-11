@@ -1,9 +1,9 @@
 (function () {
     const opt = {
-        particles: 90,
+        particles: 100,
         noiseScale: 0.02,
         angle: (Math.PI / 180) * -90,
-        strokeWeight: 1.1,
+        strokeWeight: 1,
         tail: 3,
     };
 
@@ -127,7 +127,7 @@
                 particle.update(canvas.width, canvas.height);
                 particle.render(context);
             });
-            setTimeout(animate, 1000 / 60);
+            setTimeout(animate, 1000 / 50);
         }
 
         animate();
