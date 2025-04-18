@@ -15,7 +15,7 @@ export default function BaseLayout({children, locale = "en"}) {
 
             <meta lang={locale}/>
 
-            <script defer={true} src={"/ParticleCanvas.js"}/>
+            <script defer={true} async={true} src={"/ParticleCanvas.js"}/>
         </head>
         <body className={`antialiased min-h-screen w-screen min-w-[400px]`}>
         {children}
