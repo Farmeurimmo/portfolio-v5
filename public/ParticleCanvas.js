@@ -135,9 +135,9 @@
 
     window.onload = function () {
         if ('requestIdleCallback' in window) {
-            requestIdleCallback(() => setTimeout(startAnimation, 1_000));
+            requestIdleCallback(() => setTimeout(startAnimation, 2_000));
         } else {
-            setTimeout(startAnimation, 5_000);
+            setTimeout(startAnimation, 7_000);
         }
         render();
     };
