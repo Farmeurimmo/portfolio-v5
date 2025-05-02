@@ -16,6 +16,9 @@ export default function BaseLayout({children, locale = "en"}) {
             <meta lang={locale}/>
 
             <script defer={true} async={true} src={"/ParticleCanvas.js"}/>
+
+            <script defer data-domain="farmeurimmo.fr" src="https://plausible.farmeurimmo.fr/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"></script>
+            <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
         </head>
         <body className={`antialiased min-h-screen w-screen min-w-[400px]`}>
         {children}
