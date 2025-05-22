@@ -2,6 +2,14 @@ import {host} from '@/config';
 import {getPathname, routing} from '@/i18n/routing';
 import {getAllPosts} from "@/lib/blog";
 
+function getAllProjectSlugs() {
+    const locale = routing.locales[0];
+    const projectsDir = join(process.cwd(), "src/app", locale, "projects");
+    return fs.readdirSync(projectsDir).filter((name) =>
+        fs.statSync(join(projectsDir, name)).isDirectory()
+    );
+}
+
 export default function sitemap() {
     const blogSlugs = routing.locales.flatMap((locale) =>
         getAllPosts().map((post) => ({
@@ -14,8 +22,19 @@ export default function sitemap() {
         }))
     );
 
+    const projectsSlugs = getAllProjectSlugs().flatMap((slug) =>
+        routing.locales.map((locale) => ({
+            url: getUrl(`/projects/${slug}`, locale),
+            alternates: {
+                languages: Object.fromEntries(
+                    routing.locales.map((cur) => [cur, getUrl(`/projects/${slug}`, cur)])
+                ),
+            },
+        }))
+    );
+
     return [...getEntries('/'), ...getEntries('/blog'), ...getEntries('/projects'),
-        ...getEntries('/legals'), ...blogSlugs]
+        ...getEntries('/legals'), ...blogSlugs, ...projectsSlugs];
 }
 
 function getEntries(href) {
