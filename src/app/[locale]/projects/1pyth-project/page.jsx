@@ -34,7 +34,7 @@ export default function SnortDodgemProject() {
 
             <div className="mb-8 flex gap-4">
                 <a
-                    href="https://github.com/Farmeurimmo/snort-dodgem"
+                    href="https://github.com/Farmeurimmo/1pyth-project"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 bg-gray-900 text-white rounded-lg shadow hover:bg-gray-700 transition"
