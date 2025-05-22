@@ -17,6 +17,18 @@ export default function SnortDodgemProject() {
 
     return (
         <main className="max-w-5xl mx-auto px-4 py-10">
+
+            <title>{t('title')}</title>
+            <meta name="description" content={t('summary')}/>
+            <meta name="keywords" content={"dodgem, snort, python, game, combinatorial, strategy"}/>
+            <meta name="robots" content="index, follow"/>
+            <meta property="og:title" content={t('title')}/>
+            <meta property="og:description" content={t('summary')}/>
+            <meta property="og:image" content="https://cdn.farmeurimmo.fr/img/projects/1pyth-project-cover.jpg"/>
+            <meta property="og:url" content="https://farmeurimmo.fr/projects/1pyth-project"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:site_name" content="Farmeurimmo"/>
+
             <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
             <p className="mb-4">{t('summary')}</p>
 

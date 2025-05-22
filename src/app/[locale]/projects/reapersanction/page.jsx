@@ -51,6 +51,18 @@ export default function ReaperSanction() {
 
     return (
         <section id="blog" className="flex flex-col min-h-screen p-4 lg:p-8 max-w-7xl w-full justify-center mx-auto">
+
+            <title>{t('title')}</title>
+            <meta name="description" content={t('summary')}/>
+            <meta name="keywords" content={"ReaperSanction, plugin, sanction, minecraft, spigot, paper, bungeecord, velocity"}/>
+            <meta name="robots" content="index, follow"/>
+            <meta property="og:title" content={t('title')}/>
+            <meta property="og:description" content={t('summary')}/>
+            <meta property="og:image" content="https://cdn.farmeurimmo.fr/img/projects/rs-cover.png"/>
+            <meta property="og:url" content="https://farmeurimmo.fr/projects/reapersanction"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:site_name" content="Farmeurimmo"/>
+
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">{t('title')}</h1>
             <p className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-8">{t('description')}</p>
 
