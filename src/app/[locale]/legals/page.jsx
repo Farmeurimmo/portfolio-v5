@@ -30,7 +30,8 @@ export default function Legals() {
                             <p className="text-lg text-gray-700 dark:text-gray-300">{t('host_address')}</p>
                             <p className="text-lg text-gray-700 dark:text-gray-300">{t('host_city')}</p>
                             <p className="text-lg text-gray-700 dark:text-gray-300">{t('host_country')}</p>
-                            <a href={"mailto:" + t('host_email')} className="text-lg link dark:text-blue-400 hover:underline">{t('host_email')}</a>
+                            <a href={"mailto:" + t('host_email')}
+                               className="text-lg link dark:text-blue-400 hover:underline">{t('host_email')}</a>
                             <a href="https://vercel.com"
                                className="text-lg link dark:text-blue-400 hover:underline">{t('host_website')}</a>
                         </div>

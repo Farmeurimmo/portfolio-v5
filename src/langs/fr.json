@@ -145,6 +145,18 @@
           "Plugin"
         ],
         "coverImage": "https://cdn.farmeurimmo.fr/img/projects/89580.png"
+      },
+      {
+        "id": "1html-project",
+        "title": "Projet 1HTML – Site de location saisonnière",
+        "excerpt": "Projet individuel terminé pour créer un site de location saisonnière responsive et accessible en HTML/CSS pur, sans frameworks ni templates.",
+        "tags": [
+          "HTML",
+          "CSS",
+          "Design responsive",
+          "Accessibilité"
+        ],
+        "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg"
       }
     ],
     "title": "Mes projets actuels et passés",
@@ -318,6 +330,58 @@
             "description": "Reporter un joueur"
           }
         }
+      }
+    },
+    "1html-project": {
+      "title": "Projet 1HTML – Site de location saisonnière",
+      "summary": "Projet individuel terminé réalisé en octobre sur une durée de 3 semaines dans le cadre de ma formation à SUPINFO.",
+      "score": "Note obtenue : 95/100",
+      "intro": "J’avais déjà des bases en HTML avant ce projet, ce qui m’a permis de me concentrer davantage sur la structuration du contenu, le design responsive et l’accessibilité.",
+      "presentation": {
+        "title": "Présentation",
+        "text": "Ce projet avait pour objectif de créer un site web complet de type AirBnB/Booking en HTML et CSS, sans utiliser de frameworks, de bibliothèques, de templates ou d’intelligence artificielle générative. L’accent était mis sur la qualité du code, le design responsive et le respect de l’accessibilité."
+      },
+      "features": {
+        "title": "Fonctionnalités",
+        "home": {
+          "title": "Page d’accueil",
+          "items": [
+            "Barre de navigation fonctionnelle",
+            "Section “Catégories”",
+            "Sélection de biens mis en avant"
+          ]
+        },
+        "categories": {
+          "title": "Pages catégories",
+          "items": [
+            "Grille de prévisualisation des biens",
+            "Lien vers une page descriptive"
+          ]
+        },
+        "descriptions": {
+          "title": "Pages descriptives",
+          "items": [
+            "Plusieurs images du bien",
+            "Description complète, caractéristiques",
+            "Carte d’achat",
+            "Section “Biens recommandés”"
+          ]
+        },
+        "support": {
+          "title": "Page support",
+          "items": [
+            "Formulaire de contact fonctionnel"
+          ]
+        }
+      },
+      "constraints": {
+        "title": "Contraintes techniques",
+        "items": [
+          "Site responsive (mobile, tablette, desktop)",
+          "Respect des critères d’accessibilité (RGAA)",
+          "Aucun lien mort",
+          "Code 100% HTML/CSS pur, écrit manuellement"
+        ]
       }
     }
   }

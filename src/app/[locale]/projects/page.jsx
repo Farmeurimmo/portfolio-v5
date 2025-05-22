@@ -13,18 +13,18 @@ export default function ProjectsHome() {
             <p className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-8">{t('description')}</p>
             <ul className={`flex flex-wrap gap-6 mt-4 p-4 justify-start`}>
                 {projects.map((project) => (
-                    <li key={project.id} className="min-w-[250px] grow flex-1 max-w-[500px]">
+                    <li key={project.id} className="min-w-[250px] grow flex-1 max-w-[400px]">
                         <Link href={`/projects/${project.id}`} passHref>
                             <div className={`flex flex-col justify-between items-center text-center flex-1 min-w-[250px]
-                             p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[500px] hover:scale-105 
+                             p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[400px] hover:scale-105 
                              hover:shadow-lg transition-transform cursor-pointer active:scale-95 h-full border 
                              border-gray-400 focus:border`}>
                                 <Image
                                     src={project.coverImage}
                                     alt={project.title}
-                                    width={500}
-                                    height={250}
-                                    className="w-full h-auto rounded-t-2xl object-cover"
+                                    width={400}
+                                    height={300}
+                                    className="w-full h-full rounded-t-2xl object-cover"
                                     loading={"lazy"}
                                 />
                                 <div className="p-4">

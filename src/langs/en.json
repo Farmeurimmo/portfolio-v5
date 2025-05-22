@@ -145,6 +145,18 @@
           "Plugin"
         ],
         "coverImage": "https://cdn.farmeurimmo.fr/img/projects/89580.png"
+      },
+      {
+        "id": "1html-project",
+        "title": "1HTML Project – Vacation Rental Website",
+        "excerpt": "Completed individual project to create a responsive, accessible vacation rental website using only pure HTML and CSS, without frameworks or templates.",
+        "tags": [
+          "HTML",
+          "CSS",
+          "Responsive Design",
+          "Accessibility"
+        ],
+        "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg"
       }
     ],
     "title": "My current and old projects",
@@ -318,6 +330,58 @@
             "description": "Reports a player"
           }
         }
+      }
+    },
+    "1html-project": {
+      "title": "1HTML Project – Vacation Rental Website",
+      "summary": "Completed individual project carried out in October over a 3-week period as part of my training at SUPINFO.",
+      "score": "Score: 95/100",
+      "intro": "I already had basic HTML knowledge before this project, which allowed me to focus more on content structure, responsive design, and accessibility.",
+      "presentation": {
+        "title": "Overview",
+        "text": "The goal of this project was to create a fully functional website similar to AirBnB/Booking using only HTML and CSS, without any frameworks, libraries, templates, or generative AI. The focus was on code quality, responsive design, and accessibility compliance."
+      },
+      "features": {
+        "title": "Features",
+        "home": {
+          "title": "Home Page",
+          "items": [
+            "Functional navigation bar",
+            "“Categories” section",
+            "Selection of featured properties"
+          ]
+        },
+        "categories": {
+          "title": "Category Pages",
+          "items": [
+            "Property preview grid",
+            "Link to a detailed page for each property"
+          ]
+        },
+        "descriptions": {
+          "title": "Detail Pages",
+          "items": [
+            "Multiple images of the property",
+            "Full description and characteristics",
+            "Purchase card (dates, price)",
+            "“Recommended properties” section"
+          ]
+        },
+        "support": {
+          "title": "Support Page",
+          "items": [
+            "Functional contact form"
+          ]
+        }
+      },
+      "constraints": {
+        "title": "Technical Constraints",
+        "items": [
+          "Responsive site (mobile, tablet, desktop)",
+          "Accessibility compliance (RGAA)",
+          "No dead links",
+          "100% pure HTML/CSS code, written by hand"
+        ]
       }
     }
   }
