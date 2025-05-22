@@ -26,6 +26,25 @@ export default function OneHtmlProject() {
             <p className="mb-4 font-semibold">{t('score')}</p>
             <p className="mb-8">{t('intro')}</p>
 
+            <div className="mb-8 flex gap-4">
+                <a
+                    href="https://github.com/Farmeurimmo/1HTML-Project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-gray-900 text-white rounded-lg shadow hover:bg-gray-700 transition"
+                >
+                    GitHub Repository
+                </a>
+                <a
+                    href="https://farmeurimmo.github.io/1HTML-Project/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-500 transition"
+                >
+                    Live Web Page
+                </a>
+            </div>
+
             <div className="mb-8 flex flex-col gap-4 md:grid md:grid-cols-2">
                 {images.map((img, i) => (
                     <figure key={i} className="flex flex-col items-center">
