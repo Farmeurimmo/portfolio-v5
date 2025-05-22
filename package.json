@@ -13,22 +13,22 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
-    "i18next": "^25.0.1",
-    "lucide-react": "^0.503.0",
-    "next": "15.3.1",
+    "i18next": "^25.2.0",
+    "lucide-react": "^0.511.0",
+    "next": "15.3.2",
     "next-intl": "^4.1.0",
     "next-themes": "^0.4.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-i18next": "^15.5.1",
+    "react-i18next": "^15.5.2",
     "react-syntax-highlighter": "^15.6.1",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.4",
-    "daisyui": "^5.0.28",
+    "@tailwindcss/postcss": "^4.1.7",
+    "daisyui": "^5.0.37",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.1.7"
   }
 }
