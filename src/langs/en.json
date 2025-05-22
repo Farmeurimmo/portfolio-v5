@@ -157,6 +157,18 @@
           "Accessibility"
         ],
         "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg"
+      },
+      {
+        "id": "1pyth-project",
+        "title": "1Python Project – Snort & Dodgem Games",
+        "excerpt": "Individual project to implement two abstract strategy games in Python (Snort and Dodgem), focused on clean logic and terminal interface without libraries.",
+        "tags": [
+          "Python",
+          "OOP",
+          "Algorithms",
+          "Terminal UI"
+        ],
+        "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png"
       }
     ],
     "title": "My current and old projects",
@@ -381,6 +393,33 @@
           "Accessibility compliance (RGAA)",
           "No dead links",
           "100% pure HTML/CSS code, written by hand"
+        ]
+      }
+    },
+    "snort-dodgem": {
+      "title": "Combinatorial Strategy Mini-Games in Python",
+      "summary": "Individual project coding two abstract strategy games: Snort and Dodgem.",
+      "description": {
+        "title": "General Description",
+        "text": "This project consists of programming two abstract combinatorial strategy games in Python, with full rule management and console interface."
+      },
+      "snort": {
+        "title": "Snort Game",
+        "rules": "Players alternately place a piece on an empty square not orthogonally adjacent to an opponent’s piece. The player who cannot move loses.",
+        "functions": "Functions include: board creation, display, placement validation, board update, and turn management."
+      },
+      "dodgem": {
+        "title": "Dodgem Game",
+        "rules": "Move your pieces on a square board with direction restrictions. Win by moving all your pieces off the board or blocking the opponent.",
+        "functions": "Functions include: board initialization with pieces, display, move validation, input handling, and victory detection."
+      },
+      "notes": {
+        "title": "Important Notes",
+        "items": [
+          "No global variables.",
+          "Strict input validation.",
+          "Clear and well-structured code.",
+          "Documentation included explaining algorithms."
         ]
       }
     }

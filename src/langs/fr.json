@@ -157,6 +157,18 @@
           "Accessibilité"
         ],
         "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg"
+      },
+      {
+        "id": "1pyth-project",
+        "title": "Projet Python – Jeux Snort & Dodgem",
+        "excerpt": "Projet individuel visant à coder deux jeux de stratégie combinatoire (Snort et Dodgem) en Python, avec une interface terminale et sans dépendance externe.",
+        "tags": [
+          "Python",
+          "POO",
+          "Algorithmes",
+          "Interface terminale"
+        ],
+        "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png"
       }
     ],
     "title": "Mes projets actuels et passés",
@@ -381,6 +393,33 @@
           "Respect des critères d’accessibilité (RGAA)",
           "Aucun lien mort",
           "Code 100% HTML/CSS pur, écrit manuellement"
+        ]
+      }
+    },
+    "snort-dodgem": {
+      "title": "Mini-jeux de stratégie combinatoire en Python",
+      "summary": "Projet individuel pour programmer deux jeux : Snort et Dodgem.",
+      "description": {
+        "title": "Description générale",
+        "text": "Ce projet consiste à coder en Python deux jeux abstraits de stratégie combinatoire, avec gestion complète des règles et interface console."
+      },
+      "snort": {
+        "title": "Jeu Snort",
+        "rules": "Posez tour à tour un pion sur une case vide non adjacente orthogonalement à un pion adverse. Le joueur qui ne peut plus jouer perd.",
+        "functions": "Fonctions : création du plateau, affichage, validation de placement, mise à jour du plateau, gestion du tour."
+      },
+      "dodgem": {
+        "title": "Jeu Dodgem",
+        "rules": "Déplacez vos pions sur un plateau carré avec restrictions de directions. Faire sortir tous ses pions ou bloquer l’adversaire gagne la partie.",
+        "functions": "Fonctions : initialisation du plateau avec pions, affichage, validation de déplacement, saisie des mouvements, détection de victoire."
+      },
+      "notes": {
+        "title": "Notes importantes",
+        "items": [
+          "Pas de variables globales.",
+          "Contrôle strict des saisies utilisateur.",
+          "Code clair et bien structuré.",
+          "Documentation jointe expliquant les algorithmes."
         ]
       }
     }

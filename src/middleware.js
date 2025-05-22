@@ -12,7 +12,7 @@ export default async function customMiddleware(req, ev) {
 
     if (pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.startsWith("/installHook.js") ||
         pathname.startsWith("/sitemap.xml") || pathname.startsWith("/robots.txt") || pathname.startsWith("/ai.txt")
-    || pathname.startsWith("/ParticleCanvas.js")) {
+        || pathname.startsWith("/ParticleCanvas.js")) {
         return NextResponse.next();
     }
 
