@@ -81,6 +81,7 @@
     "host_city": "Walnut, CA 91789",
     "host_country": "United States",
     "host_website": "https://vercel.com",
+    "host_email": "privacy@vercel.com",
     "privacy": {
       "title": "Privacy Policy",
       "section_1_title": "Data Collection",
