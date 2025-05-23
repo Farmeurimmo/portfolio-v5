@@ -169,6 +169,18 @@
           "Interface terminale"
         ],
         "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png"
+      },
+      {
+        "id": "strategy-game",
+        "title": "Jeu de stratégie Python – Reine & Tours",
+        "excerpt": "Jeu de stratégie à deux joueurs développé en Python avec Tkinter. Plateau carré, règles de déplacement et de capture uniques, architecture orientée objet propre.",
+        "tags": [
+          "Python",
+          "Tkinter",
+          "Développement de jeu",
+          "POO"
+        ],
+        "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png"
       }
     ],
     "title": "Mes projets actuels et passés",
@@ -421,6 +433,65 @@
           "Contrôle strict des saisies utilisateur.",
           "Code clair et bien structuré.",
           "Documentation jointe expliquant les algorithmes."
+        ]
+      }
+    },
+    "1algo-project": {
+      "title": "Mini-projet Python – Jeu de stratégie",
+      "summary": "Jeu de stratégie à deux joueurs développé en Python avec interface Tkinter. Le but est de capturer les pièces adverses selon des règles précises sur un plateau carré.",
+      "score": "Note obtenue : 87.5/100",
+      "rules": {
+        "title": "Règles du jeu",
+        "items": [
+          "Plateau carré de taille n x n (pair, entre 6 et 12, par défaut 8).",
+          "Chaque joueur a une reine et (n² / 4) - 1 tours.",
+          "La reine se déplace comme aux échecs (sans capture).",
+          "La tour se déplace en ligne droite (orthogonal) et peut capturer : si elle et la reine forment une diagonale d’un rectangle, et qu’une tour adverse est à un coin opposé, elle est capturée.",
+          "La reine ne peut pas être capturée.",
+          "Un joueur perd s’il ne lui reste que 2 pièces ou moins (reine incluse)."
+        ]
+      },
+      "features": {
+        "title": "Fonctionnalités",
+        "items": [
+          "Choix de la taille du plateau (6 à 12, pair uniquement)",
+          "Affichage du plateau et des pièces",
+          "Indication du joueur courant",
+          "Sélection uniquement des pièces valides à la souris",
+          "Déplacements et captures selon les règles",
+          "Alternance automatique des joueurs",
+          "Détection de la victoire",
+          "Fin de partie avec message et option de rejouer",
+          "Séparation entre logique du jeu et interface graphique"
+        ]
+      },
+      "constraints": {
+        "title": "Contraintes techniques",
+        "items": [
+          "Langage : Python",
+          "Bibliothèque graphique obligatoire : Tkinter",
+          "Architecture orientée objet stricte",
+          "Encapsulation obligatoire",
+          "Aucune autre bibliothèque graphique autorisée",
+          "Le non-respect des contraintes techniques entraîne un échec du projet"
+        ]
+      },
+      "bonus": {
+        "title": "Bonus",
+        "items": [
+          "Affichage des coups jouables",
+          "Sauvegarde/chargement de la partie",
+          "Animations visuelles ou sons",
+          "Mode contre IA (joueur aléatoire ou simple stratégie)"
+        ]
+      },
+      "delivery": {
+        "title": "Modalités de rendu",
+        "items": [
+          "Travail en binôme obligatoire",
+          "Plagiat et usage d’IA strictement interdits (note 0)",
+          "Livraison sous forme d’archive .zip contenant le code source",
+          "Soutenance orale prévue selon l’organisation du campus"
         ]
       }
     }

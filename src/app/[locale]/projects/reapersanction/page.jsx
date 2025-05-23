@@ -54,7 +54,8 @@ export default function ReaperSanction() {
 
             <title>{t('title')}</title>
             <meta name="description" content={t('summary')}/>
-            <meta name="keywords" content={"ReaperSanction, plugin, sanction, minecraft, spigot, paper, bungeecord, velocity"}/>
+            <meta name="keywords"
+                  content={"ReaperSanction, plugin, sanction, minecraft, spigot, paper, bungeecord, velocity"}/>
             <meta name="robots" content="index, follow"/>
             <meta property="og:title" content={t('title')}/>
             <meta property="og:description" content={t('summary')}/>
