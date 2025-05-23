@@ -148,7 +148,7 @@
       },
       {
         "id": "1html-project",
-        "title": "1HTML Project – Vacation Rental Website",
+        "title": "HTML Project – Vacation Rental Website",
         "excerpt": "Completed individual project to create a responsive, accessible vacation rental website using only pure HTML and CSS, without frameworks or templates.",
         "tags": [
           "HTML",
@@ -345,9 +345,9 @@
       }
     },
     "1html-project": {
-      "title": "1HTML Project – Vacation Rental Website",
+      "title": "HTML Project – Vacation Rental Website",
       "summary": "Completed individual project carried out in October over a 3-week period as part of my training at SUPINFO.",
-      "score": "Score: 95/100",
+      "score": "Grade: 95/100",
       "intro": "I already had basic HTML knowledge before this project, which allowed me to focus more on content structure, responsive design, and accessibility.",
       "presentation": {
         "title": "Overview",
@@ -396,9 +396,10 @@
         ]
       }
     },
-    "snort-dodgem": {
+    "1pyth-project": {
       "title": "Combinatorial Strategy Mini-Games in Python",
       "summary": "Individual project coding two abstract strategy games: Snort and Dodgem.",
+      "score": "Grade: 80/100",
       "description": {
         "title": "General Description",
         "text": "This project consists of programming two abstract combinatorial strategy games in Python, with full rule management and console interface."

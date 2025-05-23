@@ -148,7 +148,7 @@
       },
       {
         "id": "1html-project",
-        "title": "Projet 1HTML – Site de location saisonnière",
+        "title": "Projet HTML – Site de location saisonnière",
         "excerpt": "Projet individuel terminé pour créer un site de location saisonnière responsive et accessible en HTML/CSS pur, sans frameworks ni templates.",
         "tags": [
           "HTML",
@@ -345,9 +345,9 @@
       }
     },
     "1html-project": {
-      "title": "Projet 1HTML – Site de location saisonnière",
+      "title": "Projet HTML – Site de location saisonnière",
       "summary": "Projet individuel terminé réalisé en octobre sur une durée de 3 semaines dans le cadre de ma formation à SUPINFO.",
-      "score": "Note obtenue : 95/100",
+      "score": "Note: 95/100",
       "intro": "J’avais déjà des bases en HTML avant ce projet, ce qui m’a permis de me concentrer davantage sur la structuration du contenu, le design responsive et l’accessibilité.",
       "presentation": {
         "title": "Présentation",
@@ -396,9 +396,10 @@
         ]
       }
     },
-    "snort-dodgem": {
+    "1pyth-project": {
       "title": "Mini-jeux de stratégie combinatoire en Python",
       "summary": "Projet individuel pour programmer deux jeux : Snort et Dodgem.",
+      "score": "Note: 80/100",
       "description": {
         "title": "Description générale",
         "text": "Ce projet consiste à coder en Python deux jeux abstraits de stratégie combinatoire, avec gestion complète des règles et interface console."

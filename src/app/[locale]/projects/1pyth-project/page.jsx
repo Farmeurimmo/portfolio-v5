@@ -2,7 +2,7 @@ import {useTranslations} from "next-intl";
 import Image from "next/image";
 
 export default function SnortDodgemProject() {
-    const t = useTranslations("projects.snort-dodgem");
+    const t = useTranslations("projects.1pyth-project");
 
     const images = [
         {
@@ -30,7 +30,8 @@ export default function SnortDodgemProject() {
             <meta property="og:site_name" content="Farmeurimmo"/>
 
             <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
-            <p className="mb-4">{t('summary')}</p>
+            <p className="italic mb-4">{t('summary')}</p>
+            <p className="mb-4">{t('score')}</p>
 
             <div className="mb-8 flex gap-4">
                 <a
