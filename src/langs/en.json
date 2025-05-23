@@ -171,7 +171,7 @@
         "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png"
       },
       {
-        "id": "strategy-game",
+        "id": "1algo-project",
         "title": "Python Strategy Game – Queen & Rooks",
         "excerpt": "Two-player strategy game developed in Python with Tkinter. Includes a square board, unique movement and capture rules, and a clean object-oriented architecture.",
         "tags": [

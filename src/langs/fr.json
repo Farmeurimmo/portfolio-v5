@@ -171,7 +171,7 @@
         "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png"
       },
       {
-        "id": "strategy-game",
+        "id": "1algo-project",
         "title": "Jeu de stratégie Python – Reine & Tours",
         "excerpt": "Jeu de stratégie à deux joueurs développé en Python avec Tkinter. Plateau carré, règles de déplacement et de capture uniques, architecture orientée objet propre.",
         "tags": [
