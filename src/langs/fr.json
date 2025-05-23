@@ -484,15 +484,6 @@
           "Animations visuelles ou sons",
           "Mode contre IA (joueur aléatoire ou simple stratégie)"
         ]
-      },
-      "delivery": {
-        "title": "Modalités de rendu",
-        "items": [
-          "Travail en binôme obligatoire",
-          "Plagiat et usage d’IA strictement interdits (note 0)",
-          "Livraison sous forme d’archive .zip contenant le code source",
-          "Soutenance orale prévue selon l’organisation du campus"
-        ]
       }
     }
   }

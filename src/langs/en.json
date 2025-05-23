@@ -484,15 +484,6 @@
           "Visual or sound animations",
           "Play against AI (random or basic strategy)"
         ]
-      },
-      "delivery": {
-        "title": "Submission Guidelines",
-        "items": [
-          "Work in mandatory pairs",
-          "Plagiarism and use of AI strictly forbidden (score 0)",
-          "Submit a .zip archive containing the source code",
-          "Oral presentation required, see campus instructions"
-        ]
       }
     }
   }

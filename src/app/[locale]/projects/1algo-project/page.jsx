@@ -95,15 +95,6 @@ export default function StrategyGameProject() {
                     ))}
                 </ul>
             </section>
-
-            <section>
-                <h2 className="text-2xl font-semibold mb-2">{t('delivery.title')}</h2>
-                <ul className="list-disc list-inside text-sm">
-                    {t.raw('delivery.items').map((item, i) => (
-                        <li key={i}>{item}</li>
-                    ))}
-                </ul>
-            </section>
         </main>
     );
 }
