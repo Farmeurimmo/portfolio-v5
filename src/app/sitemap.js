@@ -3,41 +3,89 @@ import {getPathname, routing} from '@/i18n/routing';
 import {getAllPosts} from "@/lib/blog";
 import {getAllProjectSlugs} from "@/lib/projects";
 
-export default function sitemap() {
-    const blogSlugs = routing.locales.flatMap((locale) =>
-        getAllPosts().map((post) => ({
-            url: getUrl(`/blog/${post.slug}`, locale),
-            alternates: {
-                languages: Object.fromEntries(
-                    routing.locales.map((cur) => [cur, getUrl(`/blog/${post.slug}`, cur)])
-                ),
-            },
-        }))
-    );
+export default async function sitemap() {
+    const urls = [];
 
-    const projectsSlugs = routing.locales.flatMap((locale) =>
-        getAllProjectSlugs().map((project) => ({
-            url: getUrl(`/projects/${project}`, locale),
-            alternates: {
-                languages: Object.fromEntries(
-                    routing.locales.map((cur) => [cur, getUrl(`/projects/${project}`, cur)])
-                ),
-            },
-        }))
-    );
+    // function getAlternates(href) {
+    //     const languages = {};
+    //     for (const locale of routing.locales) {
+    //         languages[locale] = getUrl(href, locale);
+    //     }
+    //     return { languages };
+    // }
 
-    return [...getEntries('/'), ...getEntries('/blog'), ...getEntries('/projects'),
-        ...getEntries('/legals'), ...blogSlugs, ...projectsSlugs];
+    for (const entry of getEntries('/')) {
+        urls.push({
+            url: entry.url,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 1,
+            //alternates: getAlternates('/'),
+        });
+    }
+
+    for (const entry of getEntries('/projects')) {
+        urls.push({
+            url: entry.url,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+            //alternates: getAlternates('/projects'),
+        });
+    }
+
+    for (const entry of getEntries('/blog')) {
+        urls.push({
+            url: entry.url,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+            //alternates: getAlternates('/blog'),
+        });
+    }
+
+    for (const entry of getEntries('/legals')) {
+        urls.push({
+            url: entry.url,
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.5,
+            //alternates: getAlternates('/legals'),
+        });
+    }
+
+    for (const locale of routing.locales) {
+        for (const post of await getAllPosts()) {
+            const href = `/blog/${post.slug}`;
+            urls.push({
+                url: getUrl(href, locale),
+                lastModified: post.updatedAt ? new Date(post.updatedAt) : new Date(),
+                changeFrequency: 'monthly',
+                priority: 0.7,
+                //alternates: getAlternates(href),
+            });
+        }
+    }
+
+    for (const locale of routing.locales) {
+        for (const project of await getAllProjectSlugs()) {
+            const href = `/projects/${project}`;
+            urls.push({
+                url: getUrl(href, locale),
+                lastModified: new Date(),
+                changeFrequency: 'weekly',
+                priority: 0.7,
+                //alternates: getAlternates(href),
+            });
+        }
+    }
+
+    return urls;
 }
 
 function getEntries(href) {
     return routing.locales.map((locale) => ({
         url: getUrl(href, locale),
-        alternates: {
-            languages: Object.fromEntries(
-                routing.locales.map((cur) => [cur, getUrl(href, cur)])
-            ),
-        },
     }));
 }
 
