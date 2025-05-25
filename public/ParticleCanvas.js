@@ -97,6 +97,9 @@
 
     function startAnimation() {
         if (animationRunning) return;  // Prevent starting a new animation
+
+        render();
+
         animationRunning = true;
         generateParticles();
         setInterval(() => {
@@ -115,7 +118,10 @@
 
     function render() {
         const canvas = document.getElementById('particleCanvas');
-        if (!canvas) return;
+        if (!canvas) {
+            setTimeout(render, 400);
+            return;
+        }
         const context = canvas.getContext('2d');
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -139,7 +145,6 @@
         } else {
             setTimeout(startAnimation, 7_000);
         }
-        render();
     };
 
 })();
