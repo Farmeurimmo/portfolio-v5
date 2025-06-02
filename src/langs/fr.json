@@ -181,6 +181,20 @@
           "POO"
         ],
         "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png"
+      },
+      {
+        "id": "1webd-project",
+        "title": "Mini-Projet : Application Cinéma (OMDb)",
+        "excerpt": "Application web permettant de rechercher, consulter et explorer des films grâce à l'API OMDb. Développement web complet avec gestion des pages, données dynamiques et interaction utilisateur fluide.",
+        "tags": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "API REST",
+          "OMDb",
+          "Web dynamique"
+        ],
+        "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1webd-project-cover.png"
       }
     ],
     "title": "Mes projets actuels et passés",
@@ -483,6 +497,41 @@
           "Sauvegarde/chargement de la partie",
           "Animations visuelles ou sons",
           "Mode contre IA (joueur aléatoire ou simple stratégie)"
+        ]
+      }
+    },
+    "cinema": {
+      "title": "Mini-Projet Cinéma",
+      "summary": "Application web pour afficher et rechercher des films via l’API OMDb.",
+      "images": {
+        "indexAlt": "Page d’accueil montrant les films tendances",
+        "searchAlt": "Page de recherche de films avec résultats en temps réel",
+        "movieAlt": "Page affichant les détails d’un film"
+      },
+      "requirements": {
+        "title": "Contexte et exigences",
+        "text": "Un cinéma de village souhaite proposer une application permettant aux clients de consulter les films disponibles via une API."
+      },
+      "deliverables": {
+        "title": "Livrables",
+        "items": [
+          "Site web avec au moins 3 pages : index.html, search.html, movie.html.",
+          "Utilisation d’une API key pour accéder à OMDb.",
+          "Affichage des films tendances sur la page d’accueil.",
+          "Recherche en temps réel sans rechargement de page.",
+          "Affichage des détails des films.",
+          "Utilisation d’un serveur HTTP local (Live Server ou serve).",
+          "Code organisé avec plusieurs fichiers JS/TS et bundler.",
+          "Bundle séparé par page recommandé."
+        ]
+      },
+      "grading": {
+        "title": "Critères de notation",
+        "items": [
+          "index.html : affichage de films tendances avec infos et bouton 'charger plus'.",
+          "search.html : barre de recherche et résultats en temps réel, bouton 'charger plus'.",
+          "movie.html : détails complets du film, résumé, genre, acteurs, notes et date DVD en bonus.",
+          "Gestion Git : dépôt distant, branches et messages de commit."
         ]
       }
     }
