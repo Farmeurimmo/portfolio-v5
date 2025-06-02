@@ -515,7 +515,7 @@
       "deliverables": {
         "title": "Livrables",
         "items": [
-          "Site web avec au moins 3 pages : index.html, search.html, movie.html.",
+          "Site web avec au moins 3 pages : index, search, movie.",
           "Utilisation d’une API key pour accéder à OMDb.",
           "Affichage des films tendances sur la page d’accueil.",
           "Recherche en temps réel sans rechargement de page.",
@@ -528,9 +528,9 @@
       "grading": {
         "title": "Critères de notation",
         "items": [
-          "index.html : affichage de films tendances avec infos et bouton 'charger plus'.",
-          "search.html : barre de recherche et résultats en temps réel, bouton 'charger plus'.",
-          "movie.html : détails complets du film, résumé, genre, acteurs, notes et date DVD en bonus.",
+          "index : affichage de films tendances avec infos et bouton 'charger plus'.",
+          "search : barre de recherche et résultats en temps réel, bouton 'charger plus'.",
+          "movie : détails complets du film, résumé, genre, acteurs, notes et date DVD en bonus.",
           "Gestion Git : dépôt distant, branches et messages de commit."
         ]
       }

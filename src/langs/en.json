@@ -515,7 +515,7 @@
       "deliverables": {
         "title": "Deliverables",
         "items": [
-          "Website with at least 3 pages: index.html, search.html, movie.html.",
+          "Website with at least 3 pages: index, search, movie.",
           "Use of an API key to access OMDb.",
           "Display trending movies on homepage.",
           "Real-time search with no page reload.",
@@ -528,9 +528,9 @@
       "grading": {
         "title": "Grading Criteria",
         "items": [
-          "index.html: display trending movies with info and 'load more' button.",
-          "search.html: search bar and real-time results, 'load more' button.",
-          "movie.html: full movie details, synopsis, genre, actors, ratings and DVD date as bonus.",
+          "index: display trending movies with info and 'load more' button.",
+          "search: search bar and real-time results, 'load more' button.",
+          "movie: full movie details, synopsis, genre, actors, ratings and DVD date as bonus.",
           "Git management: remote repo, branches and commit messages."
         ]
       }
