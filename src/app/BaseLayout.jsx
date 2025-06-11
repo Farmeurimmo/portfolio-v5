@@ -11,7 +11,7 @@ export default function BaseLayout({children, locale = "en"}) {
             <link rel={"alternate"} hrefLang={"fr"} href={"https://farmeurimmo.fr/fr"}/>
             <link rel={"alternate"} hrefLang={"en"} href={"https://farmeurimmo.fr/en"}/>
 
-            <link rel={"canonical"} href={"https://farmeurimmo.fr/fr"}/>
+            <link rel={"canonical"} href={"https://farmeurimmo.fr/en"}/>
 
             <meta lang={locale}/>
 
