@@ -2,6 +2,7 @@ import {useTranslations} from "next-intl";
 import Image from "next/image";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {atomOneDark} from "react-syntax-highlighter/src/styles/hljs";
+import GenerateProjectLangs from "@/app/components/GenerateProjectLangs";
 
 export default function ReaperSanction() {
     const t = useTranslations("projects.reapersanction");
@@ -63,6 +64,8 @@ export default function ReaperSanction() {
             <meta property="og:url" content="https://farmeurimmo.fr/projects/reapersanction"/>
             <meta property="og:type" content="website"/>
             <meta property="og:site_name" content="Farmeurimmo"/>
+
+            <GenerateProjectLangs />
 
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">{t('title')}</h1>
             <p className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-8">{t('description')}</p>

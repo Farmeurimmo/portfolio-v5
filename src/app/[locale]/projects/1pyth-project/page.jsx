@@ -1,5 +1,6 @@
 import {useTranslations} from "next-intl";
 import Image from "next/image";
+import GenerateProjectLangs from "@/app/components/GenerateProjectLangs";
 
 export default function SnortDodgemProject() {
     const t = useTranslations("projects.1pyth-project");
@@ -28,6 +29,8 @@ export default function SnortDodgemProject() {
             <meta property="og:url" content="https://farmeurimmo.fr/projects/1pyth-project"/>
             <meta property="og:type" content="website"/>
             <meta property="og:site_name" content="Farmeurimmo"/>
+
+            <GenerateProjectLangs />
 
             <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
             <p className="italic mb-4">{t('summary')}</p>

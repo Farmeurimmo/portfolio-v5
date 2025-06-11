@@ -1,5 +1,6 @@
 import {useTranslations} from "next-intl";
 import Image from "next/image";
+import GenerateProjectLangs from "@/app/components/GenerateProjectLangs";
 
 export default function OneHtmlProject() {
     const t = useTranslations("projects.1html-project");
@@ -32,6 +33,8 @@ export default function OneHtmlProject() {
             <meta property="og:url" content="https://farmeurimmo.fr/projects/1html-project"/>
             <meta property="og:type" content="website"/>
             <meta property="og:site_name" content="Farmeurimmo"/>
+
+            <GenerateProjectLangs />
 
             <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
             <p className="mb-1 italic">{t('summary')}</p>
