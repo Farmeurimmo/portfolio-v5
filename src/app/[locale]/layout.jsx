@@ -7,6 +7,7 @@ import Footer from "@/app/components/Footer";
 import ClientThemeProvider from "./ClientThemeProvider";
 import BaseLayout from "@/app/BaseLayout";
 import {headers} from "next/headers";
+import { getPathname } from '@/i18n/routing';
 
 export async function generateStaticParams() {
     return routing.locales.map((locale) => ({locale}));
@@ -121,6 +122,11 @@ export async function generateMetadata({params}) {
 
         const truncate = (text, maxLength) => text.length > maxLength ? text.slice(0, maxLength - 3) + "..." : text;
 
+        const frUrl = `https://farmeurimmo.fr/fr${pathname}`;
+        const enUrl = `https://farmeurimmo.fr/en${pathname}`;
+
+        const currentUrl = locale === 'fr' ? frUrl : enUrl;
+
         return {
             title: truncate(meta.title, 60),
             description: truncate(meta.description, 160),
@@ -138,6 +144,13 @@ export async function generateMetadata({params}) {
                 description: truncate(meta.description, 160),
                 images: [{url: meta["twitter:image"]}],
             },
+            alternates: {
+                canonical: currentUrl,
+                languages: {
+                    'en': enUrl,
+                    'fr': frUrl
+                }
+            }
         };
     } catch (e) {
         console.error("Erreur dans la récupération des métadonnées:", e);

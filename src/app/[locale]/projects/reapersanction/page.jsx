@@ -53,12 +53,12 @@ export default function ReaperSanction() {
         <section id="blog" className="flex flex-col min-h-screen p-4 lg:p-8 max-w-7xl w-full justify-center mx-auto">
 
             <title>{t('title')}</title>
-            <meta name="description" content={t('summary')}/>
+            <meta name="description" content={t('description')}/>
             <meta name="keywords"
                   content={"ReaperSanction, plugin, sanction, minecraft, spigot, paper, bungeecord, velocity"}/>
             <meta name="robots" content="index, follow"/>
             <meta property="og:title" content={t('title')}/>
-            <meta property="og:description" content={t('summary')}/>
+            <meta property="og:description" content={t('description')}/>
             <meta property="og:image" content="https://cdn.farmeurimmo.fr/img/projects/rs-cover.png"/>
             <meta property="og:url" content="https://farmeurimmo.fr/projects/reapersanction"/>
             <meta property="og:type" content="website"/>
