@@ -11,21 +11,22 @@ function PostCard({post}) {
     return (
         <Link
             href={`/${currentLocale}/blog/${post.slug}`}
-            className={`flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-6 bg-white 
-            dark:bg-gray-800 rounded-2xl shadow-md max-w-[500px] hover:scale-105 hover:shadow-lg transition-transform 
+            className={`flex flex-col justify-between items-center text-center flex-1 min-w-[400px] bg-white 
+            dark:bg-gray-800 rounded-2xl shadow-md max-w-[800px] hover:scale-105 hover:shadow-lg transition-transform 
             cursor-pointer active:scale-95 h-full border border-gray-400 focus:border`}
         >
             <Image
                 src={post.coverImage}
                 alt={post.title}
-                width={500}
-                height={250}
-                className="w-full h-auto rounded-t-2xl object-cover"
+                width={700}
+                height={500}
+                className="w-full rounded-t-2xl object-cover max-h-92 h-72"
                 loading={"lazy"}
+                priority={false}
             />
             <div className="p-4">
-                <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{post.title}</h2>
-                <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">{post.excerpt}</p>
+                <h2 className="text-xl xl:text-2xl font-bold text-gray-900 dark:text-white mb-4">{post.title}</h2>
+                <p className="text-md xl:text-lg text-gray-700 dark:text-gray-300 mb-4">{post.excerpt}</p>
                 <div className="flex flex-wrap gap-2 items-center">
                     {post.tags.map(tag => (
                         <div key={tag} className="badge badge-info">{tag}</div>
