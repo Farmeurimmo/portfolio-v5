@@ -1,5 +1,5 @@
 import {useTranslations} from "next-intl";
-import PostCard from "@/app/components/PostCard";
+import Card from "@/app/components/Card";
 
 export default function ProjectsHome() {
     const t = useTranslations('projects');
@@ -13,7 +13,7 @@ export default function ProjectsHome() {
             <ul className={`flex flex-wrap gap-6 p-4 justify-start`}>
                 {projects.map((project) => (
                     <li key={project.id} className="min-w-[400px] grow flex-1 max-w-[800px]">
-                        <PostCard post={project}/>
+                        <Card post={project} isBlog={false}/>
                     </li>
                 ))}
             </ul>

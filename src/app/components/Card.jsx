@@ -4,13 +4,16 @@ import Link from "next/link";
 import Image from "next/image";
 import {useParams} from "next/navigation";
 
-function PostCard({post}) {
+function Card({post, isBlog = true}) {
     const params = useParams();
     const currentLocale = params.locale || "en";
 
+    let postType = isBlog ? "blog" : "projects";
+    let slug = post.slug || post.id;
+
     return (
         <Link
-            href={`/${currentLocale}/blog/${post.slug}`}
+            href={`/${currentLocale}/${postType}/${slug}`}
             className={`flex flex-col justify-between items-center text-center flex-1 min-w-[400px] bg-white 
             dark:bg-gray-800 rounded-2xl shadow-md max-w-[800px] hover:scale-105 hover:shadow-lg transition-transform 
             cursor-pointer active:scale-95 h-full border border-gray-400 focus:border`}
@@ -38,4 +41,4 @@ function PostCard({post}) {
 }
 
 
-export default PostCard;
+export default Card;

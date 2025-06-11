@@ -1,5 +1,5 @@
 import {getAllPosts} from '@/lib/blog';
-import PostCard from "@/app/components/PostCard";
+import Card from "@/app/components/Card";
 import {useTranslations} from "next-intl";
 
 export default function BlogHome() {
@@ -25,7 +25,7 @@ export default function BlogHome() {
                                 <ul className="flex flex-wrap gap-6 mt-4 p-4 justify-start">
                                     {heroPosts.map((post) => (
                                         <li key={post.id} className="min-w-[400px] grow flex-1 max-w-[800px]">
-                                            <PostCard post={post}/>
+                                            <Card post={post}/>
                                         </li>
                                     ))}
                                 </ul>
@@ -42,7 +42,7 @@ export default function BlogHome() {
                                 <ul className="flex flex-wrap gap-6 mt-4 p-4 justify-start">
                                     {morePosts.map((post) => (
                                         <li key={post.id} className="min-w-[400px] grow flex-1 max-w-[800px]">
-                                            <PostCard post={post}/>
+                                            <Card post={post}/>
                                         </li>
                                     ))}
                                 </ul>
