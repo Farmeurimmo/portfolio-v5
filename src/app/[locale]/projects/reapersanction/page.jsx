@@ -83,7 +83,7 @@ export default function ReaperSanction() {
                        className="p-5 container rounded-2xl transform transition duration-500 hover:scale-105 w-fit h-fit"
                        title={link.name}>
                         <Image src={link.icon} width={link.width} height={link.height}
-                               className="rounded-t-2xl mt-0 p-0 h-20 w-20" alt={link.name}/>
+                               className="rounded-t-2xl mt-0 p-0 h-20 w-20" alt={link.name} priority={false}/>
                     </a>
                 ))}
             </div>
@@ -91,7 +91,7 @@ export default function ReaperSanction() {
             <h2 className="text-4xl mt-8 font-bold">{t('demo')}</h2>
             <div className="p-6 justify-center grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">
                 {demo_images.map((image, index) => (
-                    <Image key={index} src={image} width={500} height={500} className="rounded-2xl mt-0 p-0 h-fit w-fit"
+                    <Image key={index} src={image} width={500} height={500} priority={false} className="rounded-2xl mt-0 p-0 h-fit w-fit"
                            alt={`Demo image ${index + 1}`}/>
                 ))}
             </div>

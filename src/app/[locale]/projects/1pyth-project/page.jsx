@@ -56,6 +56,7 @@ export default function SnortDodgemProject() {
                             loading="lazy"
                             width={600}
                             height={400}
+                            priority={false}
                             className="rounded-lg shadow-lg object-cover w-full h-auto"
                         />
                         <figcaption className="mt-2 text-md">{img.alt}</figcaption>

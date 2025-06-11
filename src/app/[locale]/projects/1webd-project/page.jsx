@@ -55,6 +55,7 @@ export default function CinemaProject() {
                             loading="lazy"
                             width={400}
                             height={250}
+                            priority={false}
                             className="rounded-lg shadow-lg object-cover w-full h-auto"
                         />
                         <figcaption className="mt-2 text-md">{img.alt}</figcaption>

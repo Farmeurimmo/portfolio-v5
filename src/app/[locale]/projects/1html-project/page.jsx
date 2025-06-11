@@ -70,6 +70,7 @@ export default function OneHtmlProject() {
                             width={800}
                             height={800}
                             className="rounded-lg shadow-lg object-cover w-full h-auto"
+                            priority={false}
                         />
                         <figcaption className="mt-2 text-md">{img.alt}</figcaption>
                     </figure>
