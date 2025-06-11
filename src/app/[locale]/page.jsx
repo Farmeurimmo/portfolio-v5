@@ -1,5 +1,6 @@
 import {useTranslations} from 'next-intl';
 import MainPageContent from "@/app/components/MainPageContent";
+import Image from "next/image";
 
 export default function HomePage() {
     const t = useTranslations('HomePage');
@@ -11,7 +12,7 @@ export default function HomePage() {
                     <div className="hero place-items-start flex flex-col lg:flex-row items-center gap-8 w-full">
                         <div className="flex flex-col text-center lg:text-left gap-4 w-full">
                             <div className="flex items-center gap-4 mb-4">
-                                <img loading="lazy"
+                                <Image loading={"lazy"} priority={false} width={250} height={250}
                                      src="https://cdn.farmeurimmo.fr/img/logo.jpg"
                                      className="rounded-full shadow-2xl w-24 h-24 lg:w-32 lg:h-32" alt="Logo"/>
                                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">{t('title')}</h1>
