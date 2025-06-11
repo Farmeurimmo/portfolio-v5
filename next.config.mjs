@@ -5,14 +5,9 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        remotePatterns: [
-            {
-                hostname: 'cdn.farmeurimmo.fr',
-            },
-            {
-                hostname: 'static.spigotmc.org',
-            }
-        ],
+        domains: ['cdn.farmeurimmo.fr', 'skillicons.dev', 'junit.org', 'img.daisyui.com', 'www.portainer.io', 'www.influxdata.com', 'www.phpmyadmin.net', 'raw.githubusercontent.com'],
+        dangerouslyAllowSVG: true,
+        contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     },
 };
 
