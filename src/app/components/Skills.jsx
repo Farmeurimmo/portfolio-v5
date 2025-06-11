@@ -229,9 +229,9 @@ export default function Skills() {
                                 <a href={skill.href} target="_blank"
                                    className="flex flex-col items-center gap-2" title={skill.name}>
                                     <Image src={getIconUrl(skill.name)}
-                                         className="w-16 h-16 lg:w-20 lg:h-20 rounded-full"
-                                         alt={`Logo de ${skill.name}`} loading="lazy"
-                                    priority={false} width={112} height={112}/>
+                                           className="w-16 h-16 lg:w-20 lg:h-20 rounded-full"
+                                           alt={`Logo de ${skill.name}`} loading="lazy"
+                                           priority={false} width={112} height={112}/>
                                     <p className="text-sm sm:text-base lg:text-lg text-gray-800 dark:text-gray-200">{skill.name}</p>
                                 </a>
                             </div>

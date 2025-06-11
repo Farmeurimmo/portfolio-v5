@@ -34,7 +34,7 @@ export default function OneHtmlProject() {
             <meta property="og:type" content="website"/>
             <meta property="og:site_name" content="Farmeurimmo"/>
 
-            <GenerateProjectLangs />
+            <GenerateProjectLangs/>
 
             <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
             <p className="mb-1 italic">{t('summary')}</p>

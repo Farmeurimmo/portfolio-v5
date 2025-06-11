@@ -30,7 +30,7 @@ export default function SnortDodgemProject() {
             <meta property="og:type" content="website"/>
             <meta property="og:site_name" content="Farmeurimmo"/>
 
-            <GenerateProjectLangs />
+            <GenerateProjectLangs/>
 
             <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
             <p className="italic mb-4">{t('summary')}</p>

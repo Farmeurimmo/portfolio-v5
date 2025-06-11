@@ -1,6 +1,4 @@
 import {useTranslations} from "next-intl";
-import Image from "next/image";
-import Link from 'next/link';
 import PostCard from "@/app/components/PostCard";
 
 export default function ProjectsHome() {

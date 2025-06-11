@@ -1,8 +1,8 @@
 "use client";
 
-import { usePathname } from 'next/navigation';
-import { routing } from '@/i18n/routing';
-import { useLocale } from 'next-intl';
+import {usePathname} from 'next/navigation';
+import {routing} from '@/i18n/routing';
+import {useLocale} from 'next-intl';
 
 export default function GenerateProjectLangs() {
     const pathname = usePathname();
@@ -25,7 +25,7 @@ export default function GenerateProjectLangs() {
 
     return (
         <>
-            <link rel="canonical" href={currentUrl} />
+            <link rel="canonical" href={currentUrl}/>
 
             {supportedLocales.map(locale => (
                 <link

@@ -65,7 +65,7 @@ export default function ReaperSanction() {
             <meta property="og:type" content="website"/>
             <meta property="og:site_name" content="Farmeurimmo"/>
 
-            <GenerateProjectLangs />
+            <GenerateProjectLangs/>
 
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">{t('title')}</h1>
             <p className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-8">{t('description')}</p>
@@ -91,7 +91,8 @@ export default function ReaperSanction() {
             <h2 className="text-4xl mt-8 font-bold">{t('demo')}</h2>
             <div className="p-6 justify-center grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">
                 {demo_images.map((image, index) => (
-                    <Image key={index} src={image} width={500} height={500} priority={false} className="rounded-2xl mt-0 p-0 h-fit w-fit"
+                    <Image key={index} src={image} width={500} height={500} priority={false}
+                           className="rounded-2xl mt-0 p-0 h-fit w-fit"
                            alt={`Demo image ${index + 1}`}/>
                 ))}
             </div>

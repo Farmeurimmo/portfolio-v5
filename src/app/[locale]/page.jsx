@@ -13,8 +13,8 @@ export default function HomePage() {
                         <div className="flex flex-col text-center lg:text-left gap-4 w-full">
                             <div className="flex items-center gap-4 mb-4">
                                 <Image loading={"lazy"} priority={false} width={250} height={250}
-                                     src="https://cdn.farmeurimmo.fr/img/logo.jpg"
-                                     className="rounded-full shadow-2xl w-24 h-24 lg:w-32 lg:h-32" alt="Logo"/>
+                                       src="https://cdn.farmeurimmo.fr/img/logo.jpg"
+                                       className="rounded-full shadow-2xl w-24 h-24 lg:w-32 lg:h-32" alt="Logo"/>
                                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">{t('title')}</h1>
                             </div>
                             <p className="text-lg font-semibold sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t("description.part1")}</p>

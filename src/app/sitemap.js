@@ -11,7 +11,7 @@ export default async function sitemap() {
         for (const locale of routing.locales) {
             languages[locale] = getUrl(href, locale);
         }
-        return { languages };
+        return {languages};
     }
 
     urls.push({

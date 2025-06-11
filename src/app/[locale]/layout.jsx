@@ -7,7 +7,6 @@ import Footer from "@/app/components/Footer";
 import ClientThemeProvider from "./ClientThemeProvider";
 import BaseLayout from "@/app/BaseLayout";
 import {headers} from "next/headers";
-import { getPathname } from '@/i18n/routing';
 
 export async function generateStaticParams() {
     return routing.locales.map((locale) => ({locale}));
