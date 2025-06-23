@@ -217,7 +217,7 @@ export default function Skills() {
     const groupedSkills = groupByCategory(skills);
 
     return (
-        <section id={"skills"} className="hero place-items-start flex flex-col p-2 gap-4 sm:p-8 w-full">
+        <section id={"skills"} className="hero place-items-start flex flex-col gap-4 sm:p-8 w-full">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">{t('skills.title')}</h2>
             {Object.keys(groupedSkills).map(category => (
                 <div key={category} className="flex flex-col flex-wrap gap-8">
