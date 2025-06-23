@@ -68,10 +68,10 @@ export default function ContactForm({service}) {
     };
 
     return (
-        <div className="flex flex-col gap-6 px-2 py-8 items-start justify-center w-full max-w-7xl">
+        <div className="flex flex-col gap-6 py-8 items-start justify-center w-full max-w-7xl">
             <form
                 onSubmit={handleSubmit}
-                className="flex flex-col gap-6 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white
+                className="flex flex-col gap-6 p-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white
                 rounded-2xl shadow-lg w-full border border-gray-200 dark:border-gray-800"
             >
                 <h2 className="text-4xl font-semibold text-left text-gray-900 dark:text-white">{t("contact.formTitle")}</h2>
@@ -166,7 +166,7 @@ export default function ContactForm({service}) {
                 {error && <p className="text-red-500 text-sm text-center">{error}</p>}
             </form>
 
-            <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-8 rounded-2xl shadow-lg
+            <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-4 rounded-2xl shadow-lg
             w-full border border-gray-200 dark:border-gray-800 flex flex-col flex-wrap mt-10">
                 <h2 className="text-4xl font-semibold text-left text-gray-900 dark:text-white mb-4">{t("contact.otherWays")}</h2>
                 <div className="mt-6 flex flex-col flex-wrap lg:flex-row justify-evenly">

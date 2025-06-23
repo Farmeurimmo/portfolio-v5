@@ -15,7 +15,7 @@ export default function BaseLayout({children, locale = "en"}) {
             <script defer data-domain="farmeurimmo.fr"
                     src="https://plausible.farmeurimmo.fr/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"/>
         </head>
-        <body className={`antialiased min-h-screen w-screen min-w-[400px]`}>
+        <body className={`antialiased min-h-screen w-screen min-w-[450px]`}>
         {children}
         </body>
         </html>
