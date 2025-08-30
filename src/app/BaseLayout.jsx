@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 
 export default function BaseLayout({children, locale = "en"}) {
     return (
@@ -12,8 +13,11 @@ export default function BaseLayout({children, locale = "en"}) {
 
             <script defer={true} async={true} src={"/ParticleCanvas.js"}/>
 
-            <script defer data-domain="farmeurimmo.fr"
-                    src="https://rybbit.farmeurimmo.fr/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"/>
+            <Script
+                src="https://app.rybbit.io/api/script.js"
+                data-site-id="1"
+                strategy="afterInteractive"
+            />
         </head>
         <body className={`antialiased min-h-screen w-screen min-w-[450px]`}>
         {children}
