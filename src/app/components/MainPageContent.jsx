@@ -37,16 +37,10 @@ export default function MainPageContent() {
             icon: <Server className="h-16 w-16 text-purple-600 dark:text-purple-400 mb-3"/>
         },
         {
-            id: "installation",
-            title: "services.installation.title",
-            description: "services.installation.description",
-            icon: <Wrench className="h-16 w-16 text-yellow-600 dark:text-yellow-400 mb-3"/>
-        },
-        {
-            id: "help",
-            title: "services.help.title",
-            description: "services.help.description",
-            icon: <CircleHelp className="h-16 w-16 text-red-600 dark:text-red-400 mb-3"/>
+            id: "support",
+            title: "services.support.title",
+            description: "services.support.description",
+            icon: <CircleHelp className="h-16 w-16 text-green-600 dark:text-green-400 mb-3"/>
         },
     ];
 

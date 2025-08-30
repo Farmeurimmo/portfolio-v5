@@ -2,8 +2,8 @@
   "HomePage": {
     "title": "Farmeurimmo",
     "description": {
-      "part1": "Développeur Full Stack et administrateur système, j'aime travailler avec diverses technologies.",
-      "part2": "Je suis à l'aise avec plusieurs langages et outils, cherchant toujours des solutions simples et efficaces."
+      "part1": "Développeur Full Stack pragmatique, je maîtrise ce qu'il faut et m'adapte rapidement selon vos besoins.",
+      "part2": "Pas de sur-ingénierie : je choisis la techno qui colle à vos besoins, pas celle qui fait joli sur mon CV."
     },
     "skills": {
       "title": "Technologies que j'utilise",
@@ -14,29 +14,25 @@
       "Languages": "Langages"
     },
     "services": {
-      "title": "Mes Services",
+      "title": "Ce que je fais",
       "java_dev": {
         "title": "Développement Java",
-        "description": "Développement d'APIs Spring Boot et de plugins Minecraft (Paper, Velocity, BungeeCord)."
+        "description": "Création d'APIs Spring Boot robustes et de plugins Minecraft personnalisés (Paper, Velocity, BungeeCord)."
       },
       "web_dev": {
         "title": "Développement Web",
-        "description": "Développement de sites et applications web adaptés à vos besoins."
-      },
-      "installation": {
-        "title": "Installation de Logiciels",
-        "description": "Installation et configuration de logiciels tiers (panneau de contrôle, CMS, ...)."
+        "description": "Conception et réalisation de sites web modernes et d'applications sur mesure selon vos besoins."
       },
       "admin": {
         "title": "Administration Système",
-        "description": "Gestion de serveurs, configuration de services, dépannage, gestion de pare-feu, optimisation, ...)."
+        "description": "Gestion complète de serveurs : configuration, sécurisation, optimisation des performances et résolution d'incidents."
       },
-      "help": {
-        "title": "Consultation & Support",
-        "description": "Assistance technique, conseils, dépannage pour vos projets, ou toute autre demande."
+      "support": {
+        "title": "Accompagnement",
+        "description": "Support technique personnalisé, conseils d'architecture, debugging et assistance pour tous vos projets."
       },
-      "contact": "Contactez-moi pour plus d'informations",
-      "contactButton": "Me contacter"
+      "contact": "Vous avez un projet en tête ?",
+      "contactButton": "Discutons-en"
     },
     "contact": {
       "formTitle": "Formulaire de contact",
@@ -95,7 +91,7 @@
       "section_2_item_1": "Réponse par email",
       "section_2_item_2": "Gestion des demandes via le formulaire",
       "section_3_title": "Cookies et suivi",
-      "section_3_text": "J'utilise un tracker auto-hébergé pour analyser les performances du site. Aucune donnée n'est collectée à des fins lucratives. Lien du tracker: https://plausible.farmeurimmo.fr",
+      "section_3_text": "J'utilise un tracker auto-hébergé pour analyser les performances du site. Aucune donnée n'est collectée à des fins lucratives. Lien du tracker: https://rybbit.farmeurimmo.fr",
       "section_4_title": "Comment me contacter",
       "section_4_text": "Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, vous pouvez me contacter par email ou via le formulaire de contact.",
       "email_label": "Email : pro@robin-massonnat.fr",

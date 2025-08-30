@@ -53,6 +53,16 @@ let skills = [
         category: 'Frameworks & Libraries'
     },
     {
+        name: 'Vuetify',
+        href: 'https://vuetifyjs.com/',
+        category: 'Frameworks & Libraries'
+    },
+    {
+        name: 'Spring',
+        href: 'https://spring.io/',
+        category: 'Frameworks & Libraries'
+    },
+    {
         name: 'React',
         href: 'https://reactjs.org/',
         category: 'Frameworks & Libraries'
@@ -68,11 +78,6 @@ let skills = [
         category: 'Frameworks & Libraries'
     },
     {
-        name: 'Spring',
-        href: 'https://spring.io/',
-        category: 'Frameworks & Libraries'
-    },
-    {
         name: 'DaisyUI',
         href: 'https://daisyui.com/',
         category: 'Frameworks & Libraries'
@@ -80,11 +85,6 @@ let skills = [
     {
         name: 'SDL3',
         href: 'https://libsdl.org/',
-        category: 'Frameworks & Libraries'
-    },
-    {
-        name: 'Minestom',
-        href: 'https://minestom.net/',
         category: 'Frameworks & Libraries'
     },
     {
