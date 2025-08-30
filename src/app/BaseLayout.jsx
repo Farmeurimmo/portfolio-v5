@@ -17,6 +17,7 @@ export default function BaseLayout({children, locale = "en"}) {
                 src="https://app.rybbit.io/api/script.js"
                 data-site-id="1"
                 strategy="afterInteractive"
+                data-session-replay="true"
             />
         </head>
         <body className={`antialiased min-h-screen w-screen min-w-[450px]`}>
