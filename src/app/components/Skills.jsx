@@ -48,6 +48,11 @@ let skills = [
         category: 'Languages'
     },
     {
+        name: 'Vue',
+        href: 'https://vuejs.org/',
+        category: 'Frameworks & Libraries'
+    },
+    {
         name: 'React',
         href: 'https://reactjs.org/',
         category: 'Frameworks & Libraries'
@@ -68,16 +73,6 @@ let skills = [
         category: 'Frameworks & Libraries'
     },
     {
-        name: 'FastAPI',
-        href: 'https://fastapi.tiangolo.com/',
-        category: 'Frameworks & Libraries'
-    },
-    {
-        name: 'Svelte',
-        href: 'https://svelte.dev/',
-        category: 'Frameworks & Libraries'
-    },
-    {
         name: 'DaisyUI',
         href: 'https://daisyui.com/',
         category: 'Frameworks & Libraries'
@@ -88,13 +83,23 @@ let skills = [
         category: 'Frameworks & Libraries'
     },
     {
-        name: 'GitHubActions',
-        href: 'https://github.com/features/actions',
+        name: 'Minestom',
+        href: 'https://minestom.net/',
+        category: 'Frameworks & Libraries'
+    },
+    {
+        name: 'Arch',
+        href: 'https://archlinux.org/',
         category: 'DevOps'
     },
     {
-        name: 'junit5',
-        href: 'https://junit.org/junit5/',
+        name: 'Ubuntu',
+        href: 'https://ubuntu.com/',
+        category: 'DevOps'
+    },
+    {
+        name: 'GitHubActions',
+        href: 'https://github.com/features/actions',
         category: 'DevOps'
     },
     {
@@ -128,11 +133,6 @@ let skills = [
         category: 'DevOps'
     },
     {
-        name: 'RabbitMQ',
-        href: 'https://www.rabbitmq.com/',
-        category: 'DevOps'
-    },
-    {
         name: 'Cloudflare',
         href: 'https://www.cloudflare.com/',
         category: 'DevOps'
@@ -143,9 +143,14 @@ let skills = [
         category: 'DevOps'
     },
     {
-        name: 'Ubuntu',
-        href: 'https://ubuntu.com/',
-        category: 'DevOps'
+        name: 'MYSQL',
+        href: 'https://www.mysql.com/',
+        category: 'Databases'
+    },
+    {
+        name: 'PostgreSQL',
+        href: 'https://www.postgresql.org/',
+        category: 'Databases'
     },
     {
         name: 'Redis',
@@ -155,11 +160,6 @@ let skills = [
     {
         name: 'MongoDB',
         href: 'https://www.mongodb.com/',
-        category: 'Databases'
-    },
-    {
-        name: 'MYSQL',
-        href: 'https://www.mysql.com/',
         category: 'Databases'
     },
     {
@@ -178,15 +178,20 @@ let skills = [
         category: 'Monitoring'
     },
     {
+        name: 'Zabbix',
+        href: 'https://www.zabbix.com/',
+        category: 'Monitoring'
+    },
+    {
+        name: 'Gatus',
+        href: 'https://gatus.io/',
+        category: 'Monitoring'
+    },
+    {
         name: 'InfluxDB',
         href: 'https://www.influxdata.com/',
         category: 'Databases'
     },
-    {
-        name: 'PhpMyAdmin',
-        href: 'https://www.phpmyadmin.net/',
-        category: 'Databases'
-    }
 ];
 
 function groupByCategory(skills) {
@@ -205,7 +210,8 @@ const specialIcons = {
     'daisyui': 'https://img.daisyui.com/images/daisyui-logo/daisyui-logomark.svg',
     'portainer': 'https://www.portainer.io/hubfs/crane-icon.svg',
     'influxdb': 'https://www.influxdata.com/wp-content/uploads/cubo.svg',
-    'phpmyadmin': 'https://www.phpmyadmin.net/static/favicon.ico',
+    'zabbix': 'https://assets.zabbix.com/img/apple-touch-icon-120x120-precomposed.png',
+    'gatus': 'https://github.com/TwiN/gatus/blob/master/.github/assets/logo.png?raw=true',
 };
 
 function getIconUrl(skillName) {
