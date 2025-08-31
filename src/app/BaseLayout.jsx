@@ -14,7 +14,7 @@ export default function BaseLayout({children, locale = "en"}) {
             <script defer={true} async={true} src={"/ParticleCanvas.js"}/>
 
             <Script
-                src="https://app.rybbit.io/api/script.js"
+                src="https://rybbit.farmeurimmo.fr/api/script.js"
                 data-site-id="1"
                 strategy="afterInteractive"
                 data-session-replay="true"
