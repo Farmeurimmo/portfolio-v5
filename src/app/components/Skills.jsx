@@ -38,6 +38,11 @@ let skills = [
         category: 'Languages'
     },
     {
+        name: 'CPP',
+        href: 'https://isocpp.org/',
+        category: 'Languages'
+    },
+    {
         name: 'Markdown',
         href: 'https://www.markdownguide.org/',
         category: 'Languages'
@@ -70,11 +75,6 @@ let skills = [
     {
         name: 'Nextjs',
         href: 'https://nextjs.org/',
-        category: 'Frameworks & Libraries'
-    },
-    {
-        name: 'TailwindCSS',
-        href: 'https://tailwindcss.com/',
         category: 'Frameworks & Libraries'
     },
     {
@@ -158,11 +158,6 @@ let skills = [
         category: 'Databases'
     },
     {
-        name: 'MongoDB',
-        href: 'https://www.mongodb.com/',
-        category: 'Databases'
-    },
-    {
         name: 'Gradle',
         href: 'https://gradle.org/',
         category: 'DevOps'
@@ -208,7 +203,7 @@ const specialIcons = {
     'sdl3': 'https://raw.githubusercontent.com/github/explore/5d5b64a8022a3b815e1128bcb69a5a6a5f545bf7/topics/sdl/sdl.png',
     'junit5': 'https://junit.org/junit5/assets/img/junit5-logo.png',
     'daisyui': 'https://img.daisyui.com/images/daisyui-logo/daisyui-logomark.svg',
-    'portainer': 'https://www.portainer.io/hubfs/crane-icon.svg',
+    'portainer': 'https://downloads.portainer.io/assets/portainer-p-logo-280x280.png',
     'influxdb': 'https://www.influxdata.com/wp-content/uploads/cubo.svg',
     'zabbix': 'https://assets.zabbix.com/img/apple-touch-icon-120x120-precomposed.png',
     'gatus': 'https://github.com/TwiN/gatus/blob/master/.github/assets/logo.png?raw=true',

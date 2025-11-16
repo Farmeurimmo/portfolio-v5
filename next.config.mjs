@@ -11,7 +11,7 @@ const nextConfig = {
             'skillicons.dev',
             'junit.org',
             'img.daisyui.com',
-            'www.portainer.io',
+            'downloads.portainer.io',
             'www.influxdata.com',
             'raw.githubusercontent.com',
             'assets.zabbix.com',
