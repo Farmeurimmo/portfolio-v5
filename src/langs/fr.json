@@ -191,6 +191,18 @@
           "Web dynamique"
         ],
         "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1webd-project-cover.png"
+      },
+      {
+        "id": "1cdev-project",
+        "title": "Projet C – Supémon (Jeu de combat)",
+        "excerpt": "Jeu de combat en C inspiré de Pokémon, avec gestion des entités, attaques, effets de statut et interface console.",
+        "tags": [
+          "C",
+          "Jeu de combat",
+          "Console",
+          "Structures de données"
+        ],
+        "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1cdev-cover.png"
       }
     ],
     "title": "Mes projets actuels et passés",
@@ -449,7 +461,7 @@
     "1algo-project": {
       "title": "Mini-projet Python – Jeu de stratégie",
       "summary": "Jeu de stratégie à deux joueurs développé en Python avec interface Tkinter. Le but est de capturer les pièces adverses selon des règles précises sur un plateau carré.",
-      "score": "Note obtenue : 87.5/100",
+      "score": "Note obtenue : 90/100",
       "rules": {
         "title": "Règles du jeu",
         "items": [
@@ -496,9 +508,10 @@
         ]
       }
     },
-    "cinema": {
+    "1webd-project": {
       "title": "Mini-Projet Cinéma",
       "summary": "Application web pour afficher et rechercher des films via l’API OMDb.",
+      "score": "Note: 82/100",
       "images": {
         "indexAlt": "Page d’accueil montrant les films tendances",
         "searchAlt": "Page de recherche de films avec résultats en temps réel",
@@ -528,6 +541,43 @@
           "search : barre de recherche et résultats en temps réel, bouton 'charger plus'.",
           "movie : détails complets du film, résumé, genre, acteurs, notes et date DVD en bonus.",
           "Gestion Git : dépôt distant, branches et messages de commit."
+        ]
+      }
+    },
+    "1cdev-project": {
+      "title": "Projet C – Supémon (Jeu de combat)",
+      "summary": "Jeu de combat en C inspiré de Pokémon, avec gestion des entités, attaques, effets de statut, interface console et logique de combat.",
+      "images": {
+        "indexAlt": "Fin d’un combat entre deux supémons",
+        "otherAlt": "Milieu de combat avec options d’attaque"
+      },
+      "score": "Note: 98/100",
+      "requirements": {
+        "title": "Contexte et exigences",
+        "text": "Développer un jeu de combat en C avec des entités appelées supémons, chacune ayant des statistiques, des attaques et des effets de statut."
+      },
+      "deliverables": {
+        "title": "Livrables",
+        "items": [
+          "Structures pour les supémons et attaques.",
+          "Fonctions pour gérer les combats, attaques, effets de statut.",
+          "Interface console pour afficher l’état du combat et les options.",
+          "Gestion des entrées utilisateur avec validation.",
+          "Système de tours alternés entre le joueur et l’IA.",
+          "Conditions de victoire/défaite basées sur les PV des supémons.",
+          "Capture possible de nouveaux supémons après le combat.",
+          "Évolution des supémons après avoir gagné des combats.",
+          "Centre de soins pour restaurer les PV des supémons."
+        ]
+      },
+      "grading": {
+        "title": "Critères de notation",
+        "items": [
+          "Correctitude des structures et fonctions.",
+          "Fonctionnement fluide du combat avec gestion des tours et effets.",
+          "Interface utilisateur claire.",
+          "Validation robuste des entrées utilisateur.",
+          "Respect des contraintes techniques (langage C)."
         ]
       }
     }

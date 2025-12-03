@@ -191,6 +191,18 @@
           "Dynamic Web"
         ],
         "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1webd-project.png"
+      },
+      {
+        "id": "1cdev-project",
+        "title": "C Project – Supémon (Combat Game)",
+        "excerpt": "A C-based combat game inspired by Pokémon, featuring entity management, attacks, status effects and a console interface.",
+        "tags": [
+          "C",
+          "Combat Game",
+          "Console",
+          "Data Structures"
+        ],
+        "coverImage": "https://cdn.farmeurimmo.fr/img/projects/1cdev-cover.png"
       }
     ],
     "title": "My current and old projects",
@@ -449,7 +461,7 @@
     "1algo-project": {
       "title": "Python Mini-Project – Strategy Game",
       "summary": "Two-player strategy game developed in Python using the Tkinter interface. The goal is to capture opponent pieces based on specific rules on a square board.",
-      "score": "Score obtained: 87.5/100",
+      "score": "Score obtained: 90/100",
       "rules": {
         "title": "Game Rules",
         "items": [
@@ -496,7 +508,7 @@
         ]
       }
     },
-    "cinema": {
+    "1webd-project": {
       "title": "Cinema Mini-Project",
       "summary": "Web application to display and search movies using the OMDb API.",
       "images": {
@@ -528,6 +540,43 @@
           "search: search bar and real-time results, 'load more' button.",
           "movie: full movie details, synopsis, genre, actors, ratings and DVD date as bonus.",
           "Git management: remote repo, branches and commit messages."
+        ]
+      }
+    },
+    "1cdev-project": {
+      "title": "C Project – Supémon (Combat Game)",
+      "summary": "Combat game in C inspired by Pokémon, with entity management, attacks, status effects, console interface and combat logic.",
+      "images": {
+        "indexAlt": "End of a battle between two supémons",
+        "otherAlt": "Mid-battle view with attack options"
+      },
+      "score": "Grade: 98/100",
+      "requirements": {
+        "title": "Context and Requirements",
+        "text": "Develop a combat game in C with entities called supémons, each having stats, attacks and status effects."
+      },
+      "deliverables": {
+        "title": "Deliverables",
+        "items": [
+          "Structures for supémons and attacks.",
+          "Functions to handle combats, attacks and status effects.",
+          "Console interface to display combat state and options.",
+          "User input handling with validation.",
+          "Turn-based system alternating between player and AI.",
+          "Victory/defeat conditions based on supémon HP.",
+          "Possible capture of new supémons after combat.",
+          "Evolution of supémons after winning battles.",
+          "Healing center to restore supémon HP."
+        ]
+      },
+      "grading": {
+        "title": "Grading Criteria",
+        "items": [
+          "Correctness of structures and functions.",
+          "Smooth combat flow with turn management and effects.",
+          "Clear user interface.",
+          "Robust validation of user inputs.",
+          "Respect of technical constraints (C language)."
         ]
       }
     }

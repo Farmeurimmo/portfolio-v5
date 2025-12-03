@@ -2,17 +2,17 @@ import {useTranslations} from "next-intl";
 import Image from "next/image";
 import GenerateProjectLangs from "@/app/components/GenerateProjectLangs";
 
-export default function CinemaProject() {
-    const t = useTranslations("projects.1webd-project");
+export default function OneCdevProject() {
+    const t = useTranslations("projects.1cdev-project");
 
     const images = [
         {
-            src: "https://cdn.farmeurimmo.fr/img/projects/1webd-project-home.png",
+            src: "https://cdn.farmeurimmo.fr/img/projects/1cdev-cover.png",
             alt: t('images.indexAlt')
         },
         {
-            src: "https://cdn.farmeurimmo.fr/img/projects/1webd-project-cover.png",
-            alt: t('images.searchAlt')
+            src: "https://cdn.farmeurimmo.fr/img/projects/1cdev-other.png",
+            alt: t('images.otherAlt')
         }
     ];
 
@@ -21,12 +21,12 @@ export default function CinemaProject() {
 
             <title>{t('title')}</title>
             <meta name="description" content={t('summary')}/>
-            <meta name="keywords" content="cinema, movies, API, JavaScript, web app"/>
+            <meta name="keywords" content="1cdev, ERP, JavaScript, web app"/>
             <meta name="robots" content="index, follow"/>
             <meta property="og:title" content={t('title')}/>
             <meta property="og:description" content={t('summary')}/>
             <meta property="og:image" content={images[0].src}/>
-            <meta property="og:url" content="https://farmeurimmo.fr/projects/cinema"/>
+            <meta property="og:url" content="https://farmeurimmo.fr/projects/1cdev"/>
             <meta property="og:type" content="website"/>
             <meta property="og:site_name" content="Farmeurimmo"/>
 
@@ -37,7 +37,7 @@ export default function CinemaProject() {
 
             <div className="mb-8 flex gap-4">
                 <a
-                    href="https://github.com/Farmeurimmo/1WEBD-Project"
+                    href="https://github.com/Farmeurimmo/1CDEV-Project"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 bg-gray-900 text-white rounded-lg shadow hover:bg-gray-700 transition"
