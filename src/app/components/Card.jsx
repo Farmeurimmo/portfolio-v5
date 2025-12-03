@@ -15,7 +15,7 @@ function Card({post, isBlog = true}) {
         <Link
             href={`/${currentLocale}/${postType}/${slug}`}
             className={`flex flex-col justify-between items-center text-center flex-1 min-w-[350px] bg-white 
-            dark:bg-gray-800 rounded-2xl shadow-md max-w-[800px] hover:scale-105 hover:shadow-lg transition-transform 
+            dark:bg-gray-800 rounded-2xl shadow-md max-w-[900px] hover:scale-105 hover:shadow-lg transition-transform 
             cursor-pointer active:scale-95 h-full border border-gray-400 focus:border`}
         >
             <Image

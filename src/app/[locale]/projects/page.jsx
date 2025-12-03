@@ -12,7 +12,7 @@ export default function ProjectsHome() {
             <p className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-8">{t('description')}</p>
             <ul className={`flex flex-wrap gap-6 p-4 justify-start`}>
                 {projects.map((project) => (
-                    <li key={project.id} className="min-w-[400px] grow flex-1 max-w-[800px]">
+                    <li key={project.id} className="min-w-[400px] grow flex-1 max-w-[900px]">
                         <Card post={project} isBlog={false}/>
                     </li>
                 ))}
