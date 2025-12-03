@@ -34,6 +34,7 @@ export default function CinemaProject() {
 
             <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
             <p className="italic mb-4">{t('summary')}</p>
+            <p className="mb-4">{t('score')}</p>
 
             <div className="mb-8 flex gap-4">
                 <a

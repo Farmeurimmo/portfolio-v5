@@ -21,12 +21,12 @@ export default function OneCdevProject() {
 
             <title>{t('title')}</title>
             <meta name="description" content={t('summary')}/>
-            <meta name="keywords" content="1cdev, ERP, JavaScript, web app"/>
+            <meta name="keywords" content="1cdev, Supemon, C"/>
             <meta name="robots" content="index, follow"/>
             <meta property="og:title" content={t('title')}/>
             <meta property="og:description" content={t('summary')}/>
             <meta property="og:image" content={images[0].src}/>
-            <meta property="og:url" content="https://farmeurimmo.fr/projects/1cdev"/>
+            <meta property="og:url" content="https://farmeurimmo.fr/projects/1cdev-project"/>
             <meta property="og:type" content="website"/>
             <meta property="og:site_name" content="Farmeurimmo"/>
 
@@ -34,6 +34,7 @@ export default function OneCdevProject() {
 
             <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
             <p className="italic mb-4">{t('summary')}</p>
+            <p className="mb-4">{t('score')}</p>
 
             <div className="mb-8 flex gap-4">
                 <a
