@@ -11,7 +11,18 @@ coverImage: "https://cdn.farmeurimmo.fr/img/projects/1cdev-cover.png"
 Jeu de combat en C inspiré de Pokémon, avec gestion d'entités, attaques, effets de statut, interface console et logique
 de combat.
 
+### Liens
+
+- [Page GitHub](https://github.com/Farmeurimmo/1CDEV-Project)
+
 **Note : 98/100**
+
+### En quelques images
+
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1cdev-cover.png" alt="Écran de fin d'un combat" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1cdev-other.png" alt="Interface de combat" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+</div>
 
 ### Contexte et exigences
 
@@ -37,4 +48,3 @@ effets de statut.
 - Interface utilisateur claire.
 - Validation robuste des entrées utilisateur.
 - Respect des contraintes techniques (langage C).
-

@@ -10,7 +10,18 @@ coverImage: "https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png"
 
 Projet individuel de codage de deux jeux de stratégie abstraits : Snort et Dodgem.
 
+### Liens
+
+- [Page GitHub](https://github.com/Farmeurimmo/1PYTH-Project)
+
 **Note : 80/100**
+
+### En quelques images
+
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png" alt="Mode de jeu dodgem" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1pyth-project-snort.png" alt="Mode de jeu snort" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+</div>
 
 ### Description générale
 
@@ -37,4 +48,3 @@ gestion des entrées et la détection de la victoire.
 - Validation stricte des entrées.
 - Code clair et bien structuré.
 - Documentation incluse expliquant les algorithmes.
-

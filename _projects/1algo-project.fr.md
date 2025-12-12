@@ -2,7 +2,7 @@
 title: "Jeu de stratégie en Python – Reine & Tours"
 date: "2025-12-04"
 excerpt: "Jeu de stratégie à deux joueurs développé en Python avec Tkinter. Comprend un plateau carré, des règles de mouvement et de capture uniques, et une architecture orientée objet propre."
-tags: ["Python", "Tkinter", "Développement de jeux", "POO"]
+tags: [ "Python", "Tkinter", "Développement de jeux", "POO" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png"
 ---
 
@@ -11,7 +11,18 @@ coverImage: "https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png"
 Jeu de stratégie à deux joueurs développé en Python à l'aide de l'interface Tkinter. L'objectif est de capturer les
 pièces de l'adversaire en fonction de règles spécifiques sur un plateau carré.
 
+### Liens
+
+- [Page GitHub](https://github.com/Farmeurimmo/1ALGO-Project)
+
 **Score obtenu : 90/100**
+
+### En quelques images
+
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png" alt="Partie en cours" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1algo-project-home.png" alt="Menu de démarrage de partie" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+</div>
 
 ### Règles du jeu
 
@@ -50,4 +61,3 @@ pièces de l'adversaire en fonction de règles spécifiques sur un plateau carr�
 - Sauvegarder/charger l'état du jeu
 - Animations visuelles ou sonores
 - Jouer contre une IA (stratégie aléatoire ou basique)
-

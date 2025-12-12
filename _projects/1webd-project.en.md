@@ -10,9 +10,20 @@ coverImage: "https://cdn.farmeurimmo.fr/img/projects/1webd-project-cover.png"
 
 Web application to display and search movies using the OMDb API.
 
+### Links
+
+- [GitHub Page](https://github.com/Farmeurimmo/1WEBD-Project)
+
 ### Context and Requirements
 
 A village cinema wants an app to allow clients to view available movies via an API.
+
+### In a few images
+
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1webd-project-home.png" alt="Cinema app home" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1webd-project-cover.png" alt="Movie search page" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+</div>
 
 ### Deliverables
 
@@ -31,4 +42,3 @@ A village cinema wants an app to allow clients to view available movies via an A
 - search: search bar and real-time results, 'load more' button.
 - movie: full movie details, synopsis, genre, actors, ratings and DVD date as bonus.
 - Git management: remote repo, branches and commit messages.
-

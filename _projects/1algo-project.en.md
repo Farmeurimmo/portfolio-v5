@@ -11,7 +11,18 @@ coverImage: "https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png"
 Two-player strategy game developed in Python using the Tkinter interface. The goal is to capture opponent pieces based
 on specific rules on a square board.
 
+### Links
+
+- [GitHub Page](https://github.com/Farmeurimmo/1ALGO-Project)
+
 **Score obtained: 90/100**
+
+### In a few images
+
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png" alt="Game in progress" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1algo-project-home.png" alt="Game start menu" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+</div>
 
 ### Game Rules
 
@@ -50,4 +61,3 @@ on specific rules on a square board.
 - Save/load game state
 - Visual or sound animations
 - Play against AI (random or basic strategy)
-

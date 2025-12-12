@@ -11,7 +11,18 @@ coverImage: "https://cdn.farmeurimmo.fr/img/projects/1cdev-cover.png"
 Combat game in C inspired by Pokémon, with entity management, attacks, status effects, console interface and combat
 logic.
 
+### Links
+
+- [GitHub Page](https://github.com/Farmeurimmo/1CDEV-Project)
+
 **Grade: 98/100**
+
+### In a few images
+
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1cdev-cover.png" alt="End of combat screen" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1cdev-other.png" alt="Combat interface" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+</div>
 
 ### Context and Requirements
 
@@ -36,4 +47,3 @@ Develop a combat game in C with entities called supémons, each having stats, at
 - Clear user interface.
 - Robust validation of user inputs.
 - Respect of technical constraints (C language).
-

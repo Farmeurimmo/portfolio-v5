@@ -10,7 +10,18 @@ coverImage: "https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png"
 
 Individual project coding two abstract strategy games: Snort and Dodgem.
 
+### Links
+
+- [GitHub Page](https://github.com/Farmeurimmo/1PYTH-Project)
+
 **Grade: 80/100**
+
+### In a few images
+
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png" alt="Dodgem mode" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+  <img src="https://cdn.farmeurimmo.fr/img/projects/1pyth-project-snort.png" alt="Snort mode" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
+</div>
 
 ### General Description
 
@@ -35,4 +46,3 @@ Functions include: board initialization with pieces, display, move validation, i
 - Strict input validation.
 - Clear and well-structured code.
 - Documentation included explaining algorithms.
-
