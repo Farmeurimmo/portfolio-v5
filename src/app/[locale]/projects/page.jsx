@@ -1,22 +1,17 @@
-import {useTranslations} from "next-intl";
-import Card from "@/app/components/Card";
+import {getAllProjects} from "@/lib/projects";
+import {getTranslations} from "next-intl/server";
+import ProjectList from "@/app/components/ProjectList";
 
-export default function ProjectsHome() {
-    const t = useTranslations('projects');
-
-    let projects = t.raw('projects');
+export default async function ProjectsHome({params}) {
+    const {locale} = await params;
+    const t = await getTranslations({locale, namespace: 'projects'});
+    const allProjects = getAllProjects(locale);
 
     return (
-        <section id="blog" className="flex flex-col min-h-screen p-4 lg:p-8">
+        <section id="projects" className="flex flex-col min-h-screen p-4 lg:p-8">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">{t('title')}</h1>
             <p className="text-xl font-bold text-gray-900 dark:text-gray-200 mb-8">{t('description')}</p>
-            <ul className={`flex flex-wrap gap-6 p-4 justify-start`}>
-                {projects.map((project) => (
-                    <li key={project.id} className="min-w-[400px] grow flex-1 max-w-[900px]">
-                        <Card post={project} isBlog={false}/>
-                    </li>
-                ))}
-            </ul>
+            <ProjectList allProjects={allProjects}/>
         </section>
-    )
+    );
 }

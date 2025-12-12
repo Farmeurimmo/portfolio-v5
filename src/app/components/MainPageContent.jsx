@@ -1,6 +1,6 @@
 "use client";
 
-import {ArrowRight, CircleHelp, Code, Server, Wrench} from "lucide-react";
+import {ArrowRight, CircleHelp, Code, Server} from "lucide-react";
 import ContactForm from "@/app/components/ContactForm";
 import {useTranslations} from "next-intl";
 import {useState} from "react";

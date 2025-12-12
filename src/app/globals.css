@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "highlight.js/styles/github-dark.css";
 
 @plugin "daisyui" {
     themes: light --default, dark --prefersdark, cupcake;
@@ -51,11 +52,11 @@
     }
 
     .markdown pre {
-        @apply bg-neutral-200 p-4 rounded-lg overflow-x-auto text-sm;
+        @apply overflow-x-auto text-sm;
     }
 
     .markdown code {
-        @apply bg-neutral-200 dark:bg-neutral-700 px-1 py-0.5 rounded;
+        @apply rounded-lg;
     }
 
     .markdown p code {
@@ -68,5 +69,29 @@
 
     .markdown img {
         @apply w-full max-w-2xl mx-auto rounded-lg shadow-md dark:shadow-lg mt-4;
+    }
+
+    .markdown table {
+        @apply w-full my-6 border-collapse;
+    }
+
+    .markdown table thead {
+        @apply bg-neutral-200 dark:bg-neutral-700;
+    }
+
+    .markdown table th {
+        @apply border border-neutral-300 dark:border-neutral-600 px-4 py-2 text-left font-semibold;
+    }
+
+    .markdown table td {
+        @apply border border-neutral-300 dark:border-neutral-600 px-4 py-2;
+    }
+
+    .markdown table tbody tr:nth-child(even) {
+        @apply bg-neutral-100 dark:bg-neutral-800;
+    }
+
+    .markdown table tbody tr:hover {
+        @apply bg-neutral-200 dark:bg-neutral-700;
     }
 }

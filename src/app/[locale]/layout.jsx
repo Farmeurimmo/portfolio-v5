@@ -41,7 +41,7 @@ export async function generateMetadata({params}) {
     const metadata = {
         en: {
             default: {
-                title: "Farmeurimmo | Developer and System Administrator",
+                title: "Developer and System Administrator | Farmeurimmo",
                 description: "Explore my portfolio as a web and Java developer, system administrator, infrastructure management specialist, and digital solutions provider.",
                 keywords: "developer, system administrator, web, Java, infrastructure management, programming, automation, cloud solutions, security, digital solutions",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
@@ -49,7 +49,7 @@ export async function generateMetadata({params}) {
                 robots: "index, follow"
             },
             blog: {
-                title: "Farmeurimmo | Personal blog",
+                title: "Personal blog | Farmeurimmo",
                 description: "Articles focused on technology, development, system administration, and digital solutions.",
                 keywords: "blog, technology, development, system administration, programming, cloud computing, automation, software engineering, cybersecurity, digital solutions, articles",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
@@ -57,7 +57,7 @@ export async function generateMetadata({params}) {
                 robots: "index, follow"
             },
             projects: {
-                title: "Farmeurimmo | Developed and Ongoing Projects",
+                title: "Developed and Ongoing Projects | Farmeurimmo",
                 description: "A showcase of my completed and ongoing projects in development, system administration, and digital solutions.",
                 keywords: "projects, software development, system administration, digital solutions, programming, automation, cloud solutions, infrastructure, DevOps, web, java",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
@@ -65,7 +65,7 @@ export async function generateMetadata({params}) {
                 robots: "index, follow"
             },
             legals: {
-                title: "Farmeurimmo | Terms & Legal Notices",
+                title: "Terms & Legal Notices | Farmeurimmo",
                 description: "Find all legal notices, terms of use, and privacy policies related to my portfolio website.",
                 keywords: "legal notices, terms of use, privacy policy, data protection, cookies, website terms",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
@@ -75,7 +75,7 @@ export async function generateMetadata({params}) {
         },
         fr: {
             default: {
-                title: "Farmeurimmo | Développeur et Administrateur Système",
+                title: "Développeur et Administrateur Système | Farmeurimmo",
                 description: "Découvrez mon portfolio de développeur web et java, administrateur système, gestion d’infrastructure et solutions numériques.",
                 keywords: "développeur, administrateur système, web, java, gestion des infrastructures, programmation, automatisation, solutions cloud, sécurité, solutions numériques",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
@@ -83,7 +83,7 @@ export async function generateMetadata({params}) {
                 "robots": "index, follow"
             },
             blog: {
-                title: "Farmeurimmo | Blog Personnel ",
+                title: "Blog Personnel | Farmeurimmo",
                 description: "Articles orienté sur la technique, le développement, l'administration système et les solutions numériques.",
                 keywords: "blog, technologie, développement, administration système, programmation, cloud computing, automatisation, ingénierie logicielle, cybersécurité, solutions numériques, articles",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
@@ -91,7 +91,7 @@ export async function generateMetadata({params}) {
                 "robots": "index, follow"
             },
             projects: {
-                title: "Farmeurimmo | Projets développés et en cours",
+                title: "Projets développés et en cours | Farmeurimmo",
                 description: "Une vitrine de mes projets terminés et en cours en développement, administration système et solutions numériques.",
                 keywords: "projets, développement logiciel, administration système, solutions numériques, programmation, automatisation, solutions cloud, infrastructure, DevOps, web, java",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
@@ -99,7 +99,7 @@ export async function generateMetadata({params}) {
                 "robots": "index, follow"
             },
             legals: {
-                title: "Farmeurimmo | Conditions & Mentions Légales",
+                title: "Conditions & Mentions Légales | Farmeurimmo",
                 description: "Retrouvez toutes les mentions légales, conditions d’utilisation et politiques de confidentialité liées à mon site portfolio.",
                 keywords: "mentions légales, conditions d'utilisation, politique de confidentialité, protection des données, cookies, conditions du site web",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",

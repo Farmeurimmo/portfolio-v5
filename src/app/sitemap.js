@@ -1,7 +1,7 @@
 import {host} from '@/config';
 import {getPathname, routing} from '@/i18n/routing';
 import {getAllPosts} from "@/lib/blog";
-import {getAllProjectSlugs} from "@/lib/projects";
+import {getProjectsSlugs} from "@/lib/projects";
 
 export default async function sitemap() {
     const urls = [];
@@ -57,10 +57,10 @@ export default async function sitemap() {
         });
     }
 
-    for (const project of await getAllProjectSlugs()) {
-        const href = `/projects/${project}`;
+    for (const project of getProjectsSlugs()) {
+        const href = `/projects/${project.slug}`;
         urls.push({
-            url: getUrl(href, 'en'),
+            url: getUrl(href, project.locale),
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.7,
