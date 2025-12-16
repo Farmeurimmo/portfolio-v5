@@ -2,7 +2,7 @@ import createMiddleware from 'next-intl/middleware';
 import {routing} from './i18n/routing';
 import {NextResponse} from 'next/server';
 
-const middleware = createMiddleware(routing);
+const proxy = createMiddleware(routing);
 
 export default async function customMiddleware(req, ev) {
     const {pathname} = req.nextUrl;
@@ -21,7 +21,7 @@ export default async function customMiddleware(req, ev) {
         return NextResponse.redirect(new URL(`/${locale}${pathname}`, req.url));
     }
 
-    return middleware(req, ev);
+    return proxy(req, ev);
 }
 
 export const config = {
