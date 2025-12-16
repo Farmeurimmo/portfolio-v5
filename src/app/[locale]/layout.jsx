@@ -70,7 +70,7 @@ export async function generateMetadata({params}) {
                 keywords: "legal notices, terms of use, privacy policy, data protection, cookies, website terms",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
-                robots: "index, nofollow"
+                robots: "noindex, follow"
             }
         },
         fr: {
@@ -104,7 +104,7 @@ export async function generateMetadata({params}) {
                 keywords: "mentions légales, conditions d'utilisation, politique de confidentialité, protection des données, cookies, conditions du site web",
                 "og:image": "https://cdn.farmeurimmo.fr/img/logo.png",
                 "twitter:image": "https://cdn.farmeurimmo.fr/img/logo.png",
-                "robots": "index, nofollow"
+                "robots": "noindex, follow"
             }
         }
     };
