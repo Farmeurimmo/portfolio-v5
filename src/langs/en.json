@@ -2,8 +2,8 @@
   "HomePage": {
     "title": "Farmeurimmo",
     "description": {
-      "part1": "Pragmatic Full Stack developer who knows what it takes and adapts quickly to your needs.",
-      "part2": "No over-engineering: I choose the tech that fits your project, not the one that looks good on my resume."
+      "part1": "As a pragmatic Full Stack developer, I specialize in building robust and scalable applications. My goal is to understand your unique challenges to deliver solutions that are perfectly tailored to your needs.",
+      "part2": "I believe in choosing the right tool for the job, not just following the latest trend. This approach allows me to build efficient and sustainable solutions that meet your goals without unnecessary complexity."
     },
     "skills": {
       "title": "Technologies I use",
@@ -50,6 +50,13 @@
       "sending": "Sending...",
       "successMessage": "Message sent successfully!",
       "otherWays": "Other ways to contact me"
+    },
+    "about": {
+      "title": "A Little More About Me",
+      "content": {
+        "part1": "Passionate about technology, I thrive in both programming and managing my own servers. This dual role gives me a deep understanding of the software lifecycle, from design to deployment. My curious side has even led me to electronics, where I've been able to create tangible projects like an outdoor alarm and a weather station.",
+        "part2": "Outside of the digital world, I like to recharge through a variety of activities. Rock climbing and calisthenics allow me to push myself physically and mentally. Gardening offers me a bubble of tranquility, while trading stimulates my analytical mind. Each of these hobbies enriches my perspective and my ability to approach challenges with creativity and resilience."
+      }
     }
   },
   "BlogPage": {

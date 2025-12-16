@@ -51,31 +51,45 @@ export default function MainPageContent() {
                     {t('services.title')}
                 </h2>
 
-                <div className="flex flex-wrap gap-6 mt-6 w-full justify-start">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 w-full">
                     {services.map(service => (
-                        <div
+                        <article
                             key={service.id}
                             id={service.id}
                             tabIndex={0}
                             role="button"
-                            className="flex flex-col justify-between items-center text-center flex-1 min-w-[250px] p-6
-                            bg-white dark:bg-gray-800 rounded-2xl shadow-md max-w-[600px] hover:scale-105 hover:shadow-lg
+                            className="flex flex-col justify-between items-center text-center p-6
+                            bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:scale-105 hover:shadow-lg
                             transition-transform cursor-pointer active:scale-95 border-amber-500 focus:border"
                             onClick={() => handleContactClick(t(service.title))}
                             aria-label={t(service.title)}
                         >
                             {service.icon}
                             <h3 className="text-2xl font-bold text-black dark:text-white flex items-center gap-2">
-                                {t(service.title)} <ArrowRight className="h-6 w-6 text-amber-500"/>
+                                {t(service.title)}
                             </h3>
-                            <p className="text-gray-700 dark:text-gray-300 text-sm italic">
+                            <p className="text-gray-700 dark:text-gray-300 text-sm italic mt-2">
                                 {t(service.description)}
                             </p>
-                            <span className="mt-2 px-4 py-2 btn btn-soft btn-info rounded-xl">
-                                En savoir plus
+                            <span className="mt-4 px-4 py-2 btn btn-soft btn-info rounded-xl flex items-center gap-2">
+                                {t('services.contactButton')} <ArrowRight className="h-5 w-5"/>
                             </span>
-                        </div>
+                        </article>
                     ))}
+                </div>
+            </section>
+
+            <section id="about-me" className="flex flex-col items-start gap-2 sm:p-8">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
+                    {t('about.title')}
+                </h2>
+                <div className="text-lg sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200 flex flex-col gap-4">
+                    <p>
+                        {t('about.content.part1')}
+                    </p>
+                    <p>
+                        {t('about.content.part2')}
+                    </p>
                 </div>
             </section>
 

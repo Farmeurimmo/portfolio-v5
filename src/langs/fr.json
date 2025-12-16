@@ -2,8 +2,8 @@
   "HomePage": {
     "title": "Farmeurimmo",
     "description": {
-      "part1": "Développeur Full Stack pragmatique, je maîtrise ce qu'il faut et m'adapte rapidement selon vos besoins.",
-      "part2": "Pas de sur-ingénierie : je choisis la techno qui colle à vos besoins, pas celle qui fait joli sur mon CV."
+      "part1": "En tant que développeur Full Stack pragmatique, je me spécialise dans la création d'applications robustes et évolutives. Mon objectif est de comprendre vos défis uniques pour fournir des solutions parfaitement adaptées à vos besoins.",
+      "part2": "Je crois qu'il faut choisir le bon outil pour chaque tâche, et non simplement suivre la dernière tendance. Cette approche me permet de créer des solutions efficaces et durables qui répondent à vos objectifs sans complexité inutile."
     },
     "skills": {
       "title": "Technologies que j'utilise",
@@ -50,6 +50,13 @@
       "sending": "Envoi en cours...",
       "successMessage": "Message envoyé avec succès !",
       "otherWays": "Autres moyens de me contacter"
+    },
+    "about": {
+      "title": "Un peu plus sur moi",
+      "content": {
+        "part1": "Passionné de technologie, je m'épanouis aussi bien dans la programmation que dans la gestion de mes propres serveurs. Cette double casquette me donne une compréhension approfondie du cycle de vie logiciel, de la conception au déploiement. Mon côté curieux m'a même poussé vers l'électronique, où j'ai pu réaliser des projets concrets comme une alarme extérieure et une station météo.",
+        "part2": "En dehors du monde numérique, j'aime me ressourcer à travers des activités variées. L'escalade et la callisthénie me permettent de me dépasser physiquement et mentalement. Le jardinage m'offre une bulle de tranquillité, tandis que le trading stimule mon esprit d'analyse. Chacun de ces passe-temps enrichit ma perspective et ma capacité à aborder les défis avec créativité et résilience."
+      }
     }
   },
   "BlogPage": {

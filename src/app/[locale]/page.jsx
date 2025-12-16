@@ -17,8 +17,8 @@ export default function HomePage() {
                                        className="rounded-full shadow-2xl w-24 h-24 lg:w-32 lg:h-32" alt="Logo"/>
                                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">{t('title')}</h1>
                             </div>
-                            <p className="text-lg font-semibold sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t("description.part1")}</p>
-                            <p className="text-lg font-semibold sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t("description.part2")}</p>
+                            <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t("description.part1")}</p>
+                            <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-200">{t("description.part2")}</p>
                         </div>
                     </div>
                 </section>
