@@ -57,7 +57,7 @@ export default function Footer() {
 
                     <Link href={"https://robin-massonnat.dev"} className="link link-hover text-amber-400"
                           target={"_blank"} rel={"noopener noreferrer"} title={"Développeur freelance Lyon Supinfo"}>
-                        Portfolio Robin Massonnat
+                        Développeur freelance Lyon Supinfo
                     </Link>
                 </nav>
             </footer>
