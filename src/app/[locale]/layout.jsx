@@ -137,6 +137,7 @@ export async function generateMetadata({params}) {
                 images: [{url: meta["og:image"]}],
                 url: `https://farmeurimmo.fr/${locale}${pathname}`,
                 siteName: "Farmeurimmo",
+                type: "website",
             },
             twitter: {
                 title: truncate(meta.title, 60),
