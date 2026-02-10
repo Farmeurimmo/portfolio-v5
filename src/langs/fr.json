@@ -2,8 +2,8 @@
   "HomePage": {
     "title": "Farmeurimmo",
     "description": {
-      "part1": "En tant que développeur Full Stack pragmatique, je me spécialise dans la création d'applications robustes et évolutives. Mon objectif est de comprendre vos défis uniques pour fournir des solutions parfaitement adaptées à vos besoins.",
-      "part2": "Je crois qu'il faut choisir le bon outil pour chaque tâche, et non simplement suivre la dernière tendance. Cette approche me permet de créer des solutions efficaces et durables qui répondent à vos objectifs sans complexité inutile."
+      "part1": "Développeur Full Stack avec une approche directe : je construis des applications qui tiennent la route et grandissent avec le temps. Mon travail commence par comprendre les vrais objectifs d'un projet, pas par imposer une stack technologique.",
+      "part2": "Chaque projet a ses propres besoins. Parfois, la solution la plus simple est la meilleure. D'autres fois, il faut sortir l'artillerie lourde. Je choisis mes outils en fonction de ce qui va réellement résoudre le problème, pas de ce qui fait le buzz sur LinkedIn."
     },
     "skills": {
       "title": "Technologies que j'utilise",
@@ -54,8 +54,11 @@
     "about": {
       "title": "Un peu plus sur moi",
       "content": {
-        "part1": "Passionné de technologie, je m'épanouis aussi bien dans la programmation que dans la gestion de mes propres serveurs. Cette double casquette me donne une compréhension approfondie du cycle de vie logiciel, de la conception au déploiement. Mon côté curieux m'a même poussé vers l'électronique, où j'ai pu réaliser des projets concrets comme une alarme extérieure et une station météo.",
-        "part2": "En dehors du monde numérique, j'aime me ressourcer à travers des activités variées. L'escalade et la callisthénie me permettent de me dépasser physiquement et mentalement. Le jardinage m'offre une bulle de tranquillité, tandis que le trading stimule mon esprit d'analyse. Chacun de ces passe-temps enrichit ma perspective et ma capacité à aborder les défis avec créativité et résilience."
+        "part1": "Passionné de technologie, je code autant que je gère mes propres serveurs. Cette double casquette donne une vision complète du cycle de vie d'une application, du premier commit au déploiement en production.",
+        "part2": "Ma curiosité m'a aussi mené vers l'électronique. J'ai bricolé quelques projets concrets : une alarme extérieure, une station météo. Rien de révolutionnaire, juste le plaisir de comprendre comment les choses fonctionnent.",
+        "part3": "En dehors des écrans, l'escalade et la callisthénie pour garder la tête claire. Le jardinage quand j'ai besoin de décrocher complètement.",
+        "part4": "Le trading m'a appris à lire les patterns, prendre des décisions rapides avec des informations incomplètes, et gérer le risque.",
+        "part5": "Ces compétences se transfèrent naturellement au développement : anticiper les cas limites, planifier pour l'incertitude, et savoir quand couper ses pertes plutôt que de s'accrocher à une solution qui ne fonctionne pas."
       }
     }
   },

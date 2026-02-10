@@ -90,6 +90,15 @@ export default function MainPageContent() {
                     <p>
                         {t('about.content.part2')}
                     </p>
+                    <p>
+                        {t('about.content.part3')}
+                    </p>
+                    <p>
+                        {t('about.content.part4')}
+                    </p>
+                    <p>
+                        {t('about.content.part5')}
+                    </p>
                 </div>
             </section>
 

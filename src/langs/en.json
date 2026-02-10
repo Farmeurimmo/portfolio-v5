@@ -2,8 +2,8 @@
   "HomePage": {
     "title": "Farmeurimmo",
     "description": {
-      "part1": "As a pragmatic Full Stack developer, I specialize in building robust and scalable applications. My goal is to understand your unique challenges to deliver solutions that are perfectly tailored to your needs.",
-      "part2": "I believe in choosing the right tool for the job, not just following the latest trend. This approach allows me to build efficient and sustainable solutions that meet your goals without unnecessary complexity."
+      "part1": "Full Stack developer with a straightforward approach: I build applications that hold up and scale over time. My work starts by understanding a project's real goals, not by pushing a tech stack.",
+      "part2": "Every project has its own needs. Sometimes the simplest solution is the best one. Other times, it's time to bring out the heavy artillery. I choose my tools based on what will actually solve the problem, not what's trending on LinkedIn."
     },
     "skills": {
       "title": "Technologies I use",
@@ -52,10 +52,13 @@
       "otherWays": "Other ways to contact me"
     },
     "about": {
-      "title": "A Little More About Me",
+      "title": "A bit more about me",
       "content": {
-        "part1": "Passionate about technology, I thrive in both programming and managing my own servers. This dual role gives me a deep understanding of the software lifecycle, from design to deployment. My curious side has even led me to electronics, where I've been able to create tangible projects like an outdoor alarm and a weather station.",
-        "part2": "Outside of the digital world, I like to recharge through a variety of activities. Rock climbing and calisthenics allow me to push myself physically and mentally. Gardening offers me a bubble of tranquility, while trading stimulates my analytical mind. Each of these hobbies enriches my perspective and my ability to approach challenges with creativity and resilience."
+        "part1": "Tech enthusiast who codes as much as I manage my own servers. This dual hat gives me a complete view of an application's lifecycle, from the first commit to production deployment.",
+        "part2": "My curiosity also led me to electronics. I've tinkered with a few concrete projects: an outdoor alarm, a weather station. Nothing groundbreaking, just the pleasure of understanding how things work.",
+        "part3": "Outside of screens, rock climbing and calisthenics to keep my head clear. Gardening when I need to completely disconnect.",
+        "part4": "Trading taught me to read patterns, make quick decisions with incomplete information, and manage risk.",
+        "part5": "These skills naturally transfer to development: anticipating edge cases, planning for uncertainty, and knowing when to cut your losses rather than clinging to a solution that isn't working."
       }
     }
   },
