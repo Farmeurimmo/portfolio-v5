@@ -30,14 +30,22 @@ export async function generateMetadata(props) {
         return notFound();
     }
 
+    const frUrl = `https://farmeurimmo.fr/fr/blog/${params.slug}`;
+    const enUrl = `https://farmeurimmo.fr/en/blog/${params.slug}`;
+    const currentUrl = params.locale === 'fr' ? frUrl : enUrl;
+
     let title = post.title.length > 60 ? post.title.substring(0, 57) + "..." : post.title;
     const description = post.excerpt.length > 160 ? post.excerpt.substring(0, 157) + "..." : post.excerpt;
 
-    return {
+    const result = {
         title,
+        description,
+        keywords: post.tags.join(", "),
         openGraph: {
             title,
+            description,
             images: [post.coverImage],
+            url: currentUrl,
             robots: "follow, index",
         },
         twitter: {
@@ -46,10 +54,20 @@ export async function generateMetadata(props) {
             images: [post.coverImage],
             title: title,
             description: description,
-        },
-        description: description,
-        keywords: post.tags.join(", "),
+        }
     };
+
+    if (process.env.NODE_ENV === 'production') {
+        result.alternates = {
+            canonical: currentUrl,
+            languages: {
+                'en': enUrl,
+                'fr': frUrl
+            }
+        };
+    }
+
+    return result;
 }
 
 export async function generateStaticParams() {

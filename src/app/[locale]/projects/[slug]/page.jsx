@@ -1,4 +1,4 @@
-import {getAllProjects, getProjectBySlug} from "@/lib/projects";
+import {getProjectsSlugs, getProjectBySlug} from "@/lib/projects";
 import {PostBody} from "@/app/components/PostBody";
 import {notFound} from "next/navigation";
 import markdownToHtml from "@/lib/markdownToHtml";
@@ -29,14 +29,22 @@ export async function generateMetadata(props) {
         return notFound();
     }
 
+    const frUrl = `https://farmeurimmo.fr/fr/projects/${params.slug}`;
+    const enUrl = `https://farmeurimmo.fr/en/projects/${params.slug}`;
+    const currentUrl = params.locale === 'fr' ? frUrl : enUrl;
+
     let title = project.frontmatter.title?.length > 50 ? project.frontmatter.title.substring(0, 57) + "..." : project.frontmatter.title + " | Farmeurimmo";
     const description = project.frontmatter.excerpt?.length > 160 ? project.frontmatter.excerpt.substring(0, 157) + "..." : project.frontmatter.excerpt;
 
-    return {
+    const result = {
         title,
+        description,
+        keywords: (project.frontmatter.tags || []).join(", "),
         openGraph: {
             title,
+            description,
             images: [project.frontmatter.coverImage],
+            url: currentUrl,
             robots: "follow, index",
         },
         twitter: {
@@ -45,16 +53,27 @@ export async function generateMetadata(props) {
             images: [project.frontmatter.coverImage],
             title: title,
             description: description,
-        },
-        description: description,
-        keywords: (project.frontmatter.tags || []).join(", "),
+        }
     };
+
+    if (process.env.NODE_ENV === 'production') {
+        result.alternates = {
+            canonical: currentUrl,
+            languages: {
+                'en': enUrl,
+                'fr': frUrl
+            }
+        };
+    }
+
+    return result;
 }
 
-export async function generateStaticParams({params: {locale}}) {
-    const projects = getAllProjects(locale);
+export async function generateStaticParams() {
+    const slugs = getProjectsSlugs();
 
-    return projects.map((project) => ({
-        slug: project.slug,
+    return slugs.map((item) => ({
+        slug: item.slug,
+        locale: item.locale
     }));
 }

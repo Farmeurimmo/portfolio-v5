@@ -126,7 +126,7 @@ export async function generateMetadata({params}) {
 
         const currentUrl = locale === 'fr' ? frUrl : enUrl;
 
-        return {
+        const result = {
             title: truncate(meta.title, 60),
             description: truncate(meta.description, 160),
             keywords: meta.keywords,
@@ -142,15 +142,21 @@ export async function generateMetadata({params}) {
                 title: truncate(meta.title, 60),
                 description: truncate(meta.description, 160),
                 images: [{url: meta["twitter:image"]}],
-            },
-            alternates: {
+            }
+        };
+
+        // Only add canonical and hreflang in production
+        if (process.env.NODE_ENV === 'production') {
+            result.alternates = {
                 canonical: currentUrl,
                 languages: {
                     'en': enUrl,
                     'fr': frUrl
                 }
-            }
-        };
+            };
+        }
+
+        return result;
     } catch (e) {
         console.error("Erreur dans la récupération des métadonnées:", e);
     }

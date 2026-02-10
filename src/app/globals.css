@@ -15,7 +15,8 @@
     .markdown p,
     .markdown ul,
     .markdown ol,
-    .markdown blockquote {
+    .markdown blockquote,
+    .markdown table {
         @apply my-6;
     }
 
