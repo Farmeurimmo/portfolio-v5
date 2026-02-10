@@ -54,11 +54,6 @@ export default function Footer() {
                     <Link className="link link-hover text-amber-400"
                           href="https://github.com/Farmeurimmo">{t("github")}</Link>
                     <p className={"text-amber-400"}>{t("discord")}</p>
-
-                    <Link href={"https://robin-massonnat.dev"} className="link link-hover text-amber-400"
-                          target={"_blank"} rel={"noopener noreferrer"} title={"Développeur freelance Lyon Supinfo"}>
-                        Développeur freelance Lyon Supinfo
-                    </Link>
                 </nav>
             </footer>
             <footer
