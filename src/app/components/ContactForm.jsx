@@ -184,7 +184,7 @@ export default function ContactForm({service}) {
                             target="_blank"
                             className="hover:underline text-lg font-medium"
                         >
-                            linkedin.com/in/robin-massonnat
+                            Robin Massonnat
                         </a>
                     </div>
                     <div className="text-gray-600 dark:text-gray-300 text-lg font-medium">Discord: Farmeurimmo</div>
