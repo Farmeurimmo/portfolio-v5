@@ -2,7 +2,9 @@
 
 import {useEffect, useState} from "react";
 import {useTranslations} from "next-intl";
-import {CircleCheck, LinkedinIcon, MailIcon, XCircle} from "lucide-react";
+import {CircleCheck, MailIcon, XCircle} from "lucide-react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactForm({service}) {
     const t = useTranslations("HomePage");
@@ -178,7 +180,7 @@ export default function ContactForm({service}) {
                         </a>
                     </div>
                     <div className="flex items-center space-x-2 link">
-                        <LinkedinIcon className="h-6 w-6"/>
+                        <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6"/>
                         <a
                             href="https://www.linkedin.com/in/robin-massonnat"
                             target="_blank"

@@ -11,13 +11,16 @@ export default function BaseLayout({children, locale = "en"}) {
 
             <meta lang={locale}/>
 
-            <script defer={true} async={true} src={"/ParticleCanvas.js"}/>
-
             <Script
                 src="https://rybbit.farmeurimmo.fr/api/script.js"
                 data-site-id="1"
                 strategy="afterInteractive"
                 data-session-replay="true"
+            />
+
+            <Script
+                strategy="afterInteractive"
+                src={"/ParticleCanvas.js"}
             />
         </head>
         <body className={`antialiased min-h-screen w-screen min-w-[450px]`}>
