@@ -2,8 +2,8 @@
   "HomePage": {
     "title": "Farmeurimmo",
     "description": {
-      "part1": "Développeur Full Stack avec une approche directe : je construis des applications qui tiennent la route et grandissent avec le temps. Mon travail commence par comprendre les vrais objectifs d'un projet, pas par imposer une stack technologique.",
-      "part2": "Chaque projet a ses propres besoins. Parfois, la solution la plus simple est la meilleure. D'autres fois, il faut sortir l'artillerie lourde. Je choisis mes outils en fonction de ce qui va réellement résoudre le problème, pas de ce qui fait le buzz sur LinkedIn."
+      "part1": "Développeur Full Stack avec une approche pragmatique : je conçois des applications solides, pensées pour durer et évoluer dans le temps. Mon point de départ n’est jamais la technologie, mais la compréhension des objectifs réels du projet.",
+      "part2": "Chaque projet a ses contraintes et ses priorités. Parfois, une solution simple et bien pensée suffit largement. D’autres fois, il faut une architecture plus robuste. Je choisis mes outils en fonction de ce qui résout efficacement le problème, pas en fonction des tendances."
     },
     "skills": {
       "title": "Technologies que j'utilise",
@@ -54,11 +54,11 @@
     "about": {
       "title": "Un peu plus sur moi",
       "content": {
-        "part1": "Passionné de technologie, je code autant que je gère mes propres serveurs. Cette double casquette donne une vision complète du cycle de vie d'une application, du premier commit au déploiement en production.",
-        "part2": "Ma curiosité m'a aussi mené vers l'électronique. J'ai bricolé quelques projets concrets : une alarme extérieure, une station météo. Rien de révolutionnaire, juste le plaisir de comprendre comment les choses fonctionnent.",
-        "part3": "En dehors des écrans, l'escalade et la callisthénie pour garder la tête claire. Le jardinage quand j'ai besoin de décrocher complètement.",
-        "part4": "Le trading m'a appris à lire les patterns, prendre des décisions rapides avec des informations incomplètes, et gérer le risque.",
-        "part5": "Ces compétences se transfèrent naturellement au développement : anticiper les cas limites, planifier pour l'incertitude, et savoir quand couper ses pertes plutôt que de s'accrocher à une solution qui ne fonctionne pas."
+        "part1": "Je m'intéresse à l'informatique depuis plusieurs années, avec une attirance particulière pour tout ce qui permet de comprendre ce qu'il se passe derrière l'écran. Cette curiosité m'a naturellement conduit vers le développement logiciel, mais aussi vers l'administration système. J'apprécie autant concevoir une application que préparer l'infrastructure qui la fait fonctionner.",
+        "part2": "Au fil du temps, j'ai développé mes propres projets, expérimenté différentes technologies et appris à gérer des serveurs, des services web et des environnements de production. Cette approche me permet d'avoir une vision globale d'un projet, depuis l'idée initiale jusqu'à son déploiement et sa maintenance.",
+        "part3": "Ma curiosité ne s'arrête pas au logiciel. J'aime également explorer l'électronique et les systèmes embarqués à travers des projets personnels. Concevoir une station météo, réaliser une alarme ou automatiser un équipement sont autant d'occasions de relier le monde physique et le monde numérique tout en approfondissant ma compréhension technique.",
+        "part4": "J'accorde aussi une place importante aux activités qui demandent de la rigueur, de la patience et de la progression sur le long terme. L'escalade et la callisthénie m'ont appris l'importance de la persévérance, tandis que le jardinage offre un équilibre différent, plus calme, qui permet de prendre du recul et de revenir aux projets avec un regard neuf.",
+        "part5": "Chaque expérience, qu'elle soit technique ou non, contribue à ma manière de travailler. J'aime analyser les problèmes, comprendre leurs causes et construire des solutions durables. Plus qu'une simple activité professionnelle, la technologie est pour moi un domaine d'apprentissage permanent où il y a toujours quelque chose de nouveau à découvrir et à améliorer."
       }
     }
   },

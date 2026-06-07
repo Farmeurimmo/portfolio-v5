@@ -2,8 +2,8 @@
   "HomePage": {
     "title": "Farmeurimmo",
     "description": {
-      "part1": "Full Stack developer with a straightforward approach: I build applications that hold up and scale over time. My work starts by understanding a project's real goals, not by pushing a tech stack.",
-      "part2": "Every project has its own needs. Sometimes the simplest solution is the best one. Other times, it's time to bring out the heavy artillery. I choose my tools based on what will actually solve the problem, not what's trending on LinkedIn."
+      "part1": "Full Stack Developer with a pragmatic approach: I build reliable applications designed to last and scale over time. I always start by understanding the real goals of a project, not by imposing a specific tech stack.",
+      "part2": "Every project has its own constraints and priorities. Sometimes, a simple and well-thought-out solution is more than enough. Other times, a more robust architecture is required. I choose my tools based on what actually solves the problem, not on what is trending."
     },
     "skills": {
       "title": "Technologies I use",
@@ -52,13 +52,13 @@
       "otherWays": "Other ways to contact me"
     },
     "about": {
-      "title": "A bit more about me",
+      "title": "A Little More About Me",
       "content": {
-        "part1": "Tech enthusiast who codes as much as I manage my own servers. This dual hat gives me a complete view of an application's lifecycle, from the first commit to production deployment.",
-        "part2": "My curiosity also led me to electronics. I've tinkered with a few concrete projects: an outdoor alarm, a weather station. Nothing groundbreaking, just the pleasure of understanding how things work.",
-        "part3": "Outside of screens, rock climbing and calisthenics to keep my head clear. Gardening when I need to completely disconnect.",
-        "part4": "Trading taught me to read patterns, make quick decisions with incomplete information, and manage risk.",
-        "part5": "These skills naturally transfer to development: anticipating edge cases, planning for uncertainty, and knowing when to cut your losses rather than clinging to a solution that isn't working."
+        "part1": "I have been interested in technology for several years, especially in understanding what happens behind the scenes. This curiosity naturally led me to software development as well as system administration. I enjoy building applications just as much as designing and maintaining the infrastructure that powers them.",
+        "part2": "Over time, I have worked on personal projects, explored a wide range of technologies, and gained experience managing servers, web services, and production environments. This hands-on approach has given me a broader understanding of how a project evolves, from the initial idea to deployment and long-term maintenance.",
+        "part3": "My curiosity goes beyond software. I also enjoy experimenting with electronics and embedded systems through personal projects. Building a weather station, designing an alarm system, or automating everyday tasks are opportunities to connect the physical and digital worlds while expanding my technical knowledge.",
+        "part4": "Outside of technology, I value activities that require consistency, patience, and continuous improvement. Climbing and calisthenics have taught me the importance of perseverance, while gardening offers a different pace that helps me disconnect, reflect, and return to projects with a fresh perspective.",
+        "part5": "Every experience, whether technical or not, shapes the way I approach challenges. I enjoy analyzing problems, understanding their root causes, and building solutions that are reliable and maintainable. More than just a profession, technology is a field of continuous learning for me, where there is always something new to explore, understand, and improve."
       }
     }
   },
