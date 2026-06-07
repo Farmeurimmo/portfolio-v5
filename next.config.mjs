@@ -46,6 +46,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'github.com',
             },
+            {
+                protocol: 'https',
+                hostname: 'www.sfml-dev.org'
+            }
         ],
         dangerouslyAllowSVG: true,
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",

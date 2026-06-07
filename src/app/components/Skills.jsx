@@ -88,6 +88,11 @@ let skills = [
         category: 'Frameworks & Libraries'
     },
     {
+        name: 'SFML3',
+        href: 'https://www.sfml-dev.org/',
+        category: 'Frameworks & Libraries'
+    },
+    {
         name: 'Arch',
         href: 'https://archlinux.org/',
         category: 'DevOps'
@@ -204,9 +209,10 @@ const specialIcons = {
     'junit5': 'https://junit.org/junit5/assets/img/junit5-logo.png',
     'daisyui': 'https://img.daisyui.com/images/daisyui-logo/daisyui-logomark.svg',
     'portainer': 'https://downloads.portainer.io/assets/portainer-p-logo-280x280.png',
-    'influxdb': 'https://www.influxdata.com/wp-content/uploads/cubo.svg',
+    'influxdb': 'https://www.influxdata.com/images/cubo.ico',
     'zabbix': 'https://assets.zabbix.com/img/apple-touch-icon-120x120-precomposed.png',
     'gatus': 'https://github.com/TwiN/gatus/blob/master/.github/assets/logo.png?raw=true',
+    'sfml3': 'https://www.sfml-dev.org/images/favicon.ico',
 };
 
 function getIconUrl(skillName) {
