@@ -19,10 +19,8 @@ pièces de l'adversaire en fonction de règles spécifiques sur un plateau carr�
 
 ### En quelques images
 
-<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png" alt="Partie en cours" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1algo-project-home.png" alt="Menu de démarrage de partie" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
-</div>
+![Partie en cours](https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png)
+![Menu de démarrage de partie](https://cdn.farmeurimmo.fr/img/projects/1algo-project-home.png)
 
 ### Règles du jeu
 

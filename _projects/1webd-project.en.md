@@ -2,7 +2,7 @@
 title: "Mini Project: Cinema Web App (OMDb)"
 date: "2025-12-04"
 excerpt: "A web application for browsing and searching movies using the OMDb API. Built with dynamic web technologies and organized into multiple pages with interactive features."
-tags: ["HTML", "CSS", "JavaScript", "REST API", "OMDb", "Dynamic Web"]
+tags: [ "HTML", "CSS", "JavaScript", "REST API", "OMDb", "Dynamic Web" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/1webd-project-cover.png"
 ---
 
@@ -20,10 +20,8 @@ A village cinema wants an app to allow clients to view available movies via an A
 
 ### In a few images
 
-<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1webd-project-home.png" alt="Cinema app home" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1webd-project-cover.png" alt="Movie search page" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
-</div>
+![Cinema app home](https://cdn.farmeurimmo.fr/img/projects/1webd-project-home.png)
+![Movie search page](https://cdn.farmeurimmo.fr/img/projects/1webd-project-cover.png)
 
 ### Deliverables
 

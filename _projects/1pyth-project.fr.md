@@ -2,7 +2,7 @@
 title: "1Projet Python – Jeux Snort & Dodgem"
 date: "2025-12-04"
 excerpt: "Projet individuel pour implémenter deux jeux de stratégie abstraits en Python (Snort et Dodgem), axé sur une logique propre et une interface terminal sans bibliothèques."
-tags: ["Python", "POO", "Algorithmes", "UI Terminal"]
+tags: [ "Python", "POO", "Algorithmes", "UI Terminal" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png"
 ---
 
@@ -18,10 +18,8 @@ Projet individuel de codage de deux jeux de stratégie abstraits : Snort et Dodg
 
 ### En quelques images
 
-<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png" alt="Mode de jeu dodgem" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1pyth-project-snort.png" alt="Mode de jeu snort" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
-</div>
+![Mode de jeu dodgem](https://cdn.farmeurimmo.fr/img/projects/1pyth-project-dodgem.png)
+![Mode de jeu snort](https://cdn.farmeurimmo.fr/img/projects/1pyth-project-snort.png)
 
 ### Description générale
 

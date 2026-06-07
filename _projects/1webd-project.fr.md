@@ -20,10 +20,8 @@ Un cinéma de village souhaite une application pour permettre aux clients de voi
 
 ### En quelques images
 
-<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1webd-project-home.png" alt="Page d'accueil de l'application cinéma" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1webd-project-cover.png" alt="Page de recherche de films" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
-</div>
+![Page d'accueil de l'application cinéma](https://cdn.farmeurimmo.fr/img/projects/1webd-project-home.png)
+![Page de recherche de films](https://cdn.farmeurimmo.fr/img/projects/1webd-project-cover.png)
 
 ### Livrables
 

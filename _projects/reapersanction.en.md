@@ -29,12 +29,10 @@ efficient player management.
 
 ## The plugin in a few pictures
 
-<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
-  <img src="https://cdn.farmeurimmo.fr/img/projects/rs2.png" alt="GUI mute" style="width:220px;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/rs3.png" alt="Ban screen" style="width:220px;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/rs4.png" alt="Sanctions history" style="width:220px;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/rs1.png" alt="Menu config" style="width:220px;height:auto;display:block" loading="lazy" />
-</div>
+![GUI mute](https://cdn.farmeurimmo.fr/img/projects/rs2.png)
+![Ban screen](https://cdn.farmeurimmo.fr/img/projects/rs3.png)
+![Sanctions history](https://cdn.farmeurimmo.fr/img/projects/rs4.png)
+![Menu config](https://cdn.farmeurimmo.fr/img/projects/rs1.png)
 
 ## In development
 

@@ -2,7 +2,7 @@
 title: "HTML Project – Vacation Rental Website"
 date: "2025-12-04"
 excerpt: "Completed individual project to create a responsive, accessible vacation rental website using only pure HTML and CSS, without frameworks or templates."
-tags: ["HTML", "CSS", "Responsive Design", "Accessibility"]
+tags: [ "HTML", "CSS", "Responsive Design", "Accessibility" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg"
 ---
 
@@ -28,11 +28,9 @@ accessibility compliance.
 
 ### In a few pictures
 
-<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1html-project-home.png" alt="Vacation rental home page" style="min-width:300px;max-width:30%;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg" alt="Activity page" style="min-width:300px;max-width:30%;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1html-project-contact.jpg" alt="Contact page" style="min-width:300px;max-width:30%;height:auto;display:block" loading="lazy" />
-</div>
+![Vacation rental home page](https://cdn.farmeurimmo.fr/img/projects/1html-project-home.png)
+![Activity page](https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg)
+![Contact page](https://cdn.farmeurimmo.fr/img/projects/1html-project-contact.jpg)
 
 ### Features
 

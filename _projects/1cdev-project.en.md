@@ -2,7 +2,7 @@
 title: "C Project – Supémon (Combat Game)"
 date: "2025-12-04"
 excerpt: "A C-based combat game inspired by Pokémon, featuring entity management, attacks, status effects and a console interface."
-tags: ["C", "Combat Game", "Console", "Data Structures"]
+tags: [ "C", "Combat Game", "Console", "Data Structures" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/1cdev-cover.png"
 ---
 
@@ -19,10 +19,8 @@ logic.
 
 ### In a few images
 
-<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1cdev-cover.png" alt="End of combat screen" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1cdev-other.png" alt="Combat interface" style="min-width:300px;max-width:40%;height:auto;display:block" loading="lazy" />
-</div>
+![End of combat screen](https://cdn.farmeurimmo.fr/img/projects/1cdev-cover.png)
+![Combat interface](https://cdn.farmeurimmo.fr/img/projects/1cdev-other.png)
 
 ### Context and Requirements
 

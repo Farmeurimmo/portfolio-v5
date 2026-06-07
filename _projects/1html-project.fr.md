@@ -2,7 +2,7 @@
 title: "Projet HTML – Site de location de vacances"
 date: "2025-12-04"
 excerpt: "Projet individuel réalisé pour créer un site de location de vacances responsive et accessible en utilisant uniquement du HTML et du CSS purs, sans frameworks ni templates."
-tags: ["HTML", "CSS", "Responsive Design", "Accessibilité"]
+tags: [ "HTML", "CSS", "Responsive Design", "Accessibilité" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg"
 ---
 
@@ -28,11 +28,9 @@ qualité du code, le design responsive et la conformité à l'accessibilité.
 
 ### En quelques images
 
-<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start">
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1html-project-home.png" alt="Page d'accueil du site de location de vacances" style="min-width:300px;max-width:30%;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg" alt="Page de présentation d'une activité" style="min-width:300px;max-width:30%;height:auto;display:block" loading="lazy" />
-  <img src="https://cdn.farmeurimmo.fr/img/projects/1html-project-contact.jpg" alt="Page de contact du site" style="min-width:300px;max-width:30%;height:auto;display:block" loading="lazy" />
-</div>
+![Page d'accueil du site de location de vacances](https://cdn.farmeurimmo.fr/img/projects/1html-project-home.png)
+![Page de présentation d'une activité](https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg)
+![Page de contact du site](https://cdn.farmeurimmo.fr/img/projects/1html-project-contact.jpg)
 
 ### Fonctionnalités
 
