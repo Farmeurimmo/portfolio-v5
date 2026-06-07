@@ -17,19 +17,19 @@
       "title": "Ce que je fais",
       "java_dev": {
         "title": "Développement Java",
-        "description": "Création d'APIs Spring Boot robustes et de plugins Minecraft personnalisés (Paper, Velocity, BungeeCord)."
+        "description": "Conception d'APIs Spring Boot et développement de plugins pour Minecraft et Hytale (Paper, Velocity, BungeeCord) orientés performance et maintenabilité."
       },
       "web_dev": {
         "title": "Développement Web",
-        "description": "Conception et réalisation de sites web modernes et d'applications sur mesure selon vos besoins."
+        "description": "Création d'applications web modernes et performantes, avec une attention particulière portée à l'architecture et à l'expérience utilisateur."
       },
       "admin": {
         "title": "Administration Système",
-        "description": "Gestion complète de serveurs : configuration, sécurisation, optimisation des performances et résolution d'incidents."
+        "description": "Gestion de serveurs Linux : déploiement, sécurisation, optimisation des performances et maintenance en production."
       },
       "support": {
-        "title": "Accompagnement",
-        "description": "Support technique personnalisé, conseils d'architecture, debugging et assistance pour tous vos projets."
+        "title": "Support & Architecture",
+        "description": "Aide au debugging, audit de code, conseil en architecture et accompagnement technique sur des projets existants."
       },
       "contact": "Vous avez un projet en tête ?",
       "contactButton": "Discutons-en"
