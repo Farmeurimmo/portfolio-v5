@@ -10,10 +10,6 @@ coverImage: "https://cdn.farmeurimmo.fr/img/projects/2stat-project-cover.png"
 
 Time series analysis project based on atmospheric data from the Global Monitoring Laboratory.
 
-Project completed by:
-- Carla ROLLET-SALAZAR
-- Robin MASSONNAT
-
 Grade: **71.67**
 
 ### Context and requirements

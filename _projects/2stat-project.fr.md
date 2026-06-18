@@ -10,10 +10,6 @@ coverImage: "https://cdn.farmeurimmo.fr/img/projects/2stat-project-cover.png"
 
 Projet d’analyse de séries temporelles basé sur des données atmosphériques issues du Global Monitoring Laboratory.
 
-Projet réalisé par :
-- Carla ROLLET-SALAZAR
-- Robin MASSONNAT
-
 Note : **71.67**
 
 ### Contexte et exigences
