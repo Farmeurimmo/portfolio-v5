@@ -1,5 +1,5 @@
 ---
-title: "1Python Project – Snort & Dodgem Games"
+title: "1Python Project : Snort & Dodgem Games"
 date: "2025-12-04"
 excerpt: "Individual project to implement two abstract strategy games in Python (Snort and Dodgem), focused on clean logic and terminal interface without libraries."
 tags: [ "Python", "OOP", "Algorithms", "Terminal UI" ]

@@ -1,12 +1,12 @@
 ---
-title: "HTML Project – Vacation Rental Website"
+title: "HTML Project : Vacation Rental Website"
 date: "2025-12-04"
 excerpt: "Completed individual project to create a responsive, accessible vacation rental website using only pure HTML and CSS, without frameworks or templates."
 tags: [ "HTML", "CSS", "Responsive Design", "Accessibility" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg"
 ---
 
-## HTML Project – Vacation Rental Website
+## HTML Project : Vacation Rental Website
 
 Completed individual project carried out in October over a 3-week period as part of my training at SUPINFO.
 

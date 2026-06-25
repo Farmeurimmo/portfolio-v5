@@ -1,12 +1,12 @@
 ---
-title: "Jeu de stratégie en Python – Reine & Tours"
+title: "Jeu de stratégie en Python : Reine & Tours"
 date: "2025-12-04"
 excerpt: "Jeu de stratégie à deux joueurs développé en Python avec Tkinter. Comprend un plateau carré, des règles de mouvement et de capture uniques, et une architecture orientée objet propre."
 tags: [ "Python", "Tkinter", "Développement de jeux", "POO" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png"
 ---
 
-## Mini-projet Python – Jeu de stratégie
+## Mini-projet Python : Jeu de stratégie
 
 Jeu de stratégie à deux joueurs développé en Python à l'aide de l'interface Tkinter. L'objectif est de capturer les
 pièces de l'adversaire en fonction de règles spécifiques sur un plateau carré.

@@ -1,12 +1,12 @@
 ---
-title: "Python Strategy Game – Queen & Rooks"
+title: "Python Strategy Game : Queen & Rooks"
 date: "2025-12-04"
 excerpt: "Two-player strategy game developed in Python with Tkinter. Includes a square board, unique movement and capture rules, and a clean object-oriented architecture."
 tags: [ "Python", "Tkinter", "Game Development", "OOP" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/1algo-project-cover.png"
 ---
 
-## Python Mini-Project – Strategy Game
+## Python Mini-Project : Strategy Game
 
 Two-player strategy game developed in Python using the Tkinter interface. The goal is to capture opponent pieces based
 on specific rules on a square board.

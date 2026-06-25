@@ -1,12 +1,12 @@
 ---
-title: "Projet HTML – Site de location de vacances"
+title: "Projet HTML : Site de location de vacances"
 date: "2025-12-04"
 excerpt: "Projet individuel réalisé pour créer un site de location de vacances responsive et accessible en utilisant uniquement du HTML et du CSS purs, sans frameworks ni templates."
 tags: [ "HTML", "CSS", "Responsive Design", "Accessibilité" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/1html-project-cover.jpg"
 ---
 
-## Projet HTML – Site de location de vacances
+## Projet HTML : Site de location de vacances
 
 Projet individuel réalisé en octobre sur une période de 3 semaines dans le cadre de ma formation à SUPINFO.
 

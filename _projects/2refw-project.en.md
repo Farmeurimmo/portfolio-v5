@@ -6,7 +6,7 @@ tags: [ "WordPress", "SEO", "Local SEO", "Search Console", "Semrush" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/2refw-seo-cover.png"
 ---
 
-# SEO Challenge – 2REFW
+# SEO Challenge : 2REFW
 
 Project completed as part of the **2REFW (WordPress and SEO)** module at **SUPINFO Lyon**, individually.
 
