@@ -1,8 +1,8 @@
 ---
-title: "2REFW Project: SUPINFO SEO Challenge"
+title: "WordPress Project: SEO Challenge"
 date: "2026-01-08"
 excerpt: Project page written for the 2REFW module (WordPress and SEO). Presentation of the strategy, technical choices, optimizations implemented, and results achieved during the SEO challenge.
-tags: [ "WordPress", "SEO", "2REFW", "Local SEO", "Search Console", "Semrush" ]
+tags: [ "WordPress", "SEO", "Local SEO", "Search Console", "Semrush" ]
 coverImage: "https://cdn.farmeurimmo.fr/img/projects/2refw-seo-cover.png"
 ---
 
